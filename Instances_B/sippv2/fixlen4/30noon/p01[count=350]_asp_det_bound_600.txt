@@ -1,0 +1,10 @@
+clingcon version 5.2.1
+Reading from ./instance_fixed.lp ...
+Solving...
+UNKNOWN
+
+TIME LIMIT   : 1
+Models       : 0+
+Calls        : 1
+Time         : 601.376s (Solving: 577.08s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 393.882s

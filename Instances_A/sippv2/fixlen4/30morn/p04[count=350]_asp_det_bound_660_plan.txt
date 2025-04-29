@@ -1,0 +1,4 @@
+328.0: (changeConfiguration wrec1_stage4 wrec1 conf_wrec1_1 conf_wrec1_4)
+363.0: (changeConfiguration wrac1_stage4 wrac1 conf_wrac1_1 conf_wrac1_5)
+524.0: (changeConfiguration wrbc1_stage5 wrbc1 conf_wrbc1_1 conf_wrbc1_5)
+660.0: @PlanEND

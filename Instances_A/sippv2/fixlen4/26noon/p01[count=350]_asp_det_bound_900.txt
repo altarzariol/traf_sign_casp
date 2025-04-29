@@ -1,0 +1,13 @@
+clingcon version 5.2.1
+Reading from ./instance_fixed.lp ...
+Solving...
+Answer: 1 (Time: 101.881s)
+sol(328,inter(wrec1,4),conf_wrec1_1,conf_wrec1_4) sol(821,inter(wrfc1,3),conf_wrfc1_1,conf_wrfc1_5) sol(864,inter(wrac1,4),conf_wrac1_1,conf_wrac1_4) sol(882,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_3) sol(892,inter(wrec1,4),conf_wrec1_4,conf_wrec1_3)
+Assignment:
+counter(900,link(wrac1,y,wrbc1))=30978040
+SATISFIABLE
+
+Models       : 1+
+Calls        : 1
+Time         : 103.152s (Solving: 65.78s 1st Model: 64.47s Unsat: 0.00s)
+CPU Time     : 58.871s
