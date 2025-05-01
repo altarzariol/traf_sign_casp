@@ -13,30 +13,26 @@ process_plan() {
     local PROBLEM=$2
     local HORIZON=$3
     local PLAN_FILE="${PROBLEM%.pddl}_${PLANNER}_det_bound_${HORIZON}_plan.txt"
-    local OUT_FILE="${PROBLEM%.pddl}_${PLANNER}_det_bound_${HORIZON}.txt"
-    if grep -wq "UNKNOWN" $OUT_FILE; then 
-        echo "No plan for $OUT_FILE" >> "timeout_det_bound_${HORIZON}.txt"
-    else
-        printf "$PLANNER,$HORIZON,${PROBLEM%.pddl}" >> "$CSV"
+
+    printf "$PLANNER,$HORIZON,${PROBLEM%.pddl}" >> "$CSV"
     
-        java -jar "$PPS" -d "$DOMAIN" -p "$PROBLEM" -sp "$PLAN_FILE" -pt > "$TEMP"
+    java -jar "$PPS" -d "$DOMAIN" -p "$PROBLEM" -sp "$PLAN_FILE" -pt > "$TEMP"
 
 
-        tac "$TEMP" | grep -m 1 "Time: " | while read -r line; do
-            jt=()
-            for link in "${path[@]}"; do
-                val=$(echo "$line" | sed -n "s/.*(counter $link)=\([-0-9.]*\).*/\1/p")
-                jt+=("$val")
-                printf ",$val" >> "$CSV"
-            done
-
-            tot=0
-            for val in "${jt[@]}"; do
-                [[ -n "$val" ]] && tot=$(echo "$tot + $val" | bc -l)
-            done
-            printf ",$tot\n" >> "$CSV"
+    tac "$TEMP" | grep -m 1 "Time: " | while read -r line; do
+        jt=()
+        for link in "${path[@]}"; do
+            val=$(echo "$line" | sed -n "s/.*(counter $link)=\([-0-9.]*\).*/\1/p")
+            jt+=("$val")
+            printf ",$val" >> "$CSV"
         done
-    fi 
+        tot=0
+        for val in "${jt[@]}"; do
+            [[ -n "$val" ]] && tot=$(echo "$tot + $val" | bc -l)
+        done
+        printf ",$tot\n" >> "$CSV"
+    done
+    
 }
 
 export -f process_plan
