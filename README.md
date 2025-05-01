@@ -15,11 +15,11 @@ python extract_instances.py ./Test
 
 ### Run clingcon 
 ```
-clingcon instance_fixed.lp enc_clingcon.lp [ASP_instance] --const h=[horizon] --const b=[cars_bound] --config=crafty 
+clingcon instance_fixed.lp enc_clingcon.lp [ASP_instance] --const horizon=[horizon] --const bound=[cars_bound] --config=crafty 
 ```
 Example
 ```
-clingcon instance_fixed.lp enc_clingcon.lp ./Test/p01[count=350].lp --const h=600 --const b=1000000 --config=crafty 
+clingcon instance_fixed.lp enc_clingcon.lp ./Test/p01[count=350].lp --const horizon=600 --const bound=1000000 --config=crafty 
 ```
 Note: 1000000 stands for 10.00000
 
