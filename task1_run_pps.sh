@@ -12,8 +12,8 @@ process_plan() {
     local PLANNER=$1
     local PROBLEM=$2
     local HORIZON=$3
-    local PLAN_FILE="${PROBLEM%.pddl}_${PLANNER}_horizon_${HORIZON}_plan.txt"
-    local OUT_FILE="${PROBLEM%.pddl}_${PLANNER}_horizon_${HORIZON}.txt"
+    local PLAN_FILE="${PROBLEM%.pddl}_${PLANNER}_det_bound_${HORIZON}_plan.txt"
+    local OUT_FILE="${PROBLEM%.pddl}_${PLANNER}_det_bound_${HORIZON}.txt"
     if grep -wq "UNKNOWN" $OUT_FILE; then 
         echo "No plan for $OUT_FILE" >> "timeout_det_bound_${HORIZON}.txt"
     else
