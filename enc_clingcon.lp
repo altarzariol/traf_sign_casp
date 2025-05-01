@@ -178,7 +178,7 @@ domain(L,-O,C+I) :- capacity(L,C), max_in(L,I), max_out(L,O).
 
 :- &sum{counter(horizon,L) } < B, counter(0,L,_), goal(B).
 %:- &sum{counter(horizon,L) : counter(0,L,_) } < B*Z, goal(B), unit(Z).
-&maximize {counter(horizon,L) : counter(0,L,_)}.
+&maximize{counter(horizon,L) : counter(0,L,_)}.
 
 #show.
 #show  sol(T-1,S,A1,A) : change(J,C,T,A), configuration(J,C-1,_,A1), active(T-1,S), status(J,S).
