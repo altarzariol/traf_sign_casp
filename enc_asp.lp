@@ -160,7 +160,7 @@ delta(T,M+N,L,D-R*E*F) :- time(T), follows(J,L), status(J,S), active(T-1,S), del
 
 
 occupancy(0,L,D) :- initial_occ(L,D).
-occupancy(T,L,O+D) :- time(T), occupancy(T-1,L,O+D), delta(T,I+O,L,D), last_delta_out(O,L), last_delta_in(I,L).
+occupancy(T,L,O1+D) :- time(T), occupancy(T-1,L,O1), delta(T,I+O,L,D), last_delta_out(O,L), last_delta_in(I,L).
 
 
 counter(T,L,C+D) :- time(T), delta(T,O,L,D), last_delta_in(O,L), counter(T-1,L,C).
