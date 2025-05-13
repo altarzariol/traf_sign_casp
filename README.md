@@ -40,9 +40,9 @@ task2_run_pps.sh [Directory]
 ### Extra 
 Run clingo-dl encoding
 ```
-clingo-dl instance_fixed.lp enc_clingodl.lp Instances_A/sippv2/fixlen4/muse/p05\[count\=350\].lp --const h=900 --config=crafty --heuristic=Domain [--minimize-variable="counter(900,[link])"]
+clingo-dl instance_fixed.lp enc_clingodl.lp ./Test/p01[count=350].lp --const horizon=900 --config=crafty --heuristic=Domain [--minimize-variable="counter(900,[link])"]
 ```
 Run asp encoding
 ```
-clingo instance_fixed.lp enc_asp.lp Instances_A/sippv2/fixlen4/muse/p05\[count\=350\].lp --const h=900 --config=crafty 
+clingo instance_fixed.lp enc_asp.lp ./Test/p01[count=350].lp --const horizon=900 --config=crafty 
 ```
