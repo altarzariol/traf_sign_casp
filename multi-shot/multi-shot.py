@@ -2,7 +2,7 @@ import argparse
 import sys
 from clingo import Control, Number, Function, SymbolType, SolveResult
 from clingo.ast import parse_string, ProgramBuilder
-from clingcon import ClingconTheory # Assumendo che clingcon sia ancora usato
+from clingcon import ClingconTheory # type: ignore
 
 # Variabile globale per la teoria clingcon, usata in parse_model
 thy = None
@@ -106,8 +106,6 @@ def main():
     print("Initial solve to get first time_steps...")
     with ctl.solve(yield_=True, on_model=thy.on_model, on_finish=on_finish_initial) as handle:
         for model in handle: 
-            # La tua modifica: _timesteps, _ = parse_model_symbols(model.symbols(shown=True))
-            # Assumendo che parse_model_symbols restituisca (time_steps, configurations)
             _timesteps, _ = parse_model_symbols(model.symbols(shown=True)) 
             initial_time_steps = _timesteps
             print(f"Initial time_steps found: {len(initial_time_steps)}")
@@ -123,7 +121,7 @@ def main():
     while current_time < args.horizon:
         print(f"\n--- Starting Shot from T_current={current_time} ---")
 
-        source_time_steps = initial_time_steps if not cumulative_shot_outputs else cumulative_shot_outputs[-1]["time_steps"] # CORREZIONE QUI
+        source_time_steps = initial_time_steps if not cumulative_shot_outputs else cumulative_shot_outputs[-1]["time_steps"]
         
         relevant_time_values = sorted(list(set(
             ts.arguments[2].number for ts in source_time_steps
@@ -193,7 +191,7 @@ def main():
             "objective_value": shot_best_obj_value,
             "counters": best_model_for_shot_counters,
             "configurations_chosen": parsed_shot_configurations,
-            "time_steps": parsed_shot_time_steps # CORREZIONE: chiave usata per salvare
+            "time_steps": parsed_shot_time_steps
         })
 
         for config_atom in parsed_shot_configurations:
