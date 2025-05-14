@@ -121,7 +121,6 @@ empty_link(t,L,1) :- link(L), not empty_link(t,L,0), t > 0.
 empty_link(t,outside,1) :- t > 0.
 &sum{occupancy(t-1,L) ; D} = occupancy(t,L) :- delta(t,I+O,L,D), last_delta_out(O,L), last_delta_in(I,L), t > 0.
 &sum{ counter(t-1,L) ; D } = counter(t,L) :- delta(t,O,L,D), last_delta_in(O,L), goal_count(L,_), t > 0.
-sol(t-1,S,A1,A) :- change(J,C,t,A), configuration(J,C-1,_,A1), active(t-1,S), status(J,S), t > 0.
 
 #program check(t).
 :- &sum{counter(t,L) } < B, counter(0,L,_), bound(B), goal_count(L,_).
