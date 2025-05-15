@@ -123,7 +123,7 @@ empty_link(t,outside,1) :- t > 0.
 &sum{ counter(t-1,L) ; D } = counter(t,L) :- delta(t,O,L,D), last_delta_in(O,L), goal_count(L,_), t > 0.
 
 #program check(t).
-:- &sum{counter(t,L) } < B, counter(0,L,_), bound(B), goal_count(L,_).
+:- &sum{counter(H,L) } < B, counter(0,L,_), bound(B), horizon(H), goal_count(L,_).
 &maximize{counter(t,L) : goal_count(L,_)}.
 
 #show. 
