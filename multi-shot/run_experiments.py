@@ -67,6 +67,7 @@ def parse_output_for_csv(output_text, horizon_val):
     """
     parsed_data = {}
     parsed_data["_parsing_successful_internally"] = False # Default
+    CPU_TIME_RE = re.compile(r"CPU Time\s*:\s*([0-9.]+)")
 
     shot_summary_matches = []
     for match in SHOT_SUMMARY_RE.finditer(output_text):
@@ -97,6 +98,10 @@ def parse_output_for_csv(output_text, horizon_val):
     if parsed_data.get("NumShotsInSummary") is not None and \
        parsed_data.get("Total") is not None:
         parsed_data["_parsing_successful_internally"] = True
+    
+    cpu_time_match = CPU_TIME_RE.search(output_text)
+    if cpu_time_match:
+        parsed_data["Time"] = float(cpu_time_match.group(1))
 
     return parsed_data
 
@@ -142,9 +147,9 @@ def main():
                         command = [
                             sys.executable,
                             str(MULTI_SHOT_SCRIPT),
-                            str(ENC_FILE),
                             str(INSTANCE_FIXED_FILE),
                             str(variable_instance_file),
+                            str(ENC_FILE),
                             f"--horizon={horizon}",
                             f"--shot_duration={shot_duration}",
                             "--stats" # Manteniamo --stats perché multi-shot.py potrebbe usarlo per altro output
@@ -155,23 +160,18 @@ def main():
                         execution_duration_wall_clock = None
 
                         try:
-                            time_before_subprocess = time.perf_counter()
+                            start_time = time.time()
                             process = subprocess.run(
                                 command,
                                 capture_output=True,
                                 text=True,
-                                cwd=BASE_SCRIPT_DIR,
-                                check=False,
-                                timeout=run_timeout_seconds 
+                                timeout=run_timeout_seconds
                             )
-                            time_after_subprocess = time.perf_counter()
-                            execution_duration_wall_clock = round(time_after_subprocess - time_before_subprocess, 3)
-                            
-                            # Assegna sempre il tempo misurato esternamente
-                            row_data["Time"] = execution_duration_wall_clock 
-
+                            end_time = time.time()
+                            execution_duration_wall_clock = end_time - start_time
                             parsed_data_from_run = parse_output_for_csv(process.stdout, horizon)
-
+                            
+                            row_data["Time"] = parsed_data_from_run.get("Time")
                             # Popola le altre colonne di row_data dai risultati parsati
                             row_data["NumShotsInSummary"] = parsed_data_from_run.get("NumShotsInSummary")
                             row_data["Total"] = parsed_data_from_run.get("Total")
