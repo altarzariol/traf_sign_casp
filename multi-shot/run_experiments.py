@@ -14,7 +14,7 @@ ENC_FILE = BASE_SCRIPT_DIR / "enc_multishot.lp"
 INSTANCE_FIXED_FILE = BASE_SCRIPT_DIR / "instance_fixed.lp"
 OUTPUT_CSV_FILE = BASE_SCRIPT_DIR / "experiment_results_multi_shot.csv" # Filename for output CSV
 
-INSTANCES_ROOT_PATH = BASE_SCRIPT_DIR.parent / "Instancesv2" / "sippv2" / "fixlen4"
+INSTANCES_ROOT_PATH = BASE_SCRIPT_DIR.parent / "Instancesv2_round" / "sippv2" / "fixlen4"
 INSTANCE_SUBDIRECTORIES = [
     "26eve",
     "muse"
@@ -29,9 +29,14 @@ INSTANCE_FILE_NAMES = [
 HORIZONS = [600, 900]
 # HORIZONS = [660, 720, 780, 840]
 
-# CSV Schema as previously defined
+# SHOT_DURATIONS = [150, 300]
+SHOT_DURATIONS = [50, 100, 150, 300, 450]
+
+MODELS_PER_SHOT_VALUES = [1, 2, 0]
+
+# CSV Schema updated
 CSV_HEADER = [
-    "Time", "Horizon", "Shot_duration", "Problem",
+    "Time", "Horizon", "Shot_duration", "Models_per_Shot", "Problem",
     "NumShotsInSummary",
     "counter wrac1_y_wrbc1", "counter wrbc1_b_wrcc1", "counter wrcc1_x_wrdc1",
     "counter wrdc1_b_wrec1", "counter wrec1_y_wrfc1",
@@ -54,9 +59,6 @@ TARGET_LINKS_FULL_NAMES = {
     "wrdc1_b_wrec1": "link(wrdc1,b,wrec1)",
     "wrec1_y_wrfc1": "link(wrec1,y,wrfc1)"
 }
-
-# SHOT_DURATIONS = [50, 100, 150, 300, 450]
-SHOT_DURATIONS = [150, 300]
 
 
 def parse_output_for_csv(output_text, horizon_val):
@@ -96,7 +98,6 @@ def parse_output_for_csv(output_text, horizon_val):
     # Determine internal parsing success (based on data we expect to find)
     if parsed_data.get("NumShotsInSummary") is not None and \
        parsed_data.get("Total") is not None:
-        # We could add a check for the presence of counters if they are always expected
         parsed_data["_parsing_successful_internally"] = True
     
     return parsed_data
@@ -113,103 +114,101 @@ def main():
         if write_header_flag:
             writer.writeheader()
 
-        total_runs = len(HORIZONS) * len(SHOT_DURATIONS) * len(INSTANCE_SUBDIRECTORIES) * len(INSTANCE_FILE_NAMES)
+        total_runs = len(HORIZONS) * len(SHOT_DURATIONS) * len(MODELS_PER_SHOT_VALUES) * len(INSTANCE_SUBDIRECTORIES) * len(INSTANCE_FILE_NAMES)
         current_run = 0
 
         for horizon in HORIZONS:
             for shot_duration in SHOT_DURATIONS:
-                for inst_subdir_name in INSTANCE_SUBDIRECTORIES:
-                    current_instance_dir_path = INSTANCES_ROOT_PATH / inst_subdir_name
-                    if not current_instance_dir_path.is_dir():
-                        print(f"Warning: Directory '{current_instance_dir_path}' not found. Skipping.")
-                        continue
+                for models_per_shot_val in MODELS_PER_SHOT_VALUES: # New loop for models_per_shot
+                    for inst_subdir_name in INSTANCE_SUBDIRECTORIES:
+                        current_instance_dir_path = INSTANCES_ROOT_PATH / inst_subdir_name
+                        if not current_instance_dir_path.is_dir():
+                            print(f"Warning: Directory '{current_instance_dir_path}' not found. Skipping associated runs in this directory.")
+                            # Adjust total_runs if you want an accurate dynamic count, or skip runs
+                            # For simplicity, current_run will still increment correctly against the initial total_runs.
+                            # To accurately reduce total_runs:
+                            # total_runs -= len(INSTANCE_FILE_NAMES) # Do this if skipping the whole inner loop
+                            continue # Skips this inst_subdir_name for current H, SD, MPS
 
-                    for inst_file_name in INSTANCE_FILE_NAMES:
-                        current_run += 1
-                        variable_instance_file = current_instance_dir_path / inst_file_name
-                        if not variable_instance_file.is_file():
-                            print(f"Warning: File '{variable_instance_file}' not found. Skipping.")
-                            continue
+                        for inst_file_name in INSTANCE_FILE_NAMES:
+                            current_run += 1
+                            variable_instance_file = current_instance_dir_path / inst_file_name
+                            if not variable_instance_file.is_file():
+                                print(f"Warning: File '{variable_instance_file}' not found. Skipping.")
+                                # total_runs -=1 # If dynamic total_runs is desired
+                                continue
 
-                        print(f"--- Running {current_run}/{total_runs}: H={horizon}, Shot_duration={shot_duration}, Dir={inst_subdir_name}, File={inst_file_name} ---")
+                            print(f"--- Running {current_run}/{total_runs}: H={horizon}, Shot_duration={shot_duration}, Models_per_Shot={models_per_shot_val}, Dir={inst_subdir_name}, File={inst_file_name} ---")
 
-                        row_data = {key: None for key in CSV_HEADER}
-                        row_data["Horizon"] = horizon
-                        row_data["Shot_duration"] = shot_duration
-                        row_data["Problem"] = f"./Instancesv2/sippv2/fixlen4/{inst_subdir_name}/{inst_file_name}" # Relative path as in example
+                            row_data = {key: None for key in CSV_HEADER}
+                            row_data["Horizon"] = horizon
+                            row_data["Shot_duration"] = shot_duration
+                            row_data["Models_per_Shot"] = models_per_shot_val # Populate new column
+                            row_data["Problem"] = f"./Instancesv2_round/sippv2/fixlen4/{inst_subdir_name}/{inst_file_name}"
 
-                        command = [
-                            sys.executable,
-                            str(MULTI_SHOT_SCRIPT),
-                            str(INSTANCE_FIXED_FILE),
-                            str(variable_instance_file),
-                            str(ENC_FILE),
-                            f"--horizon={horizon}",
-                            f"--shot_duration={shot_duration}"
-                        ]
-                        
-                        run_timeout_seconds = 3600 
-                        execution_duration_wall_clock = None # Initialize
-
-                        try:
-                            start_time = time.time()
-                            process = subprocess.run(
-                                command,
-                                capture_output=True,
-                                text=True,
-                                timeout=run_timeout_seconds,
-                                check=False # Do not raise exception for non-zero exit code, handle output
-                            )
-                            end_time = time.time()
-                            execution_duration_wall_clock = end_time - start_time
+                            command = [
+                                sys.executable,
+                                str(MULTI_SHOT_SCRIPT),
+                                str(INSTANCE_FIXED_FILE),
+                                str(variable_instance_file),
+                                str(ENC_FILE),
+                                f"--horizon={horizon}",
+                                f"--shot_duration={shot_duration}",
+                                f"--models_per_shot={models_per_shot_val}" # Add new parameter to command
+                            ]
                             
-                            # Assign the measured WALL CLOCK TIME
-                            row_data["Time"] = execution_duration_wall_clock
-                            
-                            # Parse output for other data
-                            parsed_data_from_run = parse_output_for_csv(process.stdout, horizon)
-                            
-                            row_data["NumShotsInSummary"] = parsed_data_from_run.get("NumShotsInSummary")
-                            row_data["Total"] = parsed_data_from_run.get("Total")
-                            for suffix in TARGET_COUNTER_KEY_SUFFIXES:
-                                col_name = f"counter {suffix}"
-                                row_data[col_name] = parsed_data_from_run.get(col_name)
-                            
-                            if process.returncode != 0:
-                                print(f"    Warning: Subprocess finished with exit code {process.returncode}")
-                                if process.stderr:
-                                    print(f"    Subprocess stderr:\n{process.stderr}")
+                            run_timeout_seconds = 3600 
+                            execution_duration_wall_clock = None 
 
-
-                        except subprocess.TimeoutExpired:
-                            row_data["Time"] = run_timeout_seconds # Record timeout as duration
-                            print(f"    Timeout ({run_timeout_seconds}s) for H={horizon}, Shot_duration={shot_duration}, Dir={inst_subdir_name}, File={inst_file_name}")
-                        except FileNotFoundError:
-                            row_data["Time"] = 0.0 # Execution did not occur
-                            print(f"    FileNotFoundError for command: {' '.join(map(str,command))}")
-                        except Exception as e:
-                            # If another exception occurs, execution_duration_wall_clock might have been partially calculated
-                            # or might not be significant. Record what we have or 0.0.
-                            if execution_duration_wall_clock is not None: # If error is after measurement
-                                row_data["Time"] = execution_duration_wall_clock
-                            else: # If error is before or during measurement
-                                row_data["Time"] = 0.0 
-                            print(f"    Unexpected exception for H={horizon}, Shot_duration={shot_duration}, Dir={inst_subdir_name}, File={inst_file_name}: {str(e)}")
-                        
-                        # Format time to two decimal places before writing
-                        if row_data["Time"] is not None:
                             try:
-                                # Ensure it's a float before formatting,
-                                # though it should already be (or a convertible int)
-                                row_data["Time"] = f"{float(row_data['Time']):.2f}"
-                            except (ValueError, TypeError):
-                                # Fallback in the (unlikely) event row_data["Time"] is not numeric
-                                print(f"Warning: Could not format time '{row_data['Time']}' for the row.")
-                                # Leave original value or set to a placeholder if preferred
-                                pass
-                        
-                        writer.writerow(row_data)
-                        csvfile.flush() # Ensure data is written to disk periodically
+                                start_time = time.time()
+                                process = subprocess.run(
+                                    command,
+                                    capture_output=True,
+                                    text=True,
+                                    timeout=run_timeout_seconds,
+                                    check=False 
+                                )
+                                end_time = time.time()
+                                execution_duration_wall_clock = end_time - start_time
+                                
+                                row_data["Time"] = execution_duration_wall_clock
+                                
+                                parsed_data_from_run = parse_output_for_csv(process.stdout, horizon)
+                                
+                                row_data["NumShotsInSummary"] = parsed_data_from_run.get("NumShotsInSummary")
+                                row_data["Total"] = parsed_data_from_run.get("Total")
+                                for suffix in TARGET_COUNTER_KEY_SUFFIXES:
+                                    col_name = f"counter {suffix}"
+                                    row_data[col_name] = parsed_data_from_run.get(col_name)
+                                
+                                if process.returncode != 0:
+                                    print(f"    Warning: Subprocess finished with exit code {process.returncode}")
+                                    if process.stderr:
+                                        print(f"    Subprocess stderr:\n{process.stderr}")
+
+                            except subprocess.TimeoutExpired:
+                                row_data["Time"] = run_timeout_seconds 
+                                print(f"    Timeout ({run_timeout_seconds}s) for H={horizon}, Shot_duration={shot_duration}, Models_per_Shot={models_per_shot_val}, Dir={inst_subdir_name}, File={inst_file_name}")
+                            except FileNotFoundError:
+                                row_data["Time"] = 0.0 
+                                print(f"    FileNotFoundError for command: {' '.join(map(str,command))}")
+                            except Exception as e:
+                                if execution_duration_wall_clock is not None: 
+                                    row_data["Time"] = execution_duration_wall_clock
+                                else: 
+                                    row_data["Time"] = 0.0 
+                                print(f"    Unexpected exception for H={horizon}, Shot_duration={shot_duration}, Models_per_Shot={models_per_shot_val}, Dir={inst_subdir_name}, File={inst_file_name}: {str(e)}")
+                            
+                            if row_data["Time"] is not None:
+                                try:
+                                    row_data["Time"] = f"{float(row_data['Time']):.2f}"
+                                except (ValueError, TypeError):
+                                    print(f"Warning: Could not format time '{row_data['Time']}' for the row.")
+                                    pass
+                            
+                            writer.writerow(row_data)
+                            csvfile.flush() 
     print(f"\n--- Processing complete. Results saved to '{OUTPUT_CSV_FILE}' ---")
 
 if __name__ == "__main__":

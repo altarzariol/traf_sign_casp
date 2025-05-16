@@ -210,7 +210,7 @@ def main():
                     best_model_for_shot_counters = model_counters
 
                 # If we've found enough models for this shot, as per models_per_shot, stop.
-                if shot_models_found_count >= args.models_per_shot:
+                if shot_models_found_count >= args.models_per_shot and args.models_per_shot > 0:
                     print(f"   Reached models_per_shot limit ({args.models_per_shot}).")
                     break
             
@@ -259,7 +259,7 @@ def main():
                     for ts in parsed_shot_time_steps 
                 )
                 if is_actual_time_step_for_config:
-                    print(f"   Fixing configuration via external: fixed_configuration{j_sym, c_idx_sym, t_val_sym, conf_sym}")
+                    # print(f"   Fixing configuration via external: fixed_configuration{j_sym, c_idx_sym, t_val_sym, conf_sym}")
                     
                     # Create an external atom representing this fixed configuration.
                     external_atom = Function("fixed_configuration", [j_sym, c_idx_sym, t_val_sym, conf_sym])
