@@ -297,22 +297,35 @@ def main():
             print(f"\nGlobal horizon {args.horizon} not fully reached. Last completed shot ended at T={last_shot['T_shot_end']} with objective {last_shot['objective_value']}")
         
     # If requested, print solver statistics
+        # If requested, print solver statistics
     if args.stats:
         stats = ctl.statistics
-        print("\nSolver Statistics (Cumulative):")
-        summary_stats = stats.get('summary', {})
-        times_stats = summary_stats.get('times', {})
-        models_stats = summary_stats.get('models', {}) 
-        if not models_stats and 'models' in stats: models_stats = stats['models']
-        
-        solving_stats = summary_stats.get('solving', {})
-        if not solving_stats and 'solving' in stats: solving_stats = stats['solving']
-
-        print(f"   Total Time: {times_stats.get('total', 0):.3f}s")
-        print(f"   Solve Time: {times_stats.get('solve', 0):.3f}s")
-        print(f"   Models Enumerated: {models_stats.get('enumerated', models_stats.get('number', 0))}") 
-        print(f"   Choices: {solving_stats.get('choices', 0)}")
-        print(f"   Conflicts: {solving_stats.get('conflicts', 0)}")
+        try:
+            print("\nSolver Statistics Summary:")
+            print("========================")
+            
+            # Extract and print time information
+            times = stats['summary']['times']
+            print(f"Total time: {times['total']/1e9:.2f}s")
+            print(f"CPU time: {times['cpu']:.2f}s")
+            
+            # Extract and print problem size information
+            lp_stats = stats['problem']['lp']
+            print(f"\nProblem size:")
+            print(f"- Atoms: {int(lp_stats['atoms']):,}")
+            print(f"- Rules: {int(lp_stats['rules']):,}")
+            print(f"- Bodies: {int(lp_stats['bodies']):,}")
+            
+            # Extract and print solving information
+            solving_stats = stats['solving']['solvers']
+            print(f"\nSolving process:")
+            print(f"- Choices: {int(solving_stats['choices']):,}")
+            print(f"- Conflicts: {int(solving_stats['conflicts']):,}")
+            print(f"- Restarts: {int(solving_stats['restarts']):,}")
+            print("========================")
+            
+        except KeyError as e:
+            print(f"Error retrieving statistics: {e}")
 
 if __name__ == '__main__':
     main()
