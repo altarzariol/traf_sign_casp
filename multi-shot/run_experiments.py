@@ -55,8 +55,8 @@ TARGET_LINKS_FULL_NAMES = {
     "wrec1_y_wrfc1": "link(wrec1,y,wrfc1)"
 }
 
-SHOT_DURATIONS = [50, 100, 150, 300, 450]
-# SHOT_DURATIONS = [150, 300]
+# SHOT_DURATIONS = [50, 100, 150, 300, 450]
+SHOT_DURATIONS = [150, 300]
 
 
 def parse_output_for_csv(output_text, horizon_val):

@@ -2,7 +2,7 @@ import argparse
 import sys
 from clingo import Control, Number, Function, SymbolType, SolveResult
 from clingo.ast import parse_string, ProgramBuilder
-from clingcon import ClingconTheory
+from clingcon import ClingconTheory # type: ignore
 
 # This global variable 'thy' will hold our ClingconTheory instance.
 thy = None
@@ -78,7 +78,8 @@ def main():
     parser.add_argument('--horizon', type=int, default=100, help='Value for horizon (default: 100)')
     parser.add_argument('--bound', type=int, default=0, help='Value for global bound (default: 0)')
     parser.add_argument('--lim', type=int, default=4, help='Value for lim (cycle limit) (default: 4)')
-    parser.add_argument('--shot_duration', type=int, default=100, help='Fixed duration for each shot (default: 10)')
+    parser.add_argument('--shot_duration', type=int, default=10, help='Fixed duration for each shot (default: 10)')
+    parser.add_argument('--models_per_shot', type=int, default=1, help='Maximum number of models to compute per shot (default: 1)')    
     parser.add_argument('--stats', action='store_true', help='Print statistics')
     args = parser.parse_args()
 
@@ -207,6 +208,11 @@ def main():
                     shot_best_obj_value = current_shot_obj_value
                     best_model_for_shot_symbols = model_symbols
                     best_model_for_shot_counters = model_counters
+
+                # If we've found enough models for this shot, as per models_per_shot, stop.
+                if shot_models_found_count >= args.models_per_shot:
+                    print(f"   Reached models_per_shot limit ({args.models_per_shot}).")
+                    break
             
             
         # If no models were found or the shot was unsatisfiable, we need to handle that.
