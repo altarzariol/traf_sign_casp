@@ -2,7 +2,7 @@ import argparse
 import sys
 from clingo import Control, Number, Function, SymbolType, SolveResult
 from clingo.ast import parse_string, ProgramBuilder
-from clingcon import ClingconTheory # type: ignore
+from clingcon import ClingconTheory
 
 # This global variable 'thy' will hold our ClingconTheory instance.
 thy = None
