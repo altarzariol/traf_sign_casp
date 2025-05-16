@@ -274,6 +274,36 @@ def main():
 
     # --- End of the multi-shot loop ---
 
+    # If requested, print solver statistics
+    if args.stats:
+        stats = ctl.statistics
+        try:
+            print("\nSolver Statistics Summary:")
+            print("========================")
+            
+            # Extract and print time information
+            times = stats['summary']['times']
+            print(f"CPU time: {times['cpu']:.2f}s")
+            
+            # Extract and print problem size information
+            lp_stats = stats['problem']['lp']
+            print(f"\nProblem size:")
+            print(f"- Atoms: {int(lp_stats['atoms']):,}")
+            print(f"- Rules: {int(lp_stats['rules']):,}")
+            print(f"- Bodies: {int(lp_stats['bodies']):,}")
+            
+            # Extract and print solving information
+            solving_stats = stats['solving']['solvers']
+            print(f"\nSolving process:")
+            print(f"- Choices: {int(solving_stats['choices']):,}")
+            print(f"- Conflicts: {int(solving_stats['conflicts']):,}")
+            print(f"- Restarts: {int(solving_stats['restarts']):,}")
+            print("========================")
+            
+        except KeyError as e:
+            print(f"Error retrieving statistics: {e}")
+
+
     # Print a summary of the entire multi-shot process
     print("\n--- Multi-shot Process Summary ---")
     if not cumulative_shot_outputs:
@@ -296,36 +326,6 @@ def main():
             last_shot = cumulative_shot_outputs[-1]
             print(f"\nGlobal horizon {args.horizon} not fully reached. Last completed shot ended at T={last_shot['T_shot_end']} with objective {last_shot['objective_value']}")
         
-    # If requested, print solver statistics
-        # If requested, print solver statistics
-    if args.stats:
-        stats = ctl.statistics
-        try:
-            print("\nSolver Statistics Summary:")
-            print("========================")
-            
-            # Extract and print time information
-            times = stats['summary']['times']
-            print(f"Total time: {times['total']/1e9:.2f}s")
-            print(f"CPU time: {times['cpu']:.2f}s")
-            
-            # Extract and print problem size information
-            lp_stats = stats['problem']['lp']
-            print(f"\nProblem size:")
-            print(f"- Atoms: {int(lp_stats['atoms']):,}")
-            print(f"- Rules: {int(lp_stats['rules']):,}")
-            print(f"- Bodies: {int(lp_stats['bodies']):,}")
-            
-            # Extract and print solving information
-            solving_stats = stats['solving']['solvers']
-            print(f"\nSolving process:")
-            print(f"- Choices: {int(solving_stats['choices']):,}")
-            print(f"- Conflicts: {int(solving_stats['conflicts']):,}")
-            print(f"- Restarts: {int(solving_stats['restarts']):,}")
-            print("========================")
-            
-        except KeyError as e:
-            print(f"Error retrieving statistics: {e}")
 
 if __name__ == '__main__':
     main()
