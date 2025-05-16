@@ -29,10 +29,9 @@ INSTANCE_FILE_NAMES = [
 HORIZONS = [600, 900]
 # HORIZONS = [660, 720, 780, 840]
 
-# SHOT_DURATIONS = [150, 300]
 SHOT_DURATIONS = [50, 100, 150, 300, 450]
 
-MODELS_PER_SHOT_VALUES = [1, 2, 0]
+MODELS_PER_SHOT_VALUES = [1, 2, 0] 
 
 # CSV Schema updated
 CSV_HEADER = [
@@ -119,31 +118,36 @@ def main():
 
         for horizon in HORIZONS:
             for shot_duration in SHOT_DURATIONS:
-                for models_per_shot_val in MODELS_PER_SHOT_VALUES: # New loop for models_per_shot
+                for models_per_shot_val in MODELS_PER_SHOT_VALUES: 
                     for inst_subdir_name in INSTANCE_SUBDIRECTORIES:
                         current_instance_dir_path = INSTANCES_ROOT_PATH / inst_subdir_name
                         if not current_instance_dir_path.is_dir():
                             print(f"Warning: Directory '{current_instance_dir_path}' not found. Skipping associated runs in this directory.")
-                            # Adjust total_runs if you want an accurate dynamic count, or skip runs
-                            # For simplicity, current_run will still increment correctly against the initial total_runs.
-                            # To accurately reduce total_runs:
-                            # total_runs -= len(INSTANCE_FILE_NAMES) # Do this if skipping the whole inner loop
-                            continue # Skips this inst_subdir_name for current H, SD, MPS
+                            # To accurately adjust total_runs for skipped directory:
+                            # total_runs -= len(INSTANCE_FILE_NAMES) * len(MODELS_PER_SHOT_VALUES) # if outer loops are fixed for this
+                            # current_run advancement will show a higher percentage done than actual if not adjusted.
+                            # For simplicity, we let current_run increment against the initial total.
+                            # The number of skipped files within this subdir for this H/SD/MPS combo would be len(INSTANCE_FILE_NAMES)
+                            # One way to handle total_runs if a dir is skipped for one MPS but not another:
+                            # Deduct len(INSTANCE_FILE_NAMES) from total_runs when this continue is hit.
+                            runs_to_skip_for_dir = len(INSTANCE_FILE_NAMES)
+                            total_runs = max(0, total_runs - runs_to_skip_for_dir) # Adjust total if skipping
+                            continue 
 
                         for inst_file_name in INSTANCE_FILE_NAMES:
                             current_run += 1
                             variable_instance_file = current_instance_dir_path / inst_file_name
                             if not variable_instance_file.is_file():
                                 print(f"Warning: File '{variable_instance_file}' not found. Skipping.")
-                                # total_runs -=1 # If dynamic total_runs is desired
+                                total_runs = max(0, total_runs -1) # Adjust total if skipping
                                 continue
 
                             print(f"--- Running {current_run}/{total_runs}: H={horizon}, Shot_duration={shot_duration}, Models_per_Shot={models_per_shot_val}, Dir={inst_subdir_name}, File={inst_file_name} ---")
 
-                            row_data = {key: None for key in CSV_HEADER}
+                            row_data = {key: None for key in CSV_HEADER} # Initialize all fields to None
                             row_data["Horizon"] = horizon
                             row_data["Shot_duration"] = shot_duration
-                            row_data["Models_per_Shot"] = models_per_shot_val # Populate new column
+                            row_data["Models_per_Shot"] = models_per_shot_val 
                             row_data["Problem"] = f"./Instancesv2_round/sippv2/fixlen4/{inst_subdir_name}/{inst_file_name}"
 
                             command = [
@@ -154,10 +158,10 @@ def main():
                                 str(ENC_FILE),
                                 f"--horizon={horizon}",
                                 f"--shot_duration={shot_duration}",
-                                f"--models_per_shot={models_per_shot_val}" # Add new parameter to command
+                                f"--models_per_shot={models_per_shot_val}" 
                             ]
                             
-                            run_timeout_seconds = 3600 
+                            run_timeout_seconds = 60 # Set fixed timeout
                             execution_duration_wall_clock = None 
 
                             try:
@@ -166,7 +170,7 @@ def main():
                                     command,
                                     capture_output=True,
                                     text=True,
-                                    timeout=run_timeout_seconds,
+                                    timeout=run_timeout_seconds, # Apply timeout
                                     check=False 
                                 )
                                 end_time = time.time()
@@ -174,6 +178,7 @@ def main():
                                 
                                 row_data["Time"] = execution_duration_wall_clock
                                 
+                                # Parse output only if successful and not timed out
                                 parsed_data_from_run = parse_output_for_csv(process.stdout, horizon)
                                 
                                 row_data["NumShotsInSummary"] = parsed_data_from_run.get("NumShotsInSummary")
@@ -188,7 +193,8 @@ def main():
                                         print(f"    Subprocess stderr:\n{process.stderr}")
 
                             except subprocess.TimeoutExpired:
-                                row_data["Time"] = run_timeout_seconds 
+                                row_data["Time"] = 0.0
+                                # NumShotsInSummary, Total, and counters will remain None (empty in CSV)
                                 print(f"    Timeout ({run_timeout_seconds}s) for H={horizon}, Shot_duration={shot_duration}, Models_per_Shot={models_per_shot_val}, Dir={inst_subdir_name}, File={inst_file_name}")
                             except FileNotFoundError:
                                 row_data["Time"] = 0.0 
@@ -200,12 +206,13 @@ def main():
                                     row_data["Time"] = 0.0 
                                 print(f"    Unexpected exception for H={horizon}, Shot_duration={shot_duration}, Models_per_Shot={models_per_shot_val}, Dir={inst_subdir_name}, File={inst_file_name}: {str(e)}")
                             
+                            # Format time to two decimal places before writing
                             if row_data["Time"] is not None:
                                 try:
                                     row_data["Time"] = f"{float(row_data['Time']):.2f}"
                                 except (ValueError, TypeError):
-                                    print(f"Warning: Could not format time '{row_data['Time']}' for the row.")
-                                    pass
+                                    print(f"Warning: Could not format time '{row_data['Time']}' for the row: {row_data}")
+                                    pass # Leave original value if formatting fails
                             
                             writer.writerow(row_data)
                             csvfile.flush() 
