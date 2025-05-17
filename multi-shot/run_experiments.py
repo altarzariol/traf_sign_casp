@@ -157,9 +157,9 @@ def main():
                             
                             # Determine timeout based on models_per_shot_val
                             if models_per_shot_val == 0:
-                                run_timeout_seconds = 120  # 120 seconds timeout
+                                run_timeout_seconds = 90  # 90 seconds timeout
                             else:
-                                run_timeout_seconds = None  # No timeout (unlimited time)
+                                run_timeout_seconds = 90  # No timeout (unlimited time)
                             
                             execution_duration_wall_clock = None 
 
