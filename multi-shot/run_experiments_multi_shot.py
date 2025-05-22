@@ -26,6 +26,7 @@ INSTANCE_FILE_NAMES = [
     "p01[count=350].lp", "p02[count=350].lp", "p03[count=350].lp",
     "p04[count=350].lp", "p05[count=350].lp"
 ]
+
 HORIZONS = [600, 900]
 # HORIZONS = [660, 720, 780, 840]
 
@@ -157,9 +158,9 @@ def main():
                             
                             # Determine timeout based on models_per_shot_val
                             if models_per_shot_val == 0:
-                                run_timeout_seconds = 90  # 90 seconds timeout
+                                run_timeout_seconds = 600  # 600 seconds timeout
                             else:
-                                run_timeout_seconds = 90  # No timeout (unlimited time)
+                                run_timeout_seconds = 600  # No timeout (unlimited time)
                             
                             execution_duration_wall_clock = None 
 
