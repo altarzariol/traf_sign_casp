@@ -14,7 +14,7 @@ ENC_FILE = BASE_SCRIPT_DIR / "enc_multishot.lp"
 INSTANCE_FIXED_FILE = BASE_SCRIPT_DIR / "instance_fixed.lp"
 OUTPUT_CSV_FILE = BASE_SCRIPT_DIR / "experiment_results_multi_shot.csv" # Filename for output CSV
 
-INSTANCES_ROOT_PATH = BASE_SCRIPT_DIR.parent / "Instancesv2_round" / "sippv2" / "fixlen4"
+INSTANCES_ROOT_PATH = BASE_SCRIPT_DIR.parent / "Instancesv2" / "sippv2" / "fixlen4"
 INSTANCE_SUBDIRECTORIES = [
     "26eve",
     "muse"
@@ -27,8 +27,9 @@ INSTANCE_FILE_NAMES = [
     "p04[count=350].lp", "p05[count=350].lp"
 ]
 
-HORIZONS = [600, 900]
-# HORIZONS = [660, 720, 780, 840]
+HORIZONS = [600, 660, 720, 780, 840, 900]
+
+RUN_TIMEOUT_SECONDS = 900
 
 SHOT_DURATIONS = [100, 150, 300, 450]
 
@@ -143,7 +144,7 @@ def main():
                             row_data["Horizon"] = horizon
                             row_data["Shot_duration"] = shot_duration
                             row_data["Models_per_Shot"] = models_per_shot_val 
-                            row_data["Problem"] = f"./Instancesv2_round/sippv2/fixlen4/{inst_subdir_name}/{inst_file_name}"
+                            row_data["Problem"] = f"./Instancesv2/sippv2/fixlen4/{inst_subdir_name}/{inst_file_name}"
 
                             command = [
                                 sys.executable,
@@ -157,10 +158,10 @@ def main():
                             ]
                             
                             # Determine timeout based on models_per_shot_val
-                            if models_per_shot_val == 0:
-                                run_timeout_seconds = 600  # 600 seconds timeout
+                            if models_per_shot_val == 0 or models_per_shot_val == 2:
+                                run_timeout_seconds = RUN_TIMEOUT_SECONDS
                             else:
-                                run_timeout_seconds = 600  # No timeout (unlimited time)
+                                run_timeout_seconds = RUN_TIMEOUT_SECONDS
                             
                             execution_duration_wall_clock = None 
 

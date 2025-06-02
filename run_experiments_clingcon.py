@@ -14,14 +14,13 @@ CLINGCON_EXE = "clingcon"
 ENC_CLINGCON_LP = BASE_SCRIPT_DIR / "enc_clingcon.lp"
 INSTANCE_FIXED_FILE = BASE_SCRIPT_DIR / "instance_fixed.lp"
 
-OUTPUT_CSV_CLINGCON_FILE = BASE_SCRIPT_DIR / "experiment_results_clingcon.csv"
+OUTPUT_CSV_CLINGCON_FILE = BASE_SCRIPT_DIR / "experiment_results_clingcon_models2.csv"
 
 # Instance configurations
-INSTANCES_ROOT_PATH = BASE_SCRIPT_DIR / "Instancesv2_round" / "sippv2" / "fixlen4"
+INSTANCES_ROOT_PATH = BASE_SCRIPT_DIR / "Instancesv2" / "sippv2" / "fixlen4"
 INSTANCE_SUBDIRECTORIES = [
     "26eve",
     "muse"
-    # Commented examples from multi-shot:
     # "26morn", "26noon",
     # "30eve", "30morn", "30noon",
 ]
@@ -31,16 +30,18 @@ INSTANCE_FILE_NAMES = [
 ]
 
 HORIZONS = [600, 900]
-# HORIZONS = [660, 720, 780, 840]
+# HORIZONS = [600, 660, 720, 780, 840, 900]
+
+MODELS_PER_SHOT_VALUES = [1, 2, 0] 
 
 # Clingcon Parameters
 CLINGCON_BOUND = 0
 CLINGCON_CONFIG = "crafty"
-RUN_TIMEOUT_SECONDS = 600 # Timeout for each clingcon execution (in seconds)
+RUN_TIMEOUT_SECONDS = 900 # Timeout for each clingcon execution (in seconds)
 
 # CSV Schema for clingcon results
 CSV_HEADER_CLINGCON = [
-    "Time", "Horizon", "Problem",
+    "Time", "Horizon", "Models", "Problem",
     "counter wrac1_y_wrbc1", "counter wrbc1_b_wrcc1", "counter wrcc1_x_wrdc1",
     "counter wrdc1_b_wrec1", "counter wrec1_y_wrfc1",
     "Total"
@@ -136,114 +137,119 @@ def main():
         current_run = 0
 
         for horizon in HORIZONS:
-            for inst_subdir_name in INSTANCE_SUBDIRECTORIES:
-                current_instance_dir_path = INSTANCES_ROOT_PATH / inst_subdir_name
-                if not current_instance_dir_path.is_dir():
-                    print(f"Warning: Directory '{current_instance_dir_path}' not found. Skipping runs for this directory.")
-                    runs_to_skip_for_dir = len(INSTANCE_FILE_NAMES)
-                    actual_total_runs = max(0, actual_total_runs - runs_to_skip_for_dir)
-                    continue
-
-                for inst_file_name in INSTANCE_FILE_NAMES:
-                    current_run += 1
-                    variable_instance_file = current_instance_dir_path / inst_file_name
-                    if not variable_instance_file.is_file():
-                        print(f"Warning: File '{variable_instance_file}' not found. Skipping.")
-                        actual_total_runs = max(0, actual_total_runs - 1)
+            for models_per_shot_val in MODELS_PER_SHOT_VALUES: 
+                for inst_subdir_name in INSTANCE_SUBDIRECTORIES:
+                    current_instance_dir_path = INSTANCES_ROOT_PATH / inst_subdir_name
+                    if not current_instance_dir_path.is_dir():
+                        print(f"Warning: Directory '{current_instance_dir_path}' not found. Skipping runs for this directory.")
+                        runs_to_skip_for_dir = len(INSTANCE_FILE_NAMES)
+                        actual_total_runs = max(0, actual_total_runs - runs_to_skip_for_dir)
                         continue
 
-                    print(f"--- Running {current_run}/{actual_total_runs} (Initial Total: {initial_total_runs}): H={horizon}, Dir={inst_subdir_name}, File={inst_file_name} ---")
+                    for inst_file_name in INSTANCE_FILE_NAMES:
+                        current_run += 1
+                        variable_instance_file = current_instance_dir_path / inst_file_name
+                        if not variable_instance_file.is_file():
+                            print(f"Warning: File '{variable_instance_file}' not found. Skipping.")
+                            actual_total_runs = max(0, actual_total_runs - 1)
+                            continue
 
-                    row_data = {key: None for key in CSV_HEADER_CLINGCON}
-                    row_data["Horizon"] = horizon
-                    try:
-                        # Create a relative path from the parent directory of BASE_SCRIPT_DIR
-                        relative_problem_path = variable_instance_file.relative_to(BASE_SCRIPT_DIR.parent)
+                        print(f"--- Running {current_run}/{actual_total_runs} (Initial Total: {initial_total_runs}): H={horizon}, Dir={inst_subdir_name}, File={inst_file_name} ---")
 
-                        # Remove the "traf_sign_casp/" substring from the path (POSIX string format)
-                        cleaned_path_str = str(relative_problem_path).replace("traf_sign_casp/", "")
+                        row_data = {key: None for key in CSV_HEADER_CLINGCON}
+                        row_data["Horizon"] = horizon
+                        row_data["Models"] = models_per_shot_val
+                        try:
+                            # Create a relative path from the parent directory of BASE_SCRIPT_DIR
+                            relative_problem_path = variable_instance_file.relative_to(BASE_SCRIPT_DIR.parent)
 
-                        # Set the value in the data row
-                        row_data["Problem"] = f"./{cleaned_path_str}"
-                    except ValueError:
-                        # Fallback if creating the relative path fails
-                        row_data["Problem"] = str(variable_instance_file)
+                            # Remove the "traf_sign_casp/" substring from the path (POSIX string format)
+                            cleaned_path_str = str(relative_problem_path).replace("traf_sign_casp/", "")
+
+                            # Set the value in the data row
+                            row_data["Problem"] = f"./{cleaned_path_str}"
+                        except ValueError:
+                            # Fallback if creating the relative path fails
+                            row_data["Problem"] = str(variable_instance_file)
 
 
-                    command = [
-                        CLINGCON_EXE,
-                        str(INSTANCE_FIXED_FILE),
-                        str(ENC_CLINGCON_LP),
-                        str(variable_instance_file),
-                        "--const", f"horizon={horizon}",
-                        "--const", f"bound={CLINGCON_BOUND}",
-                        f"--config={CLINGCON_CONFIG}",
-                    ]
-                    
-                    execution_duration_wall_clock = None
-                    process_output_text = ""
-                    
-                    try:
-                        start_time = time.time()
-                        process = subprocess.run(
-                            command,
-                            capture_output=True,
-                            text=True,
-                            timeout=RUN_TIMEOUT_SECONDS,
-                            check=False 
-                        )
-                        end_time = time.time()
-                        execution_duration_wall_clock = end_time - start_time
+                        command = [
+                            CLINGCON_EXE,
+                            str(INSTANCE_FIXED_FILE),
+                            str(ENC_CLINGCON_LP),
+                            str(variable_instance_file),
+                            "--const", f"horizon={horizon}",
+                            "--const", f"bound={CLINGCON_BOUND}",
+                            f"--config={CLINGCON_CONFIG}",
+                            "--models", str(models_per_shot_val),
+                        ]
                         
-                        process_output_text = process.stdout
-                        parsed_run_data = parse_clingcon_output(process_output_text, horizon)
-
-                        if parsed_run_data.get("Time") is not None:
-                            row_data["Time"] = f"{parsed_run_data['Time']:.3f}"
-                        elif execution_duration_wall_clock is not None:
-                            row_data["Time"] = f"{execution_duration_wall_clock:.2f}"
-                        else:
-                            row_data["Time"] = "ERROR_NO_TIME"
-
-                        row_data["Total"] = parsed_run_data.get("Total")
-                        for suffix in TARGET_COUNTER_KEY_SUFFIXES:
-                            col_name = f"counter {suffix}"
-                            row_data[col_name] = parsed_run_data.get(col_name)
+                        execution_duration_wall_clock = None
+                        process_output_text = ""
                         
-                        # Check Clingcon exit codes (10=SAT, 20=UNSAT, 30=SAT+OPTIMAL)
-                        # Other codes usually indicate errors.
-                        if process.returncode not in [10, 20, 30] and process.returncode !=0 : 
-                             print(f"    Warning: Clingcon process finished with exit code {process.returncode}")
-                             if process.stderr:
-                                 print(f"    Clingcon stderr:\n{process.stderr}")
+                        try:
+                            start_time = time.time()
+                            process = subprocess.run(
+                                command,
+                                capture_output=True,
+                                text=True,
+                                timeout=RUN_TIMEOUT_SECONDS,
+                                check=False,
+                                env={**os.environ, 'PYTHONUNBUFFERED': '1'}  # Forza unbuffered output
 
-                    except subprocess.TimeoutExpired:
-                        end_time = time.time() 
-                        execution_duration_wall_clock = end_time - start_time
-                        row_data["Time"] = 0.0 # Actual time until timeout
-                        print(f"    Timeout ({RUN_TIMEOUT_SECONDS}s) for H={horizon}, Dir={inst_subdir_name}, File={inst_file_name}. Wall clock: {execution_duration_wall_clock:.2f}s")
-                    except FileNotFoundError:
-                        row_data["Time"] = "ERROR_FNF" 
-                        print(f"    FileNotFoundError for command: {' '.join(map(str,command))}. Is '{CLINGCON_EXE}' in PATH?")
-                    except Exception as e:
-                        if execution_duration_wall_clock is not None:
-                            row_data["Time"] = f"{execution_duration_wall_clock:.2f}"
-                        else:
-                            row_data["Time"] = "ERROR_EXC"
-                        print(f"    Unexpected exception for H={horizon}, Dir={inst_subdir_name}, File={inst_file_name}: {str(e)}")
-                    
-                    # Final formatting for numeric fields for CSV
-                    for key_csv in CSV_HEADER_CLINGCON:
-                        if isinstance(row_data[key_csv], (int, float)):
-                            if key_csv == "Time": # Already formatted as string with precision
-                                pass
+                            )
+                            end_time = time.time()
+                            execution_duration_wall_clock = end_time - start_time
+                            
+                            process_output_text = process.stdout
+                            parsed_run_data = parse_clingcon_output(process_output_text, horizon)
+
+                            if parsed_run_data.get("Time") is not None:
+                                row_data["Time"] = f"{parsed_run_data['Time']:.3f}"
+                            elif execution_duration_wall_clock is not None:
+                                row_data["Time"] = f"{execution_duration_wall_clock:.2f}"
                             else:
-                                row_data[key_csv] = str(row_data[key_csv])
-                        elif row_data[key_csv] is None:
-                            row_data[key_csv] = "" # Represent None as empty string in CSV
+                                row_data["Time"] = "ERROR_NO_TIME"
 
-                    writer.writerow(row_data)
-                    csvfile.flush()
+                            row_data["Total"] = parsed_run_data.get("Total")
+                            for suffix in TARGET_COUNTER_KEY_SUFFIXES:
+                                col_name = f"counter {suffix}"
+                                row_data[col_name] = parsed_run_data.get(col_name)
+                            
+                            # Check Clingcon exit codes (10=SAT, 20=UNSAT, 30=SAT+OPTIMAL)
+                            # Other codes usually indicate errors.
+                            if process.returncode not in [10, 20, 30] and process.returncode !=0 : 
+                                print(f"    Warning: Clingcon process finished with exit code {process.returncode}")
+                                if process.stderr:
+                                    print(f"    Clingcon stderr:\n{process.stderr}")
+
+                        except subprocess.TimeoutExpired:
+                            end_time = time.time() 
+                            execution_duration_wall_clock = end_time - start_time
+                            row_data["Time"] = 0.0 # Actual time until timeout
+                            print(f"    Timeout ({RUN_TIMEOUT_SECONDS}s) for H={horizon}, Dir={inst_subdir_name}, File={inst_file_name}. Wall clock: {execution_duration_wall_clock:.2f}s")
+                        except FileNotFoundError:
+                            row_data["Time"] = "ERROR_FNF" 
+                            print(f"    FileNotFoundError for command: {' '.join(map(str,command))}. Is '{CLINGCON_EXE}' in PATH?")
+                        except Exception as e:
+                            if execution_duration_wall_clock is not None:
+                                row_data["Time"] = f"{execution_duration_wall_clock:.2f}"
+                            else:
+                                row_data["Time"] = "ERROR_EXC"
+                            print(f"    Unexpected exception for H={horizon}, Dir={inst_subdir_name}, File={inst_file_name}: {str(e)}")
+                        
+                        # Final formatting for numeric fields for CSV
+                        for key_csv in CSV_HEADER_CLINGCON:
+                            if isinstance(row_data[key_csv], (int, float)):
+                                if key_csv == "Time": # Already formatted as string with precision
+                                    pass
+                                else:
+                                    row_data[key_csv] = str(row_data[key_csv])
+                            elif row_data[key_csv] is None:
+                                row_data[key_csv] = "" # Represent None as empty string in CSV
+
+                        writer.writerow(row_data)
+                        csvfile.flush()
     print(f"\n--- Clingcon processing complete. Results saved to '{OUTPUT_CSV_CLINGCON_FILE}' ---")
 
 if __name__ == "__main__":
