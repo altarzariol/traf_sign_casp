@@ -176,8 +176,10 @@ domain(L,-O,C+I) :- capacity(L,C), max_in(L,I), max_out(L,O).
 &sum{ D} = counter(0,L) :- counter(0,L,D).
 &sum{counter(T-1,L) ; D} = counter(T,L) :- delta(T,O,L,D), last_delta_in(O,L).
 
-:- &sum{counter(horizon,L) } < B, counter(0,L,_), goal(B).
-%:- &sum{counter(horizon,L) : counter(0,L,_) } < B*Z, goal(B), unit(Z).
+:- &sum{counter(horizon,L) } < B, counter(0,L,_), goal(B), B>0.
+%:- &sum{counter(horizon,L) } <= B, pddl_solution(L,B), B>0.
+:- &sum{counter(horizon,L) : pddl_solution(L,_)} <= S, S=#sum{B,L : pddl_solution(L,B)}, pddl_solution(_,_).
+
 &maximize{counter(horizon,L) : counter(0,L,_)}.
 
 #show.
@@ -185,3 +187,19 @@ domain(L,-O,C+I) :- capacity(L,C), max_in(L,I), max_out(L,O).
 &show {counter(horizon,L) : counter(0,L,_)}.
 
 
+max_phase_limit(stage(J,N),M) :- stage(J,N), M=#max{L : phase_limit(stage(J,N),_,L)}.
+max_stage(C,stage(J,N)) :- available_conf(_,C), phase_limit(stage(J,N),C,L), max_phase_limit(stage(J,N),L). 
+
+optimal_conf(C,stage(J,N)) :- max_stage(C,stage(J,N)), #count{C1 : max_stage(C1,stage(J,N))}=1. 
+
+stage_fill(stage(J,N), L) :-  turnrate(stage(J,N),_,L,_). 
+stage_empty(stage(J,N), L) :-  turnrate(stage(J,N),L,_,_). 
+
+optimal_conf_1(C,L) :- counter(0,L,_), stage_empty(S,L), optimal_conf(C,S).
+optimal_conf_2(C,L) :- counter(0,L,_), stage_fill(S,L), optimal_conf(C,S).
+promising_conf_2(J,C,A) :- configuration(J,C,_,A), optimal_conf_1(A,L).
+promising_conf_1(J,C,A) :- configuration(J,C,_,A), optimal_conf_2(A,L).
+
+#heuristic promising_conf_2(J,C,A). [1, true]
+#heuristic change(J,C,T,A). [2, false]
+#heuristic promising_conf_1(J,C,A). [3, true]
