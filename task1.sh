@@ -58,11 +58,12 @@ evaluate_plan() {
 
 main() {
     if [ "$#" -lt 1 ]; then
-        echo "Usage: $0 <directory>"
+        echo "Usage: $0 <directory> <horizon>"
         exit 1
     fi
 
     DIR="$1"
+    HORIZON="$2"
     TEMP="$(mktemp)"
 
     find "$DIR" -type f -name "*.pddl" | \
@@ -79,7 +80,8 @@ main() {
         plan="${pddl_instance%.pddl}_enhsp_plan.txt"
         extract_plan "$TEMP" "$plan"
 
-        for hor in 600 660 720 780 840 900; do
+        #for hor in 600 ; do
+            hor=$HORIZON
             facts=()
             read -ra values <<< "$(evaluate_plan "$pddl_instance" "$plan" "$hor" "${links[@]}")"
             # Converts values in ASP facts
@@ -101,9 +103,9 @@ main() {
             asp_instance="${pddl_instance%.pddl}.lp"
             clingcon_output="${pddl_instance%.pddl}_asp_bound_$hor.txt"
             echo $asp_facts > $clingcon_output
-            echo $asp_facts | clingcon $asp_instance ./instance_fixed.lp ./enc_clingcon.lp - --const horizon=$hor --const bound=0 --config=crafty --heuristic=Domain --time-limit=600 --q=1  >> $clingcon_output 2>/dev/null
+            echo $asp_facts | clingcon $asp_instance ./instance_fixed.lp ./enc_clingcon.lp - --const horizon=$hor --const bound=0 --config=crafty --time-limit=600 --q=1  >> $clingcon_output 2>/dev/null
             
-        done
+        #done
     done
 }
 
