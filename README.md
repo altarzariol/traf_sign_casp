@@ -32,12 +32,20 @@ task1_run_pps.sh [Directory]
 ```
 ### Task 2
 ```
-task2_run_clingcon.sh 
+task2_run_clingcon.sh [Directory]
 task2_run_enhsp.sh [Directory]
 task2_run_pps.sh [Directory]
 ```
+### Combine PDDL+ and Clingcon
+```
+combine_pddl_clingcon.sh [Directory]
+```
 
 ### Extra 
+The experiment results are in the corresponding subdirectory of 
+```
+Result_experiments/
+```
 Run clingo-dl encoding
 ```
 clingo-dl instance_fixed.lp enc_clingodl.lp ./Test/p01[count=350].lp --const horizon=900 --config=crafty --heuristic=Domain [--minimize-variable="counter(900,[link])"]
