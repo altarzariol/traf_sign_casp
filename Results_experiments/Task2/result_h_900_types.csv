@@ -1,4 +1,4 @@
-Encoding,Horizon,Problem,Type, counter wrac1_y_wrbc1, counter wrbc1_b_wrcc1, counter wrcc1_x_wrdc1, counter wrdc1_b_wrec1, counter wrec1_y_wrfc1,Total,Diff
+Encoding,Horizon,Problem,Type,counter wrac1_y_wrbc1,counter wrbc1_b_wrcc1,counter wrcc1_x_wrdc1,counter wrdc1_b_wrec1,counter wrec1_y_wrfc1,Total,Diff
 clingcon,900,./v2/30morn,p3,104.2626003921032,79.48799657821655,95.35899892449379,,,279.10959589481354,1.871
 fire,900,./v2/30morn,p3,102.2626003921032,80.06399655342102,94.91199892759323,,,277.23859587311745,0
 clingcon,900,./v2/30morn,p4,104.2626003921032,79.48799657821655,95.35899892449379,88.71499724686146,,367.82459314167500,3.594

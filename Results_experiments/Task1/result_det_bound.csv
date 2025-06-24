@@ -1,4 +1,4 @@
-Encoding,Horizon,Problem, counter wrac1_y_wrbc1, counter wrbc1_b_wrcc1, counter wrcc1_x_wrdc1, counter wrdc1_b_wrec1, counter wrec1_y_wrfc1,Total
+Encoding,Horizon,Problem,counter wrac1_y_wrbc1,counter wrbc1_b_wrcc1,counter wrcc1_x_wrdc1,counter wrdc1_b_wrec1,counter wrec1_y_wrfc1,Total
 clingcon,600 (46),./Instancesv2_round/sippv2/fixlen4/30morn/p03[count=350],70.41480034589767,58.175997495651245,67.6567992568016,,,196.247597098350515
 clingcon,600 (46),./Instancesv2_round/sippv2/fixlen4/30morn/p04[count=350],70.41480034589767,58.175997495651245,67.6567992568016,62.83199805021286,,259.079595148563375
 clingcon,600 (46),./Instancesv2_round/sippv2/fixlen4/30morn/p05[count=350],70.41480034589767,58.175997495651245,67.6567992568016,62.83199805021286,61.682000041007996,320.761595189571371
