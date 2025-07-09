@@ -12,26 +12,29 @@ BASE_SCRIPT_DIR = Path(__file__).parent.resolve() # 'multi_shot' directory
 MULTI_SHOT_SCRIPT = BASE_SCRIPT_DIR / "multi-shot.py"
 ENC_FILE = BASE_SCRIPT_DIR / "enc_multishot.lp"
 INSTANCE_FIXED_FILE = BASE_SCRIPT_DIR / "instance_fixed.lp"
-OUTPUT_CSV_FILE = BASE_SCRIPT_DIR / "experiment_results_multi_shot.csv" # Filename for output CSV
+OUTPUT_CSV_FILE = BASE_SCRIPT_DIR / "full_experiment_results_multi_shot.csv" # Filename for output CSV
 
 INSTANCES_ROOT_PATH = BASE_SCRIPT_DIR.parent / "Instancesv2" / "sippv2" / "fixlen4"
 INSTANCE_SUBDIRECTORIES = [
     "26eve",
-    "muse"
+    "muse",
+    "26morn", 
+    "26noon",
+    "30eve", "30morn", "30noon",
 ]
-# "26morn", "26noon",
-#     "30eve", "30morn", "30noon",
 
 INSTANCE_FILE_NAMES = [
     "p01[count=350].lp", "p02[count=350].lp", "p03[count=350].lp",
     "p04[count=350].lp", "p05[count=350].lp"
 ]
 
-HORIZONS = [600, 660, 720, 780, 840, 900]
+HORIZONS = [600, 900]
+# [600, 660, 720, 780, 840, 900]
 
 RUN_TIMEOUT_SECONDS = 900
 
-SHOT_DURATIONS = [100, 150, 300, 450]
+SHOT_DURATIONS = [100]
+# [100, 150, 300, 450]
 
 MODELS_PER_SHOT_VALUES = [1, 2, 0] 
 

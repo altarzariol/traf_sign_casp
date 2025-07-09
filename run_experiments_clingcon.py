@@ -14,15 +14,16 @@ CLINGCON_EXE = "clingcon"
 ENC_CLINGCON_LP = BASE_SCRIPT_DIR / "enc_clingcon.lp"
 INSTANCE_FIXED_FILE = BASE_SCRIPT_DIR / "instance_fixed.lp"
 
-OUTPUT_CSV_CLINGCON_FILE = BASE_SCRIPT_DIR / "experiment_results_clingcon_models2.csv"
+OUTPUT_CSV_CLINGCON_FILE = BASE_SCRIPT_DIR / "full_experiment_results_clingcon.csv"
 
 # Instance configurations
 INSTANCES_ROOT_PATH = BASE_SCRIPT_DIR / "Instancesv2" / "sippv2" / "fixlen4"
 INSTANCE_SUBDIRECTORIES = [
     "26eve",
-    "muse"
-    # "26morn", "26noon",
-    # "30eve", "30morn", "30noon",
+    "muse",
+    "26morn",
+    "26noon",
+    "30eve", "30morn", "30noon",
 ]
 INSTANCE_FILE_NAMES = [
     "p01[count=350].lp", "p02[count=350].lp", "p03[count=350].lp",
