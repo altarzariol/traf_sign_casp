@@ -1,0 +1,13 @@
+Encoding,Horizon,Problem,counter wrac1_y_wrbc1,counter wrbc1_b_wrcc1,counter wrcc1_x_wrdc1,counter wrdc1_b_wrec1,counter wrec1_y_wrfc1,Total
+clingcon,900,./pddl_70/result/Instancesv2_round/sippv2/fixlen4/26morn/p05[count=350]_asp_bound_900.txt,23351440,18201600,18890700,17109800,18151300,95704840
+clingcon,900,./pddl_70/result/Instancesv2_round/sippv2/fixlen4/26morn/p02[count=350]_asp_bound_900.txt,23351440,18201600,,,,41553040
+pddl,900,./pddl_70/result/Instancesv2/sippv2/fixlen4/26morn/p03[count=350]_asp_bound_900.txt,24091340,19699199,22896479,,,66687018
+pddl,900,./pddl_70/result/Instancesv2/sippv2/fixlen4/26morn/p04[count=350]_asp_bound_900.txt,24091340,19699199,22896479,21210099,,87897117
+pddl,900,./pddl_70/result/Instancesv2/sippv2/fixlen4/26morn/p05[count=350]_asp_bound_900.txt,24091340,19699199,22896479,20774899,21200099,108662016
+pddl,900,./pddl_70/result/Instancesv2/sippv2/fixlen4/26morn/p02[count=350]_asp_bound_900.txt,24091340,19699199,,,,43790539
+pddl,900,./pddl_70/result/Instancesv2/sippv2/fixlen4/26morn/p01[count=350]_asp_bound_900.txt,24091340,,,,,24091340
+pddl,900,./pddl_70/result/Instancesv2_round/sippv2/fixlen4/26morn/p03[count=350]_asp_bound_900.txt,23482640,18431999,18964059,,,60878698
+pddl,900,./pddl_70/result/Instancesv2_round/sippv2/fixlen4/26morn/p04[count=350]_asp_bound_900.txt,23482640,18201599,18890699,17227099,,77802037
+pddl,900,./pddl_70/result/Instancesv2_round/sippv2/fixlen4/26morn/p05[count=350]_asp_bound_900.txt,23417040,17625599,18670619,16923699,17986499,94623456
+pddl,900,./pddl_70/result/Instancesv2_round/sippv2/fixlen4/26morn/p02[count=350]_asp_bound_900.txt,23417040,18086399,,,,41503439
+pddl,900,./pddl_70/result/Instancesv2_round/sippv2/fixlen4/26morn/p01[count=350]_asp_bound_900.txt,23417040,,,,,23417040

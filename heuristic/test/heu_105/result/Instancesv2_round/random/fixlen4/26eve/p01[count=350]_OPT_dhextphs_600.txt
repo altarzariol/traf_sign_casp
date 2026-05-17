@@ -1,0 +1,15 @@
+clingcon version 5.2.1
+Reading from ...random/fixlen4/26eve/p01[count=350].lp ...
+Solving...
+Answer: 5 (Time: 322.510s)
+change(wrac1,6,516,conf_wrac1_1) change(wrcc1,6,553,conf_wrcc1_1) sol(515,inter(wrac1,4),conf_wrac1_2,conf_wrac1_1) sol(552,inter(wrcc1,6),conf_wrcc1_3,conf_wrcc1_1)
+Assignment:
+counter(600,link(wrac1,y,wrbc1))=17106740
+Cost: -17106740
+SATISFIABLE
+
+TIME LIMIT   : 1
+Models       : 5+
+Calls        : 1
+Time         : 601.318s (Solving: 584.80s 1st Model: 5.51s Unsat: 0.00s)
+CPU Time     : 392.738s

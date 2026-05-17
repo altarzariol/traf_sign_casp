@@ -1,0 +1,121 @@
+Name::Test_Delta
+ ./model/instance_fixed.lp ./model/enc_clingcon.lp--Test_Delta
+Name::Test_Delta_Duplex
+ ./model/instance_fixed.lp ./model/enc_deltacon.lp--Test_Delta_Duplex
+Name::Delta_&sum
+ ./model/constants.lp ./model/enc_conf.lp ./model/enc_delta.lp ./model/instance_fixed.lp--Delta_&sum
+Name::Delta_#sum
+ ./model/constants.lp ./model/enc_conf.lp ./model/enc_delta_sum.lp ./model/instance_fixed.lp--Delta_#sum
+Name::High_rate
+ ./model/constants.lp ./model/instance_fixed.lp ./model/enc_conf.lp ./model/heu/conf_value.lp--High_rate
+Name::Change_in/out
+ ./model/constants.lp ./model/dates/activation.lp ./model/dates/capacity.lp ./model/dates/init_occ.lp ./model/dates/phase_limit.lp ./model/dates/turnrate.lp ./model/enc_conf.lp ./model/heu/conf_value.lp ./model/instance_fixed.lp--Change_in/out
+Name::Heu_Test1
+ ./model/instance_fixed.lp ./model/enc_clingcon.lp ./model/heu/conf_value.lp--Heu_Test1
+Name::QuickRate
+ ./model/instance_fixed.lp ./model/enc_clingcon.lp ./model/heu/min_volume.lp--QuickRate
+Name::PrintQuick
+ ./model/constants.lp ./model/dates/activation.lp ./model/dates/capacity.lp ./model/dates/init_occ.lp ./model/dates/phase_limit.lp ./model/dates/turnrate.lp ./model/enc_conf.lp ./model/heu/min_volume.lp ./model/instance_fixed.lp--PrintQuick
+Name::QuickPrint2
+ ./model/constants.lp ./model/enc_conf.lp ./model/heu/min_volume.lp ./model/instance_fixed.lp--QuickPrint2
+Name::LongRate
+ ./model/instance_fixed.lp ./model/enc_clingcon.lp ./model/heu/max_volume.lp--LongRate
+Name::Delta#_and_HighRate
+ ./model/constants.lp ./model/enc_conf.lp ./model/enc_delta_sum.lp ./model/instance_fixed.lp ./model/heu/conf_value.lp--Delta#_and_HighRate
+Name::NotOptTest
+ ./model/instance_fixed.lp ./model/enc_clingcon_not_opt.lp--NotOptTest
+Name::NotOptQuickrate
+ ./model/instance_fixed.lp ./model/enc_clingcon_not_opt.lp ./model/heu/min_volume.lp--NotOptQuickrate
+Name::NotOpt_Delta_#sum
+ ./model/constants.lp ./model/enc_conf.lp ./model/enc_delta_sum_NotOpt.lp ./model/instance_fixed.lp--NotOpt_Delta_#sum
+Name::NotOpt_HeuTest1(or NotOpt_HighRate)
+ ./model/instance_fixed.lp ./model/enc_clingcon_not_opt.lp ./model/heu/conf_value.lp--NotOpt_HeuTest1(or NotOpt_HighRate)
+Name::NotOpt_Heuristics
+ ./model/instance_fixed.lp ./model/enc_clingcon_not_opt.lp ./model/heu/heuristics.lp--NotOpt_Heuristics
+Name::OPT_Aggrel1
+ ./model/constants.lp ./model/instance_fixed.lp ./model/enc_conf.lp ./model/enc_delta_sum.lp--OPT_Aggrel1
+Name::OPT_Heurate
+ ./model/instance_fixed.lp ./model/enc_clingcon.lp ./model/heu/conf_value.lp--OPT_Heurate
+Name::OPT_Heuphase
+ ./model/instance_fixed.lp ./model/enc_clingcon.lp ./model/heu/heuristics.lp--OPT_Heuphase
+Name::BND_DHphase
+ ./model/constants.lp ./model/enc_conf.lp ./model/enc_delta_sum_NotOpt.lp ./model/heu/heuristics.lp ./model/instance_fixed.lp--BND_DHphase
+Name::BND_Longrate
+ ./model/instance_fixed.lp ./model/enc_clingcon_not_opt.lp ./model/heu/max_volume.lp--BND_Longrate
+Name::BND_PhLngrate
+ ./model/instance_fixed.lp ./model/enc_clingcon_not_opt.lp ./model/heu/phmax_volume.lp--BND_PhLngrate
+Name::OPT_DHphase
+ ./model/constants.lp ./model/instance_fixed.lp ./model/enc_conf.lp ./model/enc_delta_sum.lp ./model/heu/heuristics.lp--OPT_DHphase
+Name::OPT_DHphase105
+ ./model/constants.lp ./model/instance_fixed.lp ./model/enc_conf.lp ./model/enc_delta_sum.lp ./model/heu/heuristics.lp--OPT_DHphase105
+Name::OPT_Heurate105
+ ./model/instance_fixed.lp ./model/enc_clingcon.lp ./model/heu/conf_value.lp--OPT_Heurate105
+Name::OPT_Clingcon105
+ ./model/instance_fixed.lp ./model/enc_clingcon.lp--OPT_Clingcon105
+Name::OPT_DHphaseRnd
+./model/constants.lp ./model/instance_random.lp ./model/enc_conf.lp ./model/enc_delta_sum.lp ./model/heu/heuristics.lp--OPT_DHphaseRnd
+Name::OPT_ClingconRnd
+ ./model/instance_random.lp ./model/enc_clingcon.lp--OPT_ClingconRnd
+Name::OPT_DHctrphs
+ ./model/constants.lp ./model/instance_fixed.lp ./model/enc_conf.lp ./model/enc_delta_sum.lp ./model/heu/careful_heu.lp--OPT_DHctrphs
+Name::OPT_DHctrphsRnd
+ ./model/constants.lp ./model/instance_random.lp ./model/enc_conf.lp ./model/enc_delta_sum.lp ./model/heu/careful_heu.lp--OPT_DHctrphsRnd
+Name::OPT_DHextphs
+ ./model/constants.lp ./model/instance_fixed.lp ./model/enc_conf.lp ./model/enc_delta_sum.lp ./model/heu/extreme_heu.lp--OPT_DHextphs
+Name::OPT_DHextphsRnd
+ ./model/constants.lp ./model/instance_random.lp ./model/enc_conf.lp ./model/enc_delta_sum.lp ./model/heu/extreme_heu.lp--OPT_DHextphsRnd
+Name::OPT_DHctrsingle
+ ./model/constants.lp ./model/instance_fixed.lp ./model/enc_conf.lp ./model/enc_delta_sum.lp ./model/heu/careful_heu.lp--OPT_DHctrsingle
+Name::OPT_hphase105
+ ./model/instance_fixed.lp ./model/enc_clingcon.lp ./model/heu/heuristics.lp--OPT_hphase105
+Name::OPT_hphaseRnd
+ ./model/instance_random.lp ./model/enc_clingcon.lp ./model/heu/heuristics.lp--OPT_hphaseRnd
+Name::OPT_Hplink105
+ ./model/instance_fixed.lp ./model/enc_clingcon.lp ./model/heu/doria_encoding.lp--OPT_Hplink105
+Name::OPT_HplinkRnd
+ ./model/instance_random.lp ./model/enc_clingcon.lp ./model/heu/doria_encoding.lp--OPT_HplinkRnd
+Name::OPT_DHplink105
+ ./model/constants.lp ./model/instance_fixed.lp ./model/enc_conf.lp ./model/enc_delta_sum.lp ./model/heu/doria_encoding.lp--OPT_DHplink105
+Name::OPT_DHplinkRnd
+ ./model/constants.lp ./model/instance_random.lp ./model/enc_conf.lp ./model/enc_delta_sum.lp ./model/heu/doria_encoding.lp--OPT_DHplinkRnd
+Name::OPT_DHchange105
+ ./model/constants.lp ./model/instance_fixed.lp ./model/enc_conf.lp ./model/enc_delta_sum.lp ./model/heu/change.lp--OPT_DHchange105
+Name::OPT_DHchangeRnd
+ ./model/constants.lp ./model/instance_random.lp ./model/enc_conf.lp ./model/enc_delta_sum.lp ./model/heu/change.lp--OPT_DHchangeRnd
+Name::OPT_ClingconHull
+ ./model/instance_fixed_hull.lp ./model/enc_clingcon.lp--OPT_ClingconHull
+Name::OPT_HphaseHull
+ ./model/instance_fixed_hull.lp ./model/enc_clingcon.lp ./model/heu/heuristics.lp--OPT_HphaseHull
+Name::OPT_HplinkHull
+ ./model/instance_fixed_hull.lp ./model/enc_clingcon.lp ./model/heu/doria_encoding.lp--OPT_HplinkHull
+Name::OPT_DHXplink105
+ ./model/constants.lp ./model/instance_fixed.lp ./model/enc_conf.lp ./model/enc_delta_sum_extra.lp ./model/heu/doria_encoding.lp--OPT_DHXplink105
+Name::OPT_DHXplinkRnd
+ ./model/constants.lp ./model/instance_random.lp ./model/enc_conf.lp ./model/enc_delta_sum_extra.lp ./model/heu/doria_encoding.lp--OPT_DHXplinkRnd
+Name::OPT_DHXphase105
+ ./model/constants.lp ./model/instance_fixed.lp ./model/enc_conf.lp ./model/enc_delta_sum_extra.lp ./model/heu/heuristics.lp--OPT_DHXphase105
+Name::OPT_DHXphaseRnd
+ ./model/constants.lp ./model/instance_random.lp ./model/enc_conf.lp ./model/enc_delta_sum_extra.lp ./model/heu/heuristics.lp--OPT_DHXphaseRnd
+Name::OPT_CliNoTimeRnd
+ ./model/instance_random.lp ./model/enc_clingcon_outTime.lp--OPT_CliNoTimeRnd
+Name::OPT_CliNoTime105
+ ./model/instance_fixed.lp ./model/enc_clingcon_outTime.lp--OPT_CliNoTime105
+Name::OPT_Deltime
+ ./model/constants.lp ./model/enc_conf_time.lp ./model/enc_delta_sum.lp ./model/instance_fixed.lp--OPT_Deltime
+Name::OPT_DHXphs+105
+ ./model/constants.lp ./model/instance_fixed.lp ./model/enc_conf.lp ./model/enc_delta_sum_extra.lp ./model/heu/heuristics_countless.lp--OPT_DHXphs+105
+Name::OPT_DHXphs+Rnd
+ ./model/constants.lp ./model/instance_random.lp ./model/enc_conf.lp ./model/enc_delta_sum_extra.lp ./model/heu/heuristics_countless.lp--OPT_DHXphs+Rnd
+Name::PDDL_Clingcon105
+ ./model/instance_fixed.lp ./model/pddl_clingcon_bnd.lp--PDDL_Clingcon105
+Name::PDDL_ClingconRnd
+ ./model/instance_random.lp ./model/pddl_clingcon_bnd.lp--PDDL_ClingconRnd
+Name::PDDL_DHXplink105
+ ./model/constants.lp ./model/instance_fixed.lp ./model/enc_conf.lp ./model/pddl_delta_sum_extra_bnd.lp ./model/heu/doria_encoding.lp--PDDL_DHXplink105
+Name::PDDL_DHXplinkRnd
+ ./model/constants.lp ./model/instance_random.lp ./model/enc_conf.lp ./model/pddl_delta_sum_extra_bnd.lp ./model/heu/doria_encoding.lp--PDDL_DHXplinkRnd
+Name::OPT_XDeltime105
+ ./model/constants.lp ./model/enc_conf_time.lp ./model/enc_delta_sum_extra.lp ./model/instance_fixed.lp--OPT_XDeltime105
+ Name::OPT_XDeltimeRnd
+ ./model/constants.lp ./model/enc_conf_time.lp ./model/enc_delta_sum_extra.lp ./model/instance_random.lp--OPT_XDeltimeRnd
+

@@ -1,0 +1,15 @@
+Encoding,Horizon,Problem,counter wrac1_y_wrbc1,counter wrbc1_b_wrcc1,counter wrcc1_x_wrdc1,counter wrdc1_b_wrec1,counter wrec1_y_wrfc1,Total
+clingcon,840,./heu_105/result/Instancesv2_round/random/fixlen4/30morn/p04[count=350]_OPT_xdeltime_840.txt,9590940,7833600,9259680,8559400,,35243620
+clingcon,840,./heu_105/result/Instancesv2_round/random/fixlen4/30morn/p05[count=350]_OPT_xdeltime_840.txt,9590940,7833600,9259680,8559400,8922700,44166320
+clingcon,840,./heu_105/result/Instancesv2_round/random/fixlen4/30morn/p02[count=350]_OPT_xdeltime_840.txt,9590940,7833600,,,,17424540
+clingcon,840,./heu_105/result/Instancesv2_round/random/fixlen4/30morn/p01[count=350]_OPT_xdeltime_840.txt,9590940,,,,,9590940
+clingcon,840,./heu_105/result/Instancesv2_round/sipp/fixlen4/30morn/p03[count=350]_OPT_xdeltime_840.txt,9364180,7545600,8975440,,,25885220
+clingcon,840,./heu_105/result/Instancesv2_round/sipp/fixlen4/30morn/p04[count=350]_OPT_xdeltime_840.txt,53820,57600,44700,0,,156120
+clingcon,840,./heu_105/result/Instancesv2_round/sipp/fixlen4/30morn/p05[count=350]_OPT_xdeltime_840.txt,9364180,7545600,8975440,8372500,8757900,43015620
+clingcon,840,./heu_105/result/Instancesv2_round/sipp/fixlen4/30morn/p02[count=350]_OPT_xdeltime_840.txt,9239180,7488000,,,,16727180
+clingcon,840,./heu_105/result/Instancesv2_round/sipp/fixlen4/30morn/p01[count=350]_OPT_xdeltime_840.txt,9239180,,,,,9239180
+clingcon,840,./heu_105/result/Instancesv2_round/sippv2/fixlen4/30morn/p03[count=350]_OPT_xdeltime_840.txt,9739180,8006400,9351380,,,27096960
+clingcon,840,./heu_105/result/Instancesv2_round/sippv2/fixlen4/30morn/p04[count=350]_OPT_xdeltime_840.txt,53820,57600,44700,0,,156120
+clingcon,840,./heu_105/result/Instancesv2_round/sippv2/fixlen4/30morn/p05[count=350]_OPT_xdeltime_840.txt,9739180,8006400,9351380,8783200,9169900,45050060
+clingcon,840,./heu_105/result/Instancesv2_round/sippv2/fixlen4/30morn/p02[count=350]_OPT_xdeltime_840.txt,9739180,8006400,,,,17745580
+clingcon,840,./heu_105/result/Instancesv2_round/sippv2/fixlen4/30morn/p01[count=350]_OPT_xdeltime_840.txt,9739180,,,,,9739180

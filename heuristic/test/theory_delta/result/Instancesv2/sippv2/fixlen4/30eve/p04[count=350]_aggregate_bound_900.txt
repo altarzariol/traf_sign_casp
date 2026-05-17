@@ -1,0 +1,20 @@
+clingcon version 5.2.1
+Reading from ...sippv2/fixlen4/30eve/p04[count=350].lp ...
+Solving...
+Answer: 1 (Time: 26.008s)
+sol(439,inter(wrac1,4),conf_wrac1_1,conf_wrac1_6) sol(456,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_2) sol(883,inter(wrac1,4),conf_wrac1_6,conf_wrac1_2) sol(892,inter(wrec1,4),conf_wrec1_1,conf_wrec1_3)
+Assignment:
+counter(900,link(wrac1,y,wrbc1))=20748660 counter(900,link(wrbc1,b,wrcc1))=17222400 counter(900,link(wrcc1,x,wrdc1))=19109660 counter(900,link(wrdc1,b,wrec1))=17981000
+Cost: -75061720
+Answer: 2 (Time: 28.012s)
+sol(439,inter(wrac1,4),conf_wrac1_1,conf_wrac1_6) sol(456,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_2) sol(783,inter(wrbc1,5),conf_wrbc1_1,conf_wrbc1_6) sol(883,inter(wrac1,4),conf_wrac1_6,conf_wrac1_2) sol(892,inter(wrec1,4),conf_wrec1_1,conf_wrec1_3)
+Assignment:
+counter(900,link(wrac1,y,wrbc1))=20748660 counter(900,link(wrbc1,b,wrcc1))=17222400 counter(900,link(wrcc1,x,wrdc1))=19199060 counter(900,link(wrdc1,b,wrec1))=18046900
+Cost: -75217020
+SATISFIABLE
+
+TIME LIMIT   : 1
+Models       : 2+
+Calls        : 1
+Time         : 601.065s (Solving: 589.97s 1st Model: 14.89s Unsat: 0.00s)
+CPU Time     : 600.984s

@@ -1,0 +1,10 @@
+tag,comparison,dir_in,dir_out,dotunknowncsv,unknownscsv,file_record,script_diff,script_get
+tag_,compare,home_,dir_,dotunkn_csv,unkn_csv,record,diff,get
+PDDL_TEST70,all,./result/unknown,./result/improve,./parameters/dotunknown.csv,./parameters/unknowns.csv,./parameters/imprvs_results.csv,./sh/inst3.sh,./sh/get0.sh
+PDDL_DHXplinkComb,peer,./result/unknown,./result/improve,./parameters/dotunknown.csv,./parameters/unknowns.csv,./parameters/imprvs_results.csv,./sh/inst6.sh,./sh/get0.sh
+PDDL_DHXplinkmin,peer,./result/unknown,./result/improve,./parameters/dotunknown.csv,./parameters/unknowns.csv,./parameters/imprvs_results.csv,./sh/inst6.sh,./sh/get0.sh
+CAFE_DHXplink,peer,./result/unknown,./result/improve,./parameters/dotunknown.csv,./parameters/unknowns.csv,./parameters/imprvs_results.csv,./sh/inst6.sh,./sh/get0.sh
+PDDL_ClingconComb,peer,./result/unknown,./result/improve,./parameters/dotunknown.csv,./parameters/unknowns.csv,./parameters/imprvs_results.csv,./sh/inst6.sh,./sh/get0.sh
+OPTCAFE_DHXplink,peer,./result/unknown,./result/improve,./parameters/dotunknown.csv,./parameters/unknowns.csv,./parameters/imprvs_results.csv,./sh/inst3.sh,./sh/get0.sh
+OPTFIRE_DHXplink,peer,./result/unknown,./result/improve,./parameters/dotunknown.csv,./parameters/unknowns.csv,./parameters/imprvs_results.csv,./sh/inst3.sh,./sh/get0.sh
+,,,,,,,,

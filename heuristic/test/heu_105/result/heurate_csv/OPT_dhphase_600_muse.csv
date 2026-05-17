@@ -1,0 +1,16 @@
+Encoding,Horizon,Problem,counter wrac1_y_wrbc1,counter wrbc1_b_wrcc1,counter wrcc1_x_wrdc1,counter wrdc1_b_wrec1,counter wrec1_y_wrfc1,Total
+clingcon,600,./heu_105/result/Instancesv2_round/random/fixlen4/muse/p03[count=350]_OPT_dhphase_600.txt,14603400,9177100,11403000,,,35183500
+clingcon,600,./heu_105/result/Instancesv2_round/random/fixlen4/muse/p04[count=350]_OPT_dhphase_600.txt,14603400,9177100,11403000,22466400,,57649900
+clingcon,600,./heu_105/result/Instancesv2_round/random/fixlen4/muse/p05[count=350]_OPT_dhphase_600.txt,14603400,9177100,11403000,22466400,24660600,82310500
+clingcon,600,./heu_105/result/Instancesv2_round/random/fixlen4/muse/p02[count=350]_OPT_dhphase_600.txt,14611600,9177100,,,,23788700
+clingcon,600,./heu_105/result/Instancesv2_round/random/fixlen4/muse/p01[count=350]_OPT_dhphase_600.txt,14663800,,,,,14663800
+clingcon,600,./heu_105/result/Instancesv2_round/sipp/fixlen4/muse/p03[count=350]_OPT_dhphase_600.txt,17620400,12404300,14578500,,,44603200
+clingcon,600,./heu_105/result/Instancesv2_round/sipp/fixlen4/muse/p04[count=350]_OPT_dhphase_600.txt,17616300,12153300,14578500,23710200,,68058300
+clingcon,600,./heu_105/result/Instancesv2_round/sipp/fixlen4/muse/p05[count=350]_OPT_dhphase_600.txt,17616300,12153300,14578500,24695400,26391000,95434500
+clingcon,600,./heu_105/result/Instancesv2_round/sipp/fixlen4/muse/p02[count=350]_OPT_dhphase_600.txt,17620400,12404300,,,,30024700
+clingcon,600,./heu_105/result/Instancesv2_round/sipp/fixlen4/muse/p01[count=350]_OPT_dhphase_600.txt,17578600,,,,,17578600
+clingcon,600,./heu_105/result/Instancesv2_round/sippv2/fixlen4/muse/p03[count=350]_OPT_dhphase_600.txt,17360100,12131100,14298300,,,43789500
+clingcon,600,./heu_105/result/Instancesv2_round/sippv2/fixlen4/muse/p04[count=350]_OPT_dhphase_600.txt,17360100,12131100,14298300,25217600,,69007100
+clingcon,600,./heu_105/result/Instancesv2_round/sippv2/fixlen4/muse/p05[count=350]_OPT_dhphase_600.txt,17290700,12131100,14298300,25217600,27791800,96729500
+clingcon,600,./heu_105/result/Instancesv2_round/sippv2/fixlen4/muse/p02[count=350]_OPT_dhphase_600.txt,17360100,12131100,,,,29491200
+clingcon,600,./heu_105/result/Instancesv2_round/sippv2/fixlen4/muse/p01[count=350]_OPT_dhphase_600.txt,17055200,,,,,17055200

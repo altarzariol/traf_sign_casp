@@ -1,0 +1,15 @@
+Encoding,Horizon,Problem,counter wrac1_y_wrbc1,counter wrbc1_b_wrcc1,counter wrcc1_x_wrdc1,counter wrdc1_b_wrec1,counter wrec1_y_wrfc1,Total
+clingcon,720,./heu_105/result/Instancesv2_round/random/fixlen4/muse/p04[count=350]_OPT_xdeltime_720.txt,15815600,9967700,13832700,22968500,,62584500
+clingcon,720,./heu_105/result/Instancesv2_round/random/fixlen4/muse/p05[count=350]_OPT_xdeltime_720.txt,15815600,9967700,13832700,22968500,26767600,89352100
+clingcon,720,./heu_105/result/Instancesv2_round/random/fixlen4/muse/p02[count=350]_OPT_xdeltime_720.txt,15815600,9967700,,,,25783300
+clingcon,720,./heu_105/result/Instancesv2_round/random/fixlen4/muse/p01[count=350]_OPT_xdeltime_720.txt,15815600,,,,,15815600
+clingcon,720,./heu_105/result/Instancesv2_round/sipp/fixlen4/muse/p03[count=350]_OPT_xdeltime_720.txt,20823900,14192600,17288400,,,52304900
+clingcon,720,./heu_105/result/Instancesv2_round/sipp/fixlen4/muse/p04[count=350]_OPT_xdeltime_720.txt,0,61300,0,82100,,143400
+clingcon,720,./heu_105/result/Instancesv2_round/sipp/fixlen4/muse/p05[count=350]_OPT_xdeltime_720.txt,20823900,14192600,17288400,29870500,31335000,113510400
+clingcon,720,./heu_105/result/Instancesv2_round/sipp/fixlen4/muse/p02[count=350]_OPT_xdeltime_720.txt,20823900,14192600,,,,35016500
+clingcon,720,./heu_105/result/Instancesv2_round/sipp/fixlen4/muse/p01[count=350]_OPT_xdeltime_720.txt,20823900,,,,,20823900
+clingcon,720,./heu_105/result/Instancesv2_round/sippv2/fixlen4/muse/p03[count=350]_OPT_xdeltime_720.txt,20116700,13663100,16634600,,,50414400
+clingcon,720,./heu_105/result/Instancesv2_round/sippv2/fixlen4/muse/p04[count=350]_OPT_xdeltime_720.txt,64500,61300,0,82100,,207900
+clingcon,720,./heu_105/result/Instancesv2_round/sippv2/fixlen4/muse/p05[count=350]_OPT_xdeltime_720.txt,20119000,13663100,16634600,28803200,32582700,111802600
+clingcon,720,./heu_105/result/Instancesv2_round/sippv2/fixlen4/muse/p02[count=350]_OPT_xdeltime_720.txt,20119000,13663100,,,,33782100
+clingcon,720,./heu_105/result/Instancesv2_round/sippv2/fixlen4/muse/p01[count=350]_OPT_xdeltime_720.txt,20153300,,,,,20153300

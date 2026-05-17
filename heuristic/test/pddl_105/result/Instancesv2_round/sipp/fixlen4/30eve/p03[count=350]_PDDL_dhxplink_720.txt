@@ -1,0 +1,14 @@
+pddl_solution(link(wrac1,y,wrbc1),16183500). pddl_solution(link(wrbc1,b,wrcc1),13996799). pddl_solution(link(wrcc1,x,wrdc1),15079819).
+clingcon version 5.2.1
+Reading from ...d/sipp/fixlen4/30eve/p03[count=350].lp ...
+Solving...
+Answer: 1 (Time: 51.739s)
+
+Assignment:
+counter(720,link(wrac1,y,wrbc1))=16117900 counter(720,link(wrbc1,b,wrcc1))=13939200 counter(720,link(wrcc1,x,wrdc1))=15392720
+SATISFIABLE
+
+Models       : 1+
+Calls        : 1
+Time         : 52.374s (Solving: 34.70s 1st Model: 34.01s Unsat: 0.00s)
+CPU Time     : 20.461s

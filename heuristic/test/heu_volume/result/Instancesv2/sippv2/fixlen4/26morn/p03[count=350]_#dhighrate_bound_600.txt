@@ -1,0 +1,15 @@
+clingcon version 5.2.1
+Reading from ...ippv2/fixlen4/26morn/p03[count=350].lp ...
+Solving...
+Answer: 1 (Time: 285.706s)
+change_in(link(wrac1,y,wrbc1)) change_in(link(wrcc1,x,wrdc1)) optimal_conf_in(conf_wrac1_2,link(wrac1,y,wrbc1)) optimal_conf_in(conf_wrac1_3,link(wrac1,y,wrbc1)) optimal_conf_in(conf_wrac1_4,link(wrac1,y,wrbc1)) optimal_conf_in(conf_wrbc1_2,link(wrbc1,b,wrcc1)) optimal_conf_in(conf_wrbc1_4,link(wrbc1,b,wrcc1)) optimal_conf_in(conf_wrcc1_2,link(wrcc1,x,wrdc1)) optimal_conf_in(conf_wrcc1_3,link(wrcc1,x,wrdc1)) optimal_conf_out(conf_wrbc1_2,link(wrac1,y,wrbc1)) optimal_conf_out(conf_wrbc1_4,link(wrac1,y,wrbc1)) optimal_conf_out(conf_wrcc1_2,link(wrbc1,b,wrcc1)) optimal_conf_out(conf_wrcc1_3,link(wrbc1,b,wrcc1)) optimal_conf_out(conf_wrdc1_2,link(wrcc1,x,wrdc1)) optimal_conf_out(conf_wrdc1_3,link(wrcc1,x,wrdc1)) promising_conf_1(wrac1,4,conf_wrac1_4) promising_conf_1(wrac1,5,conf_wrac1_4) promising_conf_1(wrcc1,4,conf_wrcc1_3) sol(325,inter(wrec1,4),conf_wrec1_1,conf_wrec1_2) sol(388,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_2) sol(433,inter(wrac1,4),conf_wrac1_1,conf_wrac1_4) sol(462,inter(wrfc1,3),conf_wrfc1_1,conf_wrfc1_5) sol(473,inter(wrbc1,5),conf_wrbc1_1,conf_wrbc1_2) sol(565,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_3)
+Assignment:
+counter(600,link(wrac1,y,wrbc1))=16315700 counter(600,link(wrbc1,b,wrcc1))=13824000 counter(600,link(wrcc1,x,wrdc1))=14847120
+Cost: -44986820
+SATISFIABLE
+
+TIME LIMIT   : 1
+Models       : 1+
+Calls        : 1
+Time         : 602.488s (Solving: 576.86s 1st Model: 260.02s Unsat: 0.00s)
+CPU Time     : 199.459s

@@ -1,0 +1,11 @@
+Encoding,Horizon,Problem,counter wrac1_y_wrbc1,counter wrbc1_b_wrcc1,counter wrcc1_x_wrdc1,counter wrdc1_b_wrec1,counter wrec1_y_wrfc1,Total
+clingcon,600,./heu_volume/result/Instancesv2/sippv2/fixlen4/26morn/p03[count=350]_OPT_heuphase_600.txt,16315700,13824000,15204720,,,45344420
+clingcon,600,./heu_volume/result/Instancesv2/sippv2/fixlen4/26morn/p04[count=350]_OPT_heuphase_600.txt,16315700,13824000,15204720,13937100,,59281520
+clingcon,600,./heu_volume/result/Instancesv2/sippv2/fixlen4/26morn/p05[count=350]_OPT_heuphase_600.txt,16299780,13766400,15204720,13698800,14596400,73566100
+clingcon,600,./heu_volume/result/Instancesv2/sippv2/fixlen4/26morn/p02[count=350]_OPT_heuphase_600.txt,16315700,13824000,,,,30139700
+clingcon,600,./heu_volume/result/Instancesv2/sippv2/fixlen4/26morn/p01[count=350]_OPT_heuphase_600.txt,16315700,,,,,16315700
+clingcon,600,./heu_volume/result/Instancesv2_round/sippv2/fixlen4/26morn/p03[count=350]_OPT_heuphase_600.txt,16343580,13478400,12645380,,,42467360
+clingcon,600,./heu_volume/result/Instancesv2_round/sippv2/fixlen4/26morn/p04[count=350]_OPT_heuphase_600.txt,16343580,13478400,12645380,12263500,,54730860
+clingcon,600,./heu_volume/result/Instancesv2_round/sippv2/fixlen4/26morn/p05[count=350]_OPT_heuphase_600.txt,16102980,13478400,12645380,11776100,12701200,66704060
+clingcon,600,./heu_volume/result/Instancesv2_round/sippv2/fixlen4/26morn/p02[count=350]_OPT_heuphase_600.txt,16343580,13478400,,,,29821980
+clingcon,600,./heu_volume/result/Instancesv2_round/sippv2/fixlen4/26morn/p01[count=350]_OPT_heuphase_600.txt,16343580,,,,,16343580

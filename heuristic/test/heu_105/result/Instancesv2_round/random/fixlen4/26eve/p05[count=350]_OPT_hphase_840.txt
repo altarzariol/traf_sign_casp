@@ -1,0 +1,15 @@
+clingcon version 5.2.1
+Reading from ...random/fixlen4/26eve/p05[count=350].lp ...
+Solving...
+Answer: 1 (Time: 303.771s)
+
+Assignment:
+counter(840,link(wrac1,y,wrbc1))=21887080 counter(840,link(wrbc1,b,wrcc1))=13363200 counter(840,link(wrcc1,x,wrdc1))=14479140 counter(840,link(wrdc1,b,wrec1))=12641000 counter(840,link(wrec1,y,wrfc1))=16679500
+Cost: -79049920
+SATISFIABLE
+
+TIME LIMIT   : 1
+Models       : 1+
+Calls        : 1
+Time         : 602.478s (Solving: 588.83s 1st Model: 290.10s Unsat: 0.00s)
+CPU Time     : 602.196s

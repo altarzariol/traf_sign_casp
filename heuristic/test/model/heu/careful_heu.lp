@@ -1,0 +1,66 @@
+max_phase_limit(stage(J,N),M) :- 
+stage(J,N), 
+M=#max{L : phase_limit(stage(J,N),_,L)}.
+                                 
+max_stage(C,stage(J,N)) :- 
+available_conf(_,C), 
+phase_limit(stage(J,N),C,L), 
+max_phase_limit(stage(J,N),L). 
+    
+optimal_conf(C,stage(J,N)) :- 
+max_stage(C,stage(J,N)),
+#count{C1 : max_stage(C1,stage(J,N))}=1. 
+
+stage_fill(stage(J,N), L) :-  
+turnrate(stage(J,N),_,L,_). 
+stage_empty(stage(J,N), L) :-  
+turnrate(stage(J,N),L,_,_). 
+
+optimal_conf_empty(C,L) :- 
+counter(0,L,_), 
+stage_empty(S,L), 
+optimal_conf(C,S).
+
+optimal_conf_fill(C,L) :- 
+counter(0,L,_), 
+stage_fill(S,L), 
+optimal_conf(C,S).
+
+promising_conf_2(J,T,C,A) :- 
+configuration(J,C,_,A), 
+change_out(L,T,_),
+optimal_conf_empty(A,L).
+
+promising_conf_1(J,T,C,A) :- 
+configuration(J,C,_,A), 
+change_in(L,T,_),
+optimal_conf_fill(A,L).
+
+
+change_in(L,T,J) :- 
+&sum{occupancy(T,L1)} > (C*80/100),
+time_step(J,CF,T),
+capacity(L1,C),
+link(J,L,_),
+link(_,L1,J),
+goal_count(L,_),
+goal_count(L1,_).
+
+change_out(L,T,J) :- 
+&sum{occupancy(T,L2)} < (C*20/100),
+time_step(J,CF,T),
+capacity(L2,C),
+link(_,L,J),
+link(J,L2,_),
+goal_count(L,_),
+goal_count(L2,_).
+
+#heuristic change(J,C,T,A). [3, false]
+#heuristic promising_conf_1(J,T,C,A) : change_in(_,T,J). [1, true]
+#heuristic promising_conf_2(J,T,C,A) : change_out(_,T,J). [1, true]
+
+#show change/4.
+#show promising_conf_1/3.
+#show promising_conf_2/3.
+#show change_in/3.
+#show change_out/3.

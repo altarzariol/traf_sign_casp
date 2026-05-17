@@ -1,0 +1,60 @@
+clingcon version 5.2.1
+Reading from ...ippv2/fixlen4/30morn/p04[count=350].lp ...
+Solving...
+Answer: 1 (Time: 164.984s)
+sol(328,inter(wrec1,4),conf_wrec1_1,conf_wrec1_4) sol(363,inter(wrac1,4),conf_wrac1_1,conf_wrac1_5) sol(447,inter(wrfc1,3),conf_wrfc1_1,conf_wrfc1_6) sol(497,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_6) sol(524,inter(wrbc1,5),conf_wrbc1_1,conf_wrbc1_2) sol(592,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_2)
+Assignment:
+counter(600,link(wrac1,y,wrbc1))=7170300 counter(600,link(wrbc1,b,wrcc1))=5529600 counter(600,link(wrcc1,x,wrdc1))=6389740 counter(600,link(wrdc1,b,wrec1))=6226000
+Cost: -25315640
+Answer: 2 (Time: 169.948s)
+sol(328,inter(wrec1,4),conf_wrec1_1,conf_wrec1_4) sol(363,inter(wrac1,4),conf_wrac1_1,conf_wrac1_5) sol(447,inter(wrfc1,3),conf_wrfc1_1,conf_wrfc1_6) sol(497,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_5) sol(524,inter(wrbc1,5),conf_wrbc1_1,conf_wrbc1_2) sol(592,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_6)
+Assignment:
+counter(600,link(wrac1,y,wrbc1))=7170300 counter(600,link(wrbc1,b,wrcc1))=5529600 counter(600,link(wrcc1,x,wrdc1))=6389740 counter(600,link(wrdc1,b,wrec1))=6240500
+Cost: -25330140
+Answer: 3 (Time: 182.711s)
+sol(328,inter(wrec1,4),conf_wrec1_1,conf_wrec1_4) sol(363,inter(wrac1,4),conf_wrac1_1,conf_wrac1_4) sol(447,inter(wrfc1,3),conf_wrfc1_1,conf_wrfc1_6) sol(497,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_6) sol(524,inter(wrbc1,5),conf_wrbc1_1,conf_wrbc1_2) sol(592,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_5)
+Assignment:
+counter(600,link(wrac1,y,wrbc1))=7170300 counter(600,link(wrbc1,b,wrcc1))=5587200 counter(600,link(wrcc1,x,wrdc1))=6389740 counter(600,link(wrdc1,b,wrec1))=6226000
+Cost: -25373240
+Answer: 4 (Time: 184.678s)
+sol(328,inter(wrec1,4),conf_wrec1_1,conf_wrec1_4) sol(363,inter(wrac1,4),conf_wrac1_1,conf_wrac1_4) sol(447,inter(wrfc1,3),conf_wrfc1_1,conf_wrfc1_6) sol(497,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_5) sol(524,inter(wrbc1,5),conf_wrbc1_1,conf_wrbc1_2) sol(592,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_5)
+Assignment:
+counter(600,link(wrac1,y,wrbc1))=7170300 counter(600,link(wrbc1,b,wrcc1))=5587200 counter(600,link(wrcc1,x,wrdc1))=6389740 counter(600,link(wrdc1,b,wrec1))=6240500
+Cost: -25387740
+Answer: 5 (Time: 210.072s)
+sol(328,inter(wrec1,4),conf_wrec1_1,conf_wrec1_4) sol(363,inter(wrac1,4),conf_wrac1_1,conf_wrac1_3) sol(447,inter(wrfc1,3),conf_wrfc1_1,conf_wrfc1_6) sol(497,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_5) sol(524,inter(wrbc1,5),conf_wrbc1_1,conf_wrbc1_4) sol(592,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_5)
+Assignment:
+counter(600,link(wrac1,y,wrbc1))=7070300 counter(600,link(wrbc1,b,wrcc1))=5702400 counter(600,link(wrcc1,x,wrdc1))=6434440 counter(600,link(wrdc1,b,wrec1))=6306400
+Cost: -25513540
+Answer: 6 (Time: 215.765s)
+sol(328,inter(wrec1,4),conf_wrec1_1,conf_wrec1_4) sol(363,inter(wrac1,4),conf_wrac1_1,conf_wrac1_3) sol(447,inter(wrfc1,3),conf_wrfc1_1,conf_wrfc1_6) sol(497,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_2) sol(592,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_5)
+Assignment:
+counter(600,link(wrac1,y,wrbc1))=7070300 counter(600,link(wrbc1,b,wrcc1))=5817600 counter(600,link(wrcc1,x,wrdc1))=6434440 counter(600,link(wrdc1,b,wrec1))=6280300
+Cost: -25602640
+Answer: 7 (Time: 219.117s)
+sol(328,inter(wrec1,4),conf_wrec1_1,conf_wrec1_4) sol(363,inter(wrac1,4),conf_wrac1_1,conf_wrac1_3) sol(447,inter(wrfc1,3),conf_wrfc1_1,conf_wrfc1_6) sol(497,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_5) sol(592,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_5)
+Assignment:
+counter(600,link(wrac1,y,wrbc1))=7070300 counter(600,link(wrbc1,b,wrcc1))=5817600 counter(600,link(wrcc1,x,wrdc1))=6434440 counter(600,link(wrdc1,b,wrec1))=6306400
+Cost: -25628740
+Answer: 8 (Time: 238.881s)
+sol(328,inter(wrec1,4),conf_wrec1_1,conf_wrec1_4) sol(363,inter(wrac1,4),conf_wrac1_1,conf_wrac1_5) sol(447,inter(wrfc1,3),conf_wrfc1_1,conf_wrfc1_6) sol(497,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_5) sol(592,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_5)
+Assignment:
+counter(600,link(wrac1,y,wrbc1))=7170300 counter(600,link(wrbc1,b,wrcc1))=5875200 counter(600,link(wrcc1,x,wrdc1))=6389740 counter(600,link(wrdc1,b,wrec1))=6240500
+Cost: -25675740
+Answer: 9 (Time: 352.026s)
+sol(328,inter(wrec1,4),conf_wrec1_1,conf_wrec1_4) sol(447,inter(wrfc1,3),conf_wrfc1_1,conf_wrfc1_6) sol(474,inter(wrac1,4),conf_wrac1_1,conf_wrac1_3) sol(497,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_6) sol(592,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_5)
+Assignment:
+counter(600,link(wrac1,y,wrbc1))=7120300 counter(600,link(wrbc1,b,wrcc1))=5875200 counter(600,link(wrcc1,x,wrdc1))=6479140 counter(600,link(wrdc1,b,wrec1))=6291900
+Cost: -25766540
+Answer: 10 (Time: 356.984s)
+sol(328,inter(wrec1,4),conf_wrec1_1,conf_wrec1_4) sol(447,inter(wrfc1,3),conf_wrfc1_1,conf_wrfc1_6) sol(474,inter(wrac1,4),conf_wrac1_1,conf_wrac1_3) sol(497,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_5) sol(592,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_5)
+Assignment:
+counter(600,link(wrac1,y,wrbc1))=7120300 counter(600,link(wrbc1,b,wrcc1))=5875200 counter(600,link(wrcc1,x,wrdc1))=6479140 counter(600,link(wrdc1,b,wrec1))=6306400
+Cost: -25781040
+SATISFIABLE
+
+TIME LIMIT   : 1
+Models       : 10+
+Calls        : 1
+Time         : 600.580s (Solving: 592.21s 1st Model: 156.60s Unsat: 0.00s)
+CPU Time     : 600.491s

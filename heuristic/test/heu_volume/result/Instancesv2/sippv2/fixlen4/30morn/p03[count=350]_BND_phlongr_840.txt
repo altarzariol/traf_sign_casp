@@ -1,0 +1,13 @@
+clingcon version 5.2.1
+Reading from ...ippv2/fixlen4/30morn/p03[count=350].lp ...
+Solving...
+Answer: 1 (Time: 127.285s)
+optimal_conf_in(conf_wrac1_2,link(wrac1,y,wrbc1)) optimal_conf_in(conf_wrac1_3,link(wrac1,y,wrbc1)) optimal_conf_in(conf_wrbc1_1,link(wrbc1,b,wrcc1)) optimal_conf_in(conf_wrbc1_2,link(wrbc1,b,wrcc1)) optimal_conf_in(conf_wrbc1_3,link(wrbc1,b,wrcc1)) optimal_conf_in(conf_wrcc1_1,link(wrcc1,x,wrdc1)) optimal_conf_in(conf_wrcc1_2,link(wrcc1,x,wrdc1)) optimal_conf_out(conf_wrbc1_1,link(wrac1,y,wrbc1)) optimal_conf_out(conf_wrbc1_2,link(wrac1,y,wrbc1)) optimal_conf_out(conf_wrbc1_3,link(wrac1,y,wrbc1)) optimal_conf_out(conf_wrcc1_1,link(wrbc1,b,wrcc1)) optimal_conf_out(conf_wrcc1_2,link(wrbc1,b,wrcc1)) optimal_conf_out(conf_wrdc1_1,link(wrcc1,x,wrdc1)) optimal_conf_out(conf_wrdc1_2,link(wrcc1,x,wrdc1)) optimal_conf_out(conf_wrdc1_3,link(wrcc1,x,wrdc1)) optimal_conf_out(conf_wrdc1_5,link(wrcc1,x,wrdc1)) promising_conf_1(wrbc1,0,conf_wrbc1_1) promising_conf_1(wrbc1,1,conf_wrbc1_1) promising_conf_1(wrbc1,2,conf_wrbc1_1) promising_conf_1(wrbc1,3,conf_wrbc1_1) promising_conf_1(wrbc1,4,conf_wrbc1_1) promising_conf_1(wrbc1,5,conf_wrbc1_1) promising_conf_1(wrbc1,6,conf_wrbc1_1) promising_conf_1(wrcc1,0,conf_wrcc1_1) promising_conf_1(wrcc1,1,conf_wrcc1_1) promising_conf_1(wrcc1,2,conf_wrcc1_1) promising_conf_1(wrcc1,3,conf_wrcc1_1) promising_conf_1(wrcc1,4,conf_wrcc1_1) promising_conf_1(wrcc1,5,conf_wrcc1_1) promising_conf_2(wrbc1,0,conf_wrbc1_1) promising_conf_2(wrbc1,1,conf_wrbc1_1) promising_conf_2(wrbc1,2,conf_wrbc1_1) promising_conf_2(wrbc1,3,conf_wrbc1_1) promising_conf_2(wrbc1,4,conf_wrbc1_1) promising_conf_2(wrbc1,5,conf_wrbc1_1) promising_conf_2(wrbc1,6,conf_wrbc1_1) promising_conf_2(wrcc1,0,conf_wrcc1_1) promising_conf_2(wrcc1,1,conf_wrcc1_1) promising_conf_2(wrcc1,2,conf_wrcc1_1) promising_conf_2(wrcc1,3,conf_wrcc1_1) promising_conf_2(wrcc1,4,conf_wrcc1_1) promising_conf_2(wrcc1,5,conf_wrcc1_1) promising_conf_2(wrdc1,0,conf_wrdc1_1) promising_conf_2(wrdc1,1,conf_wrdc1_1) promising_conf_2(wrdc1,2,conf_wrdc1_1) promising_conf_2(wrdc1,3,conf_wrdc1_1) promising_conf_2(wrdc1,4,conf_wrdc1_1) promising_conf_2(wrdc1,5,conf_wrdc1_1) promising_conf_2(wrdc1,6,conf_wrdc1_1) promising_conf_2(wrdc1,7,conf_wrdc1_1)
+Assignment:
+counter(840,link(wrac1,y,wrbc1))=9653340 counter(840,link(wrbc1,b,wrcc1))=7948800 counter(840,link(wrcc1,x,wrdc1))=9188620
+SATISFIABLE
+
+Models       : 1+
+Calls        : 1
+Time         : 128.588s (Solving: 65.42s 1st Model: 64.06s Unsat: 0.00s)
+CPU Time     : 41.279s

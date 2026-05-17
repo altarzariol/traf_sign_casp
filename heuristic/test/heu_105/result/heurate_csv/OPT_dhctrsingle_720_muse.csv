@@ -1,0 +1,3 @@
+Encoding,Horizon,Problem,counter wrac1_y_wrbc1,counter wrbc1_b_wrcc1,counter wrcc1_x_wrdc1,counter wrdc1_b_wrec1,counter wrec1_y_wrfc1,Total
+clingcon,720,./heu_105/result/Instancesv2_round/sipp/fixlen4/muse/p03[count=350]_OPT_dhctrsingle_720.txt,21029200,14203700,17288400,,,52521300
+clingcon,720,./heu_105/result/Instancesv2_round/sipp/fixlen4/muse/p02[count=350]_OPT_dhctrsingle_720.txt,21029200,14203700,,,,35232900

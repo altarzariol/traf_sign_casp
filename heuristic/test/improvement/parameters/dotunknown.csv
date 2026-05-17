@@ -1,0 +1,10 @@
+tag,root,dir_in,dir_out,encoding_test,encoding_reference,double_encoding,file_record,script_unknw,script_split,script_record
+tag_,root_,home_,dir_,enc_test,enc_ref,double_enc,record,unknw,split,enc_record
+PDDL_TEST70,./../pddl_70,./result,./result/unknown,clingcon,pddl,true,./parameters/unknowns.csv,./sh/inst4.sh,./sh/split0.sh,./sh/inst5.sh
+PDDL_DHXplinkComb,./../pddl_combo,./result,./result/unknown,clingcon,pddl,true,./parameters/unknowns.csv,./sh/inst1.sh,./sh/split0.sh,./sh/inst5.sh
+PDDL_DHXplinkmin,./../pddl_minus,./result,./result/unknown,clingcon,pddl,true,./parameters/unknowns.csv,./sh/inst1.sh,./sh/split0.sh,./sh/inst5.sh
+CAFE_DHXplink,./../pddl_cafe,./result,./result/unknown,clingcon,pddl,true,./parameters/unknowns.csv,./sh/inst1.sh,./sh/split0.sh,./sh/inst5.sh
+PDDL_ClingconComb,./../pddl_combo,./result,./result/unknown,clingcon,pddl,true,./parameters/unknowns.csv,./sh/inst1.sh,./sh/split0.sh,./sh/inst5.sh
+OPTCAFE_DHXplink,./../heu_105,./result,./result/unknown,clingcon,cafe,true,./parameters/unknowns.csv,./sh/inst1.sh,./sh/split0.sh,./sh/inst5.sh
+OPTFIRE_DHXplink,./../heu_105,./result,./result/unknown,clingcon,pddl,true,./parameters/unknowns.csv,./sh/inst1.sh,./sh/split0.sh,./sh/inst5.sh
+,,,,,,,,,,

@@ -1,0 +1,15 @@
+clingcon version 5.2.1
+Reading from .../random/fixlen4/muse/p01[count=350].lp ...
+Solving...
+Answer: 1 (Time: 18.172s)
+
+Assignment:
+counter(900,link(wrac1,y,wrbc1))=20305200
+Cost: -20305200
+SATISFIABLE
+
+TIME LIMIT   : 1
+Models       : 1+
+Calls        : 1
+Time         : 600.916s (Solving: 590.95s 1st Model: 8.17s Unsat: 0.00s)
+CPU Time     : 600.798s

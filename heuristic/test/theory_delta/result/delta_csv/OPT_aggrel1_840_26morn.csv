@@ -1,0 +1,11 @@
+Encoding,Horizon,Problem,counter wrac1_y_wrbc1,counter wrbc1_b_wrcc1,counter wrcc1_x_wrdc1,counter wrdc1_b_wrec1,counter wrec1_y_wrfc1,Total
+clingcon,840,./theory_delta/result/Instancesv2/sippv2/fixlen4/26morn/p03[count=350]_OPT_aggrel1_840.txt,22207860,18604800,20997320,,,61809980
+clingcon,840,./theory_delta/result/Instancesv2/sippv2/fixlen4/26morn/p04[count=350]_OPT_aggrel1_840.txt,22207860,18604800,20997320,18763100,,80573080
+clingcon,840,./theory_delta/result/Instancesv2/sippv2/fixlen4/26morn/p05[count=350]_OPT_aggrel1_840.txt,22207860,18604800,20997320,18912300,19928800,100651080
+clingcon,840,./theory_delta/result/Instancesv2/sippv2/fixlen4/26morn/p02[count=350]_OPT_aggrel1_840.txt,22207860,18604800,,,,40812660
+clingcon,840,./theory_delta/result/Instancesv2/sippv2/fixlen4/26morn/p01[count=350]_OPT_aggrel1_840.txt,22207860,,,,,22207860
+clingcon,840,./theory_delta/result/Instancesv2_round/sippv2/fixlen4/26morn/p03[count=350]_OPT_aggrel1_840.txt,22490640,17222400,17444260,,,57157300
+clingcon,840,./theory_delta/result/Instancesv2_round/sippv2/fixlen4/26morn/p04[count=350]_OPT_aggrel1_840.txt,22490640,17222400,17444260,16748400,,73905700
+clingcon,840,./theory_delta/result/Instancesv2_round/sippv2/fixlen4/26morn/p05[count=350]_OPT_aggrel1_840.txt,22490640,17222400,17444260,16748400,17868800,91774500
+clingcon,840,./theory_delta/result/Instancesv2_round/sippv2/fixlen4/26morn/p02[count=350]_OPT_aggrel1_840.txt,22490640,17222400,,,,39713040
+clingcon,840,./theory_delta/result/Instancesv2_round/sippv2/fixlen4/26morn/p01[count=350]_OPT_aggrel1_840.txt,22490640,,,,,22490640

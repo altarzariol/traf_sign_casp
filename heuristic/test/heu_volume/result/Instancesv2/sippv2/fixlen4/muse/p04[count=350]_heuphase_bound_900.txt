@@ -1,0 +1,40 @@
+clingcon version 5.2.1
+Reading from .../sippv2/fixlen4/muse/p04[count=350].lp ...
+Solving...
+Answer: 1 (Time: 33.171s)
+
+Assignment:
+counter(900,link(wrac1,y,wrbc1))=29016200 counter(900,link(wrbc1,b,wrcc1))=20929800 counter(900,link(wrcc1,x,wrdc1))=24949800 counter(900,link(wrdc1,b,wrec1))=33695700
+Cost: -108591500
+Answer: 2 (Time: 44.672s)
+sol(472,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_2)
+Assignment:
+counter(900,link(wrac1,y,wrbc1))=29016200 counter(900,link(wrbc1,b,wrcc1))=20929800 counter(900,link(wrcc1,x,wrdc1))=24949800 counter(900,link(wrdc1,b,wrec1))=34024100
+Cost: -108919900
+Answer: 3 (Time: 73.237s)
+sol(561,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_2)
+Assignment:
+counter(900,link(wrac1,y,wrbc1))=29016200 counter(900,link(wrbc1,b,wrcc1))=21308200 counter(900,link(wrcc1,x,wrdc1))=25323400 counter(900,link(wrdc1,b,wrec1))=33695700
+Cost: -109343500
+Answer: 4 (Time: 78.749s)
+sol(472,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_2) sol(561,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_2)
+Assignment:
+counter(900,link(wrac1,y,wrbc1))=29016200 counter(900,link(wrbc1,b,wrcc1))=21308200 counter(900,link(wrcc1,x,wrdc1))=25323400 counter(900,link(wrdc1,b,wrec1))=34024100
+Cost: -109671900
+Answer: 5 (Time: 142.921s)
+sol(472,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_2) sol(561,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_2) sol(573,inter(wrbc1,5),conf_wrbc1_1,conf_wrbc1_4)
+Assignment:
+counter(900,link(wrac1,y,wrbc1))=29016200 counter(900,link(wrbc1,b,wrcc1))=21352600 counter(900,link(wrcc1,x,wrdc1))=25323400 counter(900,link(wrdc1,b,wrec1))=34024100
+Cost: -109716300
+Answer: 6 (Time: 270.793s)
+sol(472,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_2) sol(561,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_2) sol(573,inter(wrbc1,5),conf_wrbc1_1,conf_wrbc1_2)
+Assignment:
+counter(900,link(wrac1,y,wrbc1))=29274200 counter(900,link(wrbc1,b,wrcc1))=21336700 counter(900,link(wrcc1,x,wrdc1))=25323400 counter(900,link(wrdc1,b,wrec1))=34024100
+Cost: -109958400
+SATISFIABLE
+
+TIME LIMIT   : 1
+Models       : 6+
+Calls        : 1
+Time         : 603.146s (Solving: 583.61s 1st Model: 13.61s Unsat: 0.00s)
+CPU Time     : 481.994s

@@ -1,0 +1,11 @@
+Encoding,Horizon,Problem,counter wrac1_y_wrbc1,counter wrbc1_b_wrcc1,counter wrcc1_x_wrdc1,counter wrdc1_b_wrec1,counter wrec1_y_wrfc1,Total
+clingcon,900,./heu_105/result/Instancesv2_round/sipp/fixlen4/30eve/p03[count=350]_OPT_clingcon_900.txt,19998540,17049600,17965800,,,55013940
+clingcon,900,./heu_105/result/Instancesv2_round/sipp/fixlen4/30eve/p04[count=350]_OPT_clingcon_900.txt,19998540,17049600,17965800,17276400,,72290340
+clingcon,900,./heu_105/result/Instancesv2_round/sipp/fixlen4/30eve/p05[count=350]_OPT_clingcon_900.txt,19998540,17049600,17965800,17273500,18975000,91262440
+clingcon,900,./heu_105/result/Instancesv2_round/sipp/fixlen4/30eve/p02[count=350]_OPT_clingcon_900.txt,19998540,17049600,,,,37048140
+clingcon,900,./heu_105/result/Instancesv2_round/sipp/fixlen4/30eve/p01[count=350]_OPT_clingcon_900.txt,19998540,,,,,19998540
+clingcon,900,./heu_105/result/Instancesv2_round/sippv2/fixlen4/30eve/p03[count=350]_OPT_clingcon_900.txt,20064140,17107200,17697600,,,54868940
+clingcon,900,./heu_105/result/Instancesv2_round/sippv2/fixlen4/30eve/p04[count=350]_OPT_clingcon_900.txt,20064140,17107200,17697600,17064200,,71933140
+clingcon,900,./heu_105/result/Instancesv2_round/sippv2/fixlen4/30eve/p05[count=350]_OPT_clingcon_900.txt,20064140,17107200,17697600,17075800,18645400,90590140
+clingcon,900,./heu_105/result/Instancesv2_round/sippv2/fixlen4/30eve/p02[count=350]_OPT_clingcon_900.txt,20064140,17107200,,,,37171340
+clingcon,900,./heu_105/result/Instancesv2_round/sippv2/fixlen4/30eve/p01[count=350]_OPT_clingcon_900.txt,20064140,,,,,20064140

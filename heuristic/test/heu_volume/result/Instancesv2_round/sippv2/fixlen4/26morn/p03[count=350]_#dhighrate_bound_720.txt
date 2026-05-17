@@ -1,0 +1,15 @@
+clingcon version 5.2.1
+Reading from ...ippv2/fixlen4/26morn/p03[count=350].lp ...
+Solving...
+Answer: 1 (Time: 73.931s)
+change_in(link(wrac1,y,wrbc1)) change_in(link(wrcc1,x,wrdc1)) change_out(link(wrbc1,b,wrcc1)) optimal_conf_in(conf_wrac1_2,link(wrac1,y,wrbc1)) optimal_conf_in(conf_wrac1_3,link(wrac1,y,wrbc1)) optimal_conf_in(conf_wrac1_4,link(wrac1,y,wrbc1)) optimal_conf_in(conf_wrbc1_2,link(wrbc1,b,wrcc1)) optimal_conf_in(conf_wrbc1_4,link(wrbc1,b,wrcc1)) optimal_conf_in(conf_wrcc1_2,link(wrcc1,x,wrdc1)) optimal_conf_in(conf_wrcc1_3,link(wrcc1,x,wrdc1)) optimal_conf_out(conf_wrbc1_2,link(wrac1,y,wrbc1)) optimal_conf_out(conf_wrbc1_4,link(wrac1,y,wrbc1)) optimal_conf_out(conf_wrcc1_2,link(wrbc1,b,wrcc1)) optimal_conf_out(conf_wrcc1_3,link(wrbc1,b,wrcc1)) optimal_conf_out(conf_wrdc1_2,link(wrcc1,x,wrdc1)) optimal_conf_out(conf_wrdc1_3,link(wrcc1,x,wrdc1)) promising_conf_1(wrac1,4,conf_wrac1_4) promising_conf_1(wrac1,5,conf_wrac1_4) promising_conf_1(wrac1,6,conf_wrac1_4) promising_conf_1(wrac1,7,conf_wrac1_4) promising_conf_1(wrac1,8,conf_wrac1_4) promising_conf_1(wrcc1,4,conf_wrcc1_2) promising_conf_1(wrcc1,5,conf_wrcc1_2) promising_conf_1(wrcc1,6,conf_wrcc1_2) promising_conf_1(wrcc1,7,conf_wrcc1_2) promising_conf_2(wrcc1,4,conf_wrcc1_2) promising_conf_2(wrcc1,5,conf_wrcc1_2) promising_conf_2(wrcc1,6,conf_wrcc1_2) promising_conf_2(wrcc1,7,conf_wrcc1_2) sol(321,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_2) sol(325,inter(wrec1,4),conf_wrec1_1,conf_wrec1_2) sol(350,inter(wrbc1,5),conf_wrbc1_1,conf_wrbc1_4) sol(353,inter(wrac1,4),conf_wrac1_1,conf_wrac1_4) sol(362,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_2) sol(701,inter(wrec1,4),conf_wrec1_2,conf_wrec1_3) sol(717,inter(wrdc1,4),conf_wrdc1_2,conf_wrdc1_5)
+Assignment:
+counter(720,link(wrac1,y,wrbc1))=18936420 counter(720,link(wrbc1,b,wrcc1))=15264000 counter(720,link(wrcc1,x,wrdc1))=15160020
+Cost: -49360440
+SATISFIABLE
+
+TIME LIMIT   : 1
+Models       : 1+
+Calls        : 1
+Time         : 602.787s (Solving: 575.68s 1st Model: 46.75s Unsat: 0.00s)
+CPU Time     : 236.906s

@@ -1,0 +1,40 @@
+clingcon version 5.2.1
+Reading from ...ippv2/fixlen4/30morn/p04[count=350].lp ...
+Solving...
+Answer: 1 (Time: 26.843s)
+
+Assignment:
+counter(780,link(wrac1,y,wrbc1))=9020080 counter(780,link(wrbc1,b,wrcc1))=7430400 counter(780,link(wrcc1,x,wrdc1))=8233880 counter(780,link(wrdc1,b,wrec1))=7618600
+Cost: -32302960
+Answer: 2 (Time: 30.210s)
+sol(414,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_5)
+Assignment:
+counter(780,link(wrac1,y,wrbc1))=9020080 counter(780,link(wrbc1,b,wrcc1))=7430400 counter(780,link(wrcc1,x,wrdc1))=8233880 counter(780,link(wrdc1,b,wrec1))=7723000
+Cost: -32407360
+Answer: 3 (Time: 43.335s)
+sol(382,inter(wrbc1,5),conf_wrbc1_1,conf_wrbc1_2)
+Assignment:
+counter(780,link(wrac1,y,wrbc1))=9020080 counter(780,link(wrbc1,b,wrcc1))=7430400 counter(780,link(wrcc1,x,wrdc1))=8412680 counter(780,link(wrdc1,b,wrec1))=7750400
+Cost: -32613560
+Answer: 4 (Time: 48.334s)
+sol(382,inter(wrbc1,5),conf_wrbc1_1,conf_wrbc1_2) sol(414,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_2)
+Assignment:
+counter(780,link(wrac1,y,wrbc1))=9020080 counter(780,link(wrbc1,b,wrcc1))=7430400 counter(780,link(wrcc1,x,wrdc1))=8412680 counter(780,link(wrdc1,b,wrec1))=7827900
+Cost: -32691060
+Answer: 5 (Time: 53.217s)
+sol(382,inter(wrbc1,5),conf_wrbc1_1,conf_wrbc1_2) sol(414,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_5)
+Assignment:
+counter(780,link(wrac1,y,wrbc1))=9020080 counter(780,link(wrbc1,b,wrcc1))=7430400 counter(780,link(wrcc1,x,wrdc1))=8412680 counter(780,link(wrdc1,b,wrec1))=7854800
+Cost: -32717960
+Answer: 6 (Time: 218.219s)
+sol(382,inter(wrbc1,5),conf_wrbc1_1,conf_wrbc1_2) sol(388,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_2) sol(414,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_2)
+Assignment:
+counter(780,link(wrac1,y,wrbc1))=9020080 counter(780,link(wrbc1,b,wrcc1))=7430400 counter(780,link(wrcc1,x,wrdc1))=8502080 counter(780,link(wrdc1,b,wrec1))=7827900
+Cost: -32780460
+SATISFIABLE
+
+TIME LIMIT   : 1
+Models       : 6+
+Calls        : 1
+Time         : 601.103s (Solving: 584.15s 1st Model: 9.88s Unsat: 0.00s)
+CPU Time     : 600.815s

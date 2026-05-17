@@ -1,0 +1,16 @@
+Encoding,Horizon,Problem,counter wrac1_y_wrbc1,counter wrbc1_b_wrcc1,counter wrcc1_x_wrdc1,counter wrdc1_b_wrec1,counter wrec1_y_wrfc1,Total
+clingcon,780,./heu_105/result/Instancesv2_round/random/fixlen4/26morn/p03[count=350]_OPT_dhxphase_plus_780.txt,14850780,12844800,13208080,,,40903660
+clingcon,780,./heu_105/result/Instancesv2_round/random/fixlen4/26morn/p04[count=350]_OPT_dhxphase_plus_780.txt,14650780,12729600,13208080,13129700,,53718160
+clingcon,780,./heu_105/result/Instancesv2_round/random/fixlen4/26morn/p05[count=350]_OPT_dhxphase_plus_780.txt,14650780,12729600,13208080,12531600,13548700,66668760
+clingcon,780,./heu_105/result/Instancesv2_round/random/fixlen4/26morn/p02[count=350]_OPT_dhxphase_plus_780.txt,19689080,12844800,,,,32533880
+clingcon,780,./heu_105/result/Instancesv2_round/random/fixlen4/26morn/p01[count=350]_OPT_dhxphase_plus_780.txt,19689080,,,,,19689080
+clingcon,780,./heu_105/result/Instancesv2_round/sipp/fixlen4/26morn/p03[count=350]_OPT_dhxphase_plus_780.txt,20607160,15955200,16646560,,,53208920
+clingcon,780,./heu_105/result/Instancesv2_round/sipp/fixlen4/26morn/p04[count=350]_OPT_dhxphase_plus_780.txt,20607160,15955200,16646560,15183400,,68392320
+clingcon,780,./heu_105/result/Instancesv2_round/sipp/fixlen4/26morn/p05[count=350]_OPT_dhxphase_plus_780.txt,20607160,15955200,16646560,15183400,16185500,84577820
+clingcon,780,./heu_105/result/Instancesv2_round/sipp/fixlen4/26morn/p02[count=350]_OPT_dhxphase_plus_780.txt,20607160,15955200,,,,36562360
+clingcon,780,./heu_105/result/Instancesv2_round/sipp/fixlen4/26morn/p01[count=350]_OPT_dhxphase_plus_780.txt,20620380,,,,,20620380
+clingcon,780,./heu_105/result/Instancesv2_round/sippv2/fixlen4/26morn/p03[count=350]_OPT_dhxphase_plus_780.txt,20607160,15955200,16646560,,,53208920
+clingcon,780,./heu_105/result/Instancesv2_round/sippv2/fixlen4/26morn/p04[count=350]_OPT_dhxphase_plus_780.txt,20607160,15955200,16646560,15249300,,68458220
+clingcon,780,./heu_105/result/Instancesv2_round/sippv2/fixlen4/26morn/p05[count=350]_OPT_dhxphase_plus_780.txt,20607160,15955200,16646560,15249300,16267900,84726120
+clingcon,780,./heu_105/result/Instancesv2_round/sippv2/fixlen4/26morn/p02[count=350]_OPT_dhxphase_plus_780.txt,20876580,15955200,,,,36831780
+clingcon,780,./heu_105/result/Instancesv2_round/sippv2/fixlen4/26morn/p01[count=350]_OPT_dhxphase_plus_780.txt,20876580,,,,,20876580

@@ -1,0 +1,13 @@
+clingcon version 5.2.1
+Reading from ...ippv2/fixlen4/26morn/p05[count=350].lp ...
+Solving...
+Answer: 1 (Time: 112.218s)
+change_in(link(wrac1,y,wrbc1)) change_in(link(wrcc1,x,wrdc1)) optimal_conf_in(conf_wrac1_2,link(wrac1,y,wrbc1)) optimal_conf_in(conf_wrac1_3,link(wrac1,y,wrbc1)) optimal_conf_in(conf_wrac1_4,link(wrac1,y,wrbc1)) optimal_conf_in(conf_wrbc1_2,link(wrbc1,b,wrcc1)) optimal_conf_in(conf_wrbc1_3,link(wrbc1,b,wrcc1)) optimal_conf_in(conf_wrbc1_4,link(wrbc1,b,wrcc1)) optimal_conf_in(conf_wrcc1_2,link(wrcc1,x,wrdc1)) optimal_conf_in(conf_wrcc1_3,link(wrcc1,x,wrdc1)) optimal_conf_in(conf_wrdc1_2,link(wrdc1,b,wrec1)) optimal_conf_in(conf_wrdc1_3,link(wrdc1,b,wrec1)) optimal_conf_in(conf_wrdc1_5,link(wrdc1,b,wrec1)) optimal_conf_in(conf_wrec1_3,link(wrec1,y,wrfc1)) optimal_conf_out(conf_wrbc1_2,link(wrac1,y,wrbc1)) optimal_conf_out(conf_wrbc1_3,link(wrac1,y,wrbc1)) optimal_conf_out(conf_wrbc1_4,link(wrac1,y,wrbc1)) optimal_conf_out(conf_wrcc1_2,link(wrbc1,b,wrcc1)) optimal_conf_out(conf_wrcc1_3,link(wrbc1,b,wrcc1)) optimal_conf_out(conf_wrdc1_2,link(wrcc1,x,wrdc1)) optimal_conf_out(conf_wrdc1_3,link(wrcc1,x,wrdc1)) optimal_conf_out(conf_wrdc1_5,link(wrcc1,x,wrdc1)) optimal_conf_out(conf_wrec1_3,link(wrdc1,b,wrec1)) optimal_conf_out(conf_wrfc1_2,link(wrec1,y,wrfc1)) optimal_conf_out(conf_wrfc1_3,link(wrec1,y,wrfc1)) optimal_conf_out(conf_wrfc1_4,link(wrec1,y,wrfc1)) promising_conf_1(wrac1,4,conf_wrac1_4) promising_conf_1(wrac1,5,conf_wrac1_4) promising_conf_1(wrac1,6,conf_wrac1_4) promising_conf_1(wrcc1,4,conf_wrcc1_3) sol(325,inter(wrec1,4),conf_wrec1_1,conf_wrec1_3) sol(388,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_5) sol(433,inter(wrac1,4),conf_wrac1_1,conf_wrac1_4) sol(462,inter(wrfc1,3),conf_wrfc1_1,conf_wrfc1_6) sol(473,inter(wrbc1,5),conf_wrbc1_1,conf_wrbc1_2) sol(565,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_3)
+Assignment:
+counter(660,link(wrac1,y,wrbc1))=17323940 counter(660,link(wrbc1,b,wrcc1))=14976000 counter(660,link(wrcc1,x,wrdc1))=16480380 counter(660,link(wrdc1,b,wrec1))=15925700 counter(660,link(wrec1,y,wrfc1))=16903600
+SATISFIABLE
+
+Models       : 1+
+Calls        : 1
+Time         : 113.218s (Solving: 101.23s 1st Model: 100.21s Unsat: 0.00s)
+CPU Time     : 113.210s

@@ -1,0 +1,15 @@
+clingcon version 5.2.1
+Reading from ...ippv2/fixlen4/30morn/p01[count=350].lp ...
+Solving...
+Answer: 2 (Time: 66.293s)
+sol(568,inter(wrac1,4),conf_wrac1_1,conf_wrac1_2)
+Assignment:
+counter(600,link(wrac1,y,wrbc1))=7041480
+Cost: -7041480
+SATISFIABLE
+
+TIME LIMIT   : 1
+Models       : 2+
+Calls        : 1
+Time         : 600.734s (Solving: 591.95s 1st Model: 6.26s Unsat: 0.00s)
+CPU Time     : 391.286s

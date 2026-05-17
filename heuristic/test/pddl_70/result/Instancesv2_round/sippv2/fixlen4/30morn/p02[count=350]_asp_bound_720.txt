@@ -1,0 +1,16 @@
+pddl_solution(link(wrac1,y,wrbc1),7913260). pddl_solution(link(wrbc1,b,wrcc1),6508799).
+clingcon version 5.2.1
+Reading from ...ippv2/fixlen4/30morn/p02[count=350].lp ...
+Solving...
+Answer: 2 (Time: 63.380s)
+sol(295,inter(wrac1,4),conf_wrac1_1,conf_wrac1_6) sol(328,inter(wrec1,4),conf_wrec1_1,conf_wrec1_4) sol(382,inter(wrbc1,5),conf_wrbc1_1,conf_wrbc1_5) sol(388,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_5) sol(414,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_6) sol(659,inter(wrac1,4),conf_wrac1_6,conf_wrac1_1) sol(704,inter(wrec1,4),conf_wrec1_4,conf_wrec1_3)
+Assignment:
+counter(720,link(wrac1,y,wrbc1))=8238260 counter(720,link(wrbc1,b,wrcc1))=6739200
+Cost: -14977460
+SATISFIABLE
+
+TIME LIMIT   : 1
+Models       : 2+
+Calls        : 1
+Time         : 602.334s (Solving: 566.53s 1st Model: 22.96s Unsat: 0.00s)
+CPU Time     : 301.093s

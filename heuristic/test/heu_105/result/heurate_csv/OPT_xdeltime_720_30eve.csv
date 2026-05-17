@@ -1,0 +1,15 @@
+Encoding,Horizon,Problem,counter wrac1_y_wrbc1,counter wrbc1_b_wrcc1,counter wrcc1_x_wrdc1,counter wrdc1_b_wrec1,counter wrec1_y_wrfc1,Total
+clingcon,720,./heu_105/result/Instancesv2_round/random/fixlen4/30eve/p04[count=350]_OPT_xdeltime_720.txt,11381800,10080000,12141060,11708100,,45310960
+clingcon,720,./heu_105/result/Instancesv2_round/random/fixlen4/30eve/p05[count=350]_OPT_xdeltime_720.txt,11381800,10080000,11694060,11708100,11971100,56835060
+clingcon,720,./heu_105/result/Instancesv2_round/random/fixlen4/30eve/p02[count=350]_OPT_xdeltime_720.txt,11381800,10080000,,,,21461800
+clingcon,720,./heu_105/result/Instancesv2_round/random/fixlen4/30eve/p01[count=350]_OPT_xdeltime_720.txt,11381800,,,,,11381800
+clingcon,720,./heu_105/result/Instancesv2_round/sipp/fixlen4/30eve/p03[count=350]_OPT_xdeltime_720.txt,16117900,13939200,14856320,,,44913420
+clingcon,720,./heu_105/result/Instancesv2_round/sipp/fixlen4/30eve/p04[count=350]_OPT_xdeltime_720.txt,65600,0,0,0,,65600
+clingcon,720,./heu_105/result/Instancesv2_round/sipp/fixlen4/30eve/p05[count=350]_OPT_xdeltime_720.txt,16117900,13939200,14856320,14670700,16138200,75722320
+clingcon,720,./heu_105/result/Instancesv2_round/sipp/fixlen4/30eve/p02[count=350]_OPT_xdeltime_720.txt,16117900,13939200,,,,30057100
+clingcon,720,./heu_105/result/Instancesv2_round/sipp/fixlen4/30eve/p01[count=350]_OPT_xdeltime_720.txt,16117900,,,,,16117900
+clingcon,720,./heu_105/result/Instancesv2_round/sippv2/fixlen4/30eve/p03[count=350]_OPT_xdeltime_720.txt,16183500,13996800,14677520,,,44857820
+clingcon,720,./heu_105/result/Instancesv2_round/sippv2/fixlen4/30eve/p04[count=350]_OPT_xdeltime_720.txt,65600,0,0,0,,65600
+clingcon,720,./heu_105/result/Instancesv2_round/sippv2/fixlen4/30eve/p05[count=350]_OPT_xdeltime_720.txt,16183500,13996800,14677520,14538900,15973400,75370120
+clingcon,720,./heu_105/result/Instancesv2_round/sippv2/fixlen4/30eve/p02[count=350]_OPT_xdeltime_720.txt,16183500,13996800,,,,30180300
+clingcon,720,./heu_105/result/Instancesv2_round/sippv2/fixlen4/30eve/p01[count=350]_OPT_xdeltime_720.txt,16183500,,,,,16183500

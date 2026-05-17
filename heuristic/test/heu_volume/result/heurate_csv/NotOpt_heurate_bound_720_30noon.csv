@@ -1,0 +1,6 @@
+Encoding,Horizon,Problem,counter wrac1_y_wrbc1,counter wrbc1_b_wrcc1,counter wrcc1_x_wrdc1,counter wrdc1_b_wrec1,counter wrec1_y_wrfc1,Total
+clingcon,720,./heu_volume/result/Instancesv2/sippv2/fixlen4/30noon/p03[count=350]_NotOpt_heurate_bound_720.txt,25119460,18547200,18522840,,,62189500
+clingcon,720,./heu_volume/result/Instancesv2/sippv2/fixlen4/30noon/p04[count=350]_NotOpt_heurate_bound_720.txt,25119460,18547200,18522840,18928900,,81118400
+clingcon,720,./heu_volume/result/Instancesv2/sippv2/fixlen4/30noon/p05[count=350]_NotOpt_heurate_bound_720.txt,23413860,18720000,18577860,18931800,19281200,98924720
+clingcon,720,./heu_volume/result/Instancesv2/sippv2/fixlen4/30noon/p01[count=350]_NotOpt_heurate_bound_720.txt,25119460,,,,,25119460
+clingcon,720,./heu_volume/result/Instancesv2_round/sippv2/fixlen4/30noon/p01[count=350]_NotOpt_heurate_bound_720.txt,22428880,,,,,22428880

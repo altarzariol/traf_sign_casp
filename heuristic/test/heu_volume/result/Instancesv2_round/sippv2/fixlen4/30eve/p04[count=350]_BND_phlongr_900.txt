@@ -1,0 +1,13 @@
+clingcon version 5.2.1
+Reading from ...sippv2/fixlen4/30eve/p04[count=350].lp ...
+Solving...
+Answer: 1 (Time: 181.478s)
+optimal_conf_in(conf_wrac1_2,link(wrac1,y,wrbc1)) optimal_conf_in(conf_wrac1_3,link(wrac1,y,wrbc1)) optimal_conf_in(conf_wrac1_4,link(wrac1,y,wrbc1)) optimal_conf_in(conf_wrbc1_2,link(wrbc1,b,wrcc1)) optimal_conf_in(conf_wrbc1_3,link(wrbc1,b,wrcc1)) optimal_conf_in(conf_wrbc1_4,link(wrbc1,b,wrcc1)) optimal_conf_in(conf_wrcc1_1,link(wrcc1,x,wrdc1)) optimal_conf_in(conf_wrcc1_3,link(wrcc1,x,wrdc1)) optimal_conf_in(conf_wrdc1_2,link(wrdc1,b,wrec1)) optimal_conf_in(conf_wrdc1_3,link(wrdc1,b,wrec1)) optimal_conf_in(conf_wrdc1_4,link(wrdc1,b,wrec1)) optimal_conf_in(conf_wrdc1_5,link(wrdc1,b,wrec1)) optimal_conf_out(conf_wrbc1_2,link(wrac1,y,wrbc1)) optimal_conf_out(conf_wrbc1_3,link(wrac1,y,wrbc1)) optimal_conf_out(conf_wrbc1_4,link(wrac1,y,wrbc1)) optimal_conf_out(conf_wrcc1_1,link(wrbc1,b,wrcc1)) optimal_conf_out(conf_wrcc1_3,link(wrbc1,b,wrcc1)) optimal_conf_out(conf_wrdc1_2,link(wrcc1,x,wrdc1)) optimal_conf_out(conf_wrdc1_3,link(wrcc1,x,wrdc1)) optimal_conf_out(conf_wrdc1_4,link(wrcc1,x,wrdc1)) optimal_conf_out(conf_wrdc1_5,link(wrcc1,x,wrdc1)) optimal_conf_out(conf_wrec1_3,link(wrdc1,b,wrec1)) promising_conf_1(wrcc1,0,conf_wrcc1_1) promising_conf_1(wrcc1,1,conf_wrcc1_1) promising_conf_1(wrcc1,2,conf_wrcc1_1) promising_conf_1(wrcc1,3,conf_wrcc1_1) promising_conf_1(wrcc1,4,conf_wrcc1_1) promising_conf_1(wrcc1,5,conf_wrcc1_1) promising_conf_1(wrcc1,6,conf_wrcc1_1) promising_conf_1(wrcc1,7,conf_wrcc1_1) promising_conf_1(wrcc1,8,conf_wrcc1_1) promising_conf_1(wrcc1,9,conf_wrcc1_1) promising_conf_1(wrcc1,10,conf_wrcc1_1) promising_conf_2(wrcc1,0,conf_wrcc1_1) promising_conf_2(wrcc1,1,conf_wrcc1_1) promising_conf_2(wrcc1,2,conf_wrcc1_1) promising_conf_2(wrcc1,3,conf_wrcc1_1) promising_conf_2(wrcc1,4,conf_wrcc1_1) promising_conf_2(wrcc1,5,conf_wrcc1_1) promising_conf_2(wrcc1,6,conf_wrcc1_1) promising_conf_2(wrcc1,7,conf_wrcc1_1) promising_conf_2(wrcc1,8,conf_wrcc1_1) promising_conf_2(wrcc1,9,conf_wrcc1_1) promising_conf_2(wrcc1,10,conf_wrcc1_1)
+Assignment:
+counter(900,link(wrac1,y,wrbc1))=19998540 counter(900,link(wrbc1,b,wrcc1))=17107200 counter(900,link(wrcc1,x,wrdc1))=18770400 counter(900,link(wrdc1,b,wrec1))=17920900
+SATISFIABLE
+
+Models       : 1+
+Calls        : 1
+Time         : 184.322s (Solving: 114.89s 1st Model: 111.97s Unsat: 0.00s)
+CPU Time     : 60.475s

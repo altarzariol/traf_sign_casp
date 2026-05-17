@@ -1,0 +1,15 @@
+clingcon version 5.2.1
+Reading from ...andom/fixlen4/30morn/p02[count=350].lp ...
+Solving...
+Answer: 2 (Time: 48.503s)
+sol(293,inter(wrac1,4),conf_wrac1_2,conf_wrac1_1)
+Assignment:
+counter(840,link(wrac1,y,wrbc1))=9364180 counter(840,link(wrbc1,b,wrcc1))=7603200
+Cost: -16967380
+SATISFIABLE
+
+TIME LIMIT   : 1
+Models       : 2+
+Calls        : 1
+Time         : 602.097s (Solving: 585.48s 1st Model: 23.63s Unsat: 0.00s)
+CPU Time     : 388.999s

@@ -1,0 +1,27 @@
+Encoding,Horizon,Problem,counter wrac1_y_wrbc1,counter wrbc1_b_wrcc1,counter wrcc1_x_wrdc1,counter wrdc1_b_wrec1,counter wrec1_y_wrfc1,Total
+clingcon,720,./pddl_combo/result/Instancesv2_round/random/fixlen4/26morn/p03[count=350]_pddl-bnd_dhxplink_720.txt,17989200,11923200,12249920,,,42162320
+clingcon,720,./pddl_combo/result/Instancesv2_round/random/fixlen4/26morn/p04[count=350]_pddl-bnd_dhxplink_720.txt,17989200,11923200,12249920,12662600,,54824920
+clingcon,720,./pddl_combo/result/Instancesv2_round/random/fixlen4/26morn/p05[count=350]_pddl-bnd_dhxplink_720.txt,17989200,11923200,12249920,12662600,12936600,67761520
+clingcon,720,./pddl_combo/result/Instancesv2_round/sipp/fixlen4/26morn/p04[count=350]_pddl-bnd_dhxplink_720.txt,18870820,15148800,15060300,14320900,,63400820
+clingcon,720,./pddl_combo/result/Instancesv2_round/sipp/fixlen4/26morn/p05[count=350]_pddl-bnd_dhxplink_720.txt,18870820,15148800,15060300,14320900,15243800,78644620
+clingcon,720,./pddl_combo/result/Instancesv2_round/sipp/fixlen4/26morn/p02[count=350]_pddl-bnd_dhxplink_720.txt,18870820,15148800,,,,34019620
+clingcon,720,./pddl_combo/result/Instancesv2_round/sippv2/fixlen4/26morn/p03[count=350]_pddl-bnd_dhxplink_720.txt,18870820,15321600,15160020,,,49352440
+clingcon,720,./pddl_combo/result/Instancesv2_round/sippv2/fixlen4/26morn/p04[count=350]_pddl-bnd_dhxplink_720.txt,18870820,15321600,15160020,14452700,,63805140
+clingcon,720,./pddl_combo/result/Instancesv2_round/sippv2/fixlen4/26morn/p05[count=350]_pddl-bnd_dhxplink_720.txt,18870820,15148800,15060300,14386800,15326200,78792920
+clingcon,720,./pddl_combo/result/Instancesv2_round/sippv2/fixlen4/26morn/p02[count=350]_pddl-bnd_dhxplink_720.txt,18870820,15148800,,,,34019620
+clingcon,720,./pddl_combo/result/Instancesv2_round/sippv2/fixlen4/26morn/p01[count=350]_pddl-bnd_dhxplink_720.txt,19002020,,,,,19002020
+pddl,720,./pddl_combo/result/Instancesv2_round/random/fixlen4/26morn/p03[count=350]_pddl-bnd_dhxplink_720.txt,17989200,11692799,12071119,,,41753118
+pddl,720,./pddl_combo/result/Instancesv2_round/random/fixlen4/26morn/p04[count=350]_pddl-bnd_dhxplink_720.txt,17989200,11865599,12071119,11794299,,53720217
+pddl,720,./pddl_combo/result/Instancesv2_round/random/fixlen4/26morn/p05[count=350]_pddl-bnd_dhxplink_720.txt,17989200,12153599,12071119,11794299,12771799,66780016
+pddl,720,./pddl_combo/result/Instancesv2_round/random/fixlen4/26morn/p02[count=350]_pddl-bnd_dhxplink_720.txt,17989200,12153599,,,,30142799
+pddl,720,./pddl_combo/result/Instancesv2_round/random/fixlen4/26morn/p01[count=350]_pddl-bnd_dhxplink_720.txt,17989200,,,,,17989200
+pddl,720,./pddl_combo/result/Instancesv2_round/sipp/fixlen4/26morn/p03[count=350]_pddl-bnd_dhxplink_720.txt,18870820,15436799,15160019,,,49467638
+pddl,720,./pddl_combo/result/Instancesv2_round/sipp/fixlen4/26morn/p04[count=350]_pddl-bnd_dhxplink_720.txt,18870820,14975999,14913579,14237599,,62997997
+pddl,720,./pddl_combo/result/Instancesv2_round/sipp/fixlen4/26morn/p05[count=350]_pddl-bnd_dhxplink_720.txt,18870820,15033599,14897539,14266599,15243799,78312356
+pddl,720,./pddl_combo/result/Instancesv2_round/sipp/fixlen4/26morn/p02[count=350]_pddl-bnd_dhxplink_720.txt,18870820,15033599,,,,33904419
+pddl,720,./pddl_combo/result/Instancesv2_round/sipp/fixlen4/26morn/p01[count=350]_pddl-bnd_dhxplink_720.txt,18870820,,,,,18870820
+pddl,720,./pddl_combo/result/Instancesv2_round/sippv2/fixlen4/26morn/p03[count=350]_pddl-bnd_dhxplink_720.txt,18936420,15263999,15141679,,,49342098
+pddl,720,./pddl_combo/result/Instancesv2_round/sippv2/fixlen4/26morn/p04[count=350]_pddl-bnd_dhxplink_720.txt,18936420,15148799,15060299,14369399,,63514917
+pddl,720,./pddl_combo/result/Instancesv2_round/sippv2/fixlen4/26morn/p05[count=350]_pddl-bnd_dhxplink_720.txt,19002020,15263999,14897539,14326699,15243799,78734056
+pddl,720,./pddl_combo/result/Instancesv2_round/sippv2/fixlen4/26morn/p02[count=350]_pddl-bnd_dhxplink_720.txt,19002020,14860799,,,,33862819
+pddl,720,./pddl_combo/result/Instancesv2_round/sippv2/fixlen4/26morn/p01[count=350]_pddl-bnd_dhxplink_720.txt,18936420,,,,,18936420

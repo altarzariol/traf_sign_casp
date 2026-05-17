@@ -1,0 +1,25 @@
+clingcon version 5.2.1
+Reading from .../sippv2/fixlen4/muse/p04[count=350].lp ...
+Solving...
+Answer: 1 (Time: 16.278s)
+optimal_conf_in(conf_wrac1_2,link(wrac1,y,wrbc1)) optimal_conf_in(conf_wrac1_3,link(wrac1,y,wrbc1)) optimal_conf_in(conf_wrac1_4,link(wrac1,y,wrbc1)) optimal_conf_in(conf_wrbc1_2,link(wrbc1,b,wrcc1)) optimal_conf_in(conf_wrbc1_3,link(wrbc1,b,wrcc1)) optimal_conf_in(conf_wrbc1_4,link(wrbc1,b,wrcc1)) optimal_conf_in(conf_wrcc1_2,link(wrcc1,x,wrdc1)) optimal_conf_in(conf_wrcc1_3,link(wrcc1,x,wrdc1)) optimal_conf_in(conf_wrdc1_2,link(wrdc1,b,wrec1)) optimal_conf_in(conf_wrdc1_3,link(wrdc1,b,wrec1)) optimal_conf_in(conf_wrdc1_5,link(wrdc1,b,wrec1)) optimal_conf_out(conf_wrbc1_2,link(wrac1,y,wrbc1)) optimal_conf_out(conf_wrbc1_4,link(wrac1,y,wrbc1)) optimal_conf_out(conf_wrcc1_2,link(wrbc1,b,wrcc1)) optimal_conf_out(conf_wrcc1_3,link(wrbc1,b,wrcc1)) optimal_conf_out(conf_wrdc1_2,link(wrcc1,x,wrdc1)) optimal_conf_out(conf_wrdc1_3,link(wrcc1,x,wrdc1)) sol(417,inter(wrbc1,5),conf_wrbc1_1,conf_wrbc1_6)
+Assignment:
+counter(600,link(wrac1,y,wrbc1))=16986200 counter(600,link(wrbc1,b,wrcc1))=11606900 counter(600,link(wrcc1,x,wrdc1))=13878000 counter(600,link(wrdc1,b,wrec1))=24941700
+Cost: -67412800
+Answer: 2 (Time: 36.630s)
+optimal_conf_in(conf_wrac1_2,link(wrac1,y,wrbc1)) optimal_conf_in(conf_wrac1_3,link(wrac1,y,wrbc1)) optimal_conf_in(conf_wrac1_4,link(wrac1,y,wrbc1)) optimal_conf_in(conf_wrbc1_2,link(wrbc1,b,wrcc1)) optimal_conf_in(conf_wrbc1_3,link(wrbc1,b,wrcc1)) optimal_conf_in(conf_wrbc1_4,link(wrbc1,b,wrcc1)) optimal_conf_in(conf_wrcc1_2,link(wrcc1,x,wrdc1)) optimal_conf_in(conf_wrcc1_3,link(wrcc1,x,wrdc1)) optimal_conf_in(conf_wrdc1_2,link(wrdc1,b,wrec1)) optimal_conf_in(conf_wrdc1_3,link(wrdc1,b,wrec1)) optimal_conf_in(conf_wrdc1_5,link(wrdc1,b,wrec1)) optimal_conf_out(conf_wrbc1_2,link(wrac1,y,wrbc1)) optimal_conf_out(conf_wrbc1_4,link(wrac1,y,wrbc1)) optimal_conf_out(conf_wrcc1_2,link(wrbc1,b,wrcc1)) optimal_conf_out(conf_wrcc1_3,link(wrbc1,b,wrcc1)) optimal_conf_out(conf_wrdc1_2,link(wrcc1,x,wrdc1)) optimal_conf_out(conf_wrdc1_3,link(wrcc1,x,wrdc1)) sol(520,inter(wrac1,4),conf_wrac1_1,conf_wrac1_6) sol(580,inter(wrec1,4),conf_wrec1_1,conf_wrec1_5) sol(584,inter(wrfc1,3),conf_wrfc1_1,conf_wrfc1_5) sol(590,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_2)
+Assignment:
+counter(600,link(wrac1,y,wrbc1))=17029200 counter(600,link(wrbc1,b,wrcc1))=11674000 counter(600,link(wrcc1,x,wrdc1))=13878000 counter(600,link(wrdc1,b,wrec1))=24941700
+Cost: -67522900
+Answer: 3 (Time: 528.284s)
+optimal_conf_in(conf_wrac1_2,link(wrac1,y,wrbc1)) optimal_conf_in(conf_wrac1_3,link(wrac1,y,wrbc1)) optimal_conf_in(conf_wrac1_4,link(wrac1,y,wrbc1)) optimal_conf_in(conf_wrbc1_2,link(wrbc1,b,wrcc1)) optimal_conf_in(conf_wrbc1_3,link(wrbc1,b,wrcc1)) optimal_conf_in(conf_wrbc1_4,link(wrbc1,b,wrcc1)) optimal_conf_in(conf_wrcc1_2,link(wrcc1,x,wrdc1)) optimal_conf_in(conf_wrcc1_3,link(wrcc1,x,wrdc1)) optimal_conf_in(conf_wrdc1_2,link(wrdc1,b,wrec1)) optimal_conf_in(conf_wrdc1_3,link(wrdc1,b,wrec1)) optimal_conf_in(conf_wrdc1_5,link(wrdc1,b,wrec1)) optimal_conf_out(conf_wrbc1_2,link(wrac1,y,wrbc1)) optimal_conf_out(conf_wrbc1_4,link(wrac1,y,wrbc1)) optimal_conf_out(conf_wrcc1_2,link(wrbc1,b,wrcc1)) optimal_conf_out(conf_wrcc1_3,link(wrbc1,b,wrcc1)) optimal_conf_out(conf_wrdc1_2,link(wrcc1,x,wrdc1)) optimal_conf_out(conf_wrdc1_3,link(wrcc1,x,wrdc1)) sol(338,inter(wrac1,4),conf_wrac1_1,conf_wrac1_6) sol(580,inter(wrec1,4),conf_wrec1_1,conf_wrec1_6) sol(584,inter(wrfc1,3),conf_wrfc1_1,conf_wrfc1_4) sol(590,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_3)
+Assignment:
+counter(600,link(wrac1,y,wrbc1))=17042500 counter(600,link(wrbc1,b,wrcc1))=11674000 counter(600,link(wrcc1,x,wrdc1))=13878000 counter(600,link(wrdc1,b,wrec1))=24941700
+Cost: -67536200
+SATISFIABLE
+
+TIME LIMIT   : 1
+Models       : 3+
+Calls        : 1
+Time         : 601.113s (Solving: 588.36s 1st Model: 3.51s Unsat: 0.00s)
+CPU Time     : 396.715s

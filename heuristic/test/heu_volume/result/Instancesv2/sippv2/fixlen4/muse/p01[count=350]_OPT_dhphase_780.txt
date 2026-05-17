@@ -1,0 +1,15 @@
+clingcon version 5.2.1
+Reading from .../sippv2/fixlen4/muse/p01[count=350].lp ...
+Solving...
+Answer: 1 (Time: 62.959s)
+
+Assignment:
+counter(780,link(wrac1,y,wrbc1))=25117300
+Cost: -25117300
+SATISFIABLE
+
+TIME LIMIT   : 1
+Models       : 1+
+Calls        : 1
+Time         : 602.279s (Solving: 566.58s 1st Model: 27.18s Unsat: 0.00s)
+CPU Time     : 194.900s

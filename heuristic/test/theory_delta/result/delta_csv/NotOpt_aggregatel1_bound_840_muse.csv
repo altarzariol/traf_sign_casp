@@ -1,0 +1,7 @@
+Encoding,Horizon,Problem,counter wrac1_y_wrbc1,counter wrbc1_b_wrcc1,counter wrcc1_x_wrdc1,counter wrdc1_b_wrec1,counter wrec1_y_wrfc1,Total
+clingcon,840,./theory_delta/result/Instancesv2/sippv2/fixlen4/muse/p03[count=350]_NotOpt_aggregatel1_bound_840.txt,26668700,19146800,23035000,,,68850500
+clingcon,840,./theory_delta/result/Instancesv2/sippv2/fixlen4/muse/p04[count=350]_NotOpt_aggregatel1_bound_840.txt,26668700,19146800,23035000,32135800,,100986300
+clingcon,840,./theory_delta/result/Instancesv2/sippv2/fixlen4/muse/p05[count=350]_NotOpt_aggregatel1_bound_840.txt,26668700,19146800,23035000,32135800,34783800,135770100
+clingcon,840,./theory_delta/result/Instancesv2/sippv2/fixlen4/muse/p01[count=350]_NotOpt_aggregatel1_bound_840.txt,26668700,,,,,26668700
+clingcon,840,./theory_delta/result/Instancesv2_round/sippv2/fixlen4/muse/p02[count=350]_NotOpt_aggregatel1_bound_840.txt,22970200,15529600,,,,38499800
+clingcon,840,./theory_delta/result/Instancesv2_round/sippv2/fixlen4/muse/p01[count=350]_NotOpt_aggregatel1_bound_840.txt,22970200,,,,,22970200

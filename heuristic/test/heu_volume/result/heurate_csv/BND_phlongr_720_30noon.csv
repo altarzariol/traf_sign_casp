@@ -1,0 +1,11 @@
+Encoding,Horizon,Problem,counter wrac1_y_wrbc1,counter wrbc1_b_wrcc1,counter wrcc1_x_wrdc1,counter wrdc1_b_wrec1,counter wrec1_y_wrfc1,Total
+clingcon,720,./heu_volume/result/Instancesv2/sippv2/fixlen4/30noon/p03[count=350]_BND_phlongr_720.txt,25053860,18720000,18577860,,,62351720
+clingcon,720,./heu_volume/result/Instancesv2/sippv2/fixlen4/30noon/p04[count=350]_BND_phlongr_720.txt,25053860,18720000,18577860,18928900,,81280620
+clingcon,720,./heu_volume/result/Instancesv2/sippv2/fixlen4/30noon/p05[count=350]_BND_phlongr_720.txt,25053860,18720000,18577860,18928900,19410700,100691320
+clingcon,720,./heu_volume/result/Instancesv2/sippv2/fixlen4/30noon/p02[count=350]_BND_phlongr_720.txt,25053860,18720000,,,,43773860
+clingcon,720,./heu_volume/result/Instancesv2/sippv2/fixlen4/30noon/p01[count=350]_BND_phlongr_720.txt,25119460,,,,,25119460
+clingcon,720,./heu_volume/result/Instancesv2_round/sippv2/fixlen4/30noon/p03[count=350]_BND_phlongr_720.txt,22954800,15091200,16003600,,,54049600
+clingcon,720,./heu_volume/result/Instancesv2_round/sippv2/fixlen4/30noon/p04[count=350]_BND_phlongr_720.txt,22954800,15091200,16003600,16931600,,70981200
+clingcon,720,./heu_volume/result/Instancesv2_round/sippv2/fixlen4/30noon/p05[count=350]_BND_phlongr_720.txt,22954800,15091200,16003600,16931600,17680300,88661500
+clingcon,720,./heu_volume/result/Instancesv2_round/sippv2/fixlen4/30noon/p02[count=350]_BND_phlongr_720.txt,22954800,15091200,,,,38046000
+clingcon,720,./heu_volume/result/Instancesv2_round/sippv2/fixlen4/30noon/p01[count=350]_BND_phlongr_720.txt,22954800,,,,,22954800

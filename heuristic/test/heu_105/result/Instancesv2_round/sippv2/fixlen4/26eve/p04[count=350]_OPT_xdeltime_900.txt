@@ -1,0 +1,16 @@
+clingcon version 5.2.1
+Reading from ...sippv2/fixlen4/26eve/p04[count=350].lp ...
+Solving...
+Answer: 1 (Time: 22.722s)
+
+Assignment:
+counter(900,link(wrac1,y,wrbc1))=28820 counter(900,link(wrbc1,b,wrcc1))=0 counter(900,link(wrcc1,x,wrdc1))=44700 counter(900,link(wrdc1,b,wrec1))=65900
+Optimization: -139420
+OPTIMUM FOUND
+
+Models       : 1
+  Optimum    : yes
+Optimization : -139420
+Calls        : 1
+Time         : 22.890s (Solving: 15.88s 1st Model: 15.70s Unsat: 0.18s)
+CPU Time     : 22.887s

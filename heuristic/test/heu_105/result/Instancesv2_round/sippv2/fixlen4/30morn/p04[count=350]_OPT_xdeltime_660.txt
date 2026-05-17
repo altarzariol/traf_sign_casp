@@ -1,0 +1,16 @@
+clingcon version 5.2.1
+Reading from ...ippv2/fixlen4/30morn/p04[count=350].lp ...
+Solving...
+Answer: 1 (Time: 19.582s)
+
+Assignment:
+counter(660,link(wrac1,y,wrbc1))=53820 counter(660,link(wrbc1,b,wrcc1))=57600 counter(660,link(wrcc1,x,wrdc1))=44700 counter(660,link(wrdc1,b,wrec1))=0
+Optimization: -156120
+OPTIMUM FOUND
+
+Models       : 1
+  Optimum    : yes
+Optimization : -156120
+Calls        : 1
+Time         : 19.655s (Solving: 14.72s 1st Model: 14.64s Unsat: 0.08s)
+CPU Time     : 15.949s

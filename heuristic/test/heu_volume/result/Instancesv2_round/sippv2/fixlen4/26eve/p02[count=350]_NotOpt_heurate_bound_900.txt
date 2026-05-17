@@ -1,0 +1,13 @@
+clingcon version 5.2.1
+Reading from ...sippv2/fixlen4/26eve/p02[count=350].lp ...
+Solving...
+Answer: 1 (Time: 153.083s)
+change_out(link(wrac1,y,wrbc1)) change_out(link(wrbc1,b,wrcc1)) optimal_conf_in(conf_wrac1_2,link(wrac1,y,wrbc1)) optimal_conf_in(conf_wrac1_3,link(wrac1,y,wrbc1)) optimal_conf_in(conf_wrac1_4,link(wrac1,y,wrbc1)) optimal_conf_in(conf_wrbc1_2,link(wrbc1,b,wrcc1)) optimal_conf_in(conf_wrbc1_4,link(wrbc1,b,wrcc1)) optimal_conf_out(conf_wrbc1_2,link(wrac1,y,wrbc1)) optimal_conf_out(conf_wrbc1_4,link(wrac1,y,wrbc1)) optimal_conf_out(conf_wrcc1_2,link(wrbc1,b,wrcc1)) optimal_conf_out(conf_wrcc1_3,link(wrbc1,b,wrcc1)) sol(314,inter(wrac1,4),conf_wrac1_1,conf_wrac1_6) sol(364,inter(wrec1,4),conf_wrec1_1,conf_wrec1_4) sol(734,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_5) sol(780,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_4) sol(852,inter(wrfc1,3),conf_wrfc1_1,conf_wrfc1_2)
+Assignment:
+counter(900,link(wrac1,y,wrbc1))=26711320 counter(900,link(wrbc1,b,wrcc1))=17510400
+SATISFIABLE
+
+Models       : 1+
+Calls        : 1
+Time         : 154.858s (Solving: 102.27s 1st Model: 100.43s Unsat: 0.00s)
+CPU Time     : 51.528s

@@ -1,0 +1,4 @@
+Encoding,Horizon,Problem,counter wrac1_y_wrbc1,counter wrbc1_b_wrcc1,counter wrcc1_x_wrdc1,counter wrdc1_b_wrec1,counter wrec1_y_wrfc1,Total
+clingcon,780,./heu_volume/result/Instancesv2/sippv2/fixlen4/26eve/p01[count=350]_NotOpt_quickrate_bound_780.txt,28090860,,,,,28090860
+clingcon,780,./heu_volume/result/Instancesv2_round/sippv2/fixlen4/26eve/p02[count=350]_NotOpt_quickrate_bound_780.txt,23371880,15206400,,,,38578280
+clingcon,780,./heu_volume/result/Instancesv2_round/sippv2/fixlen4/26eve/p01[count=350]_NotOpt_quickrate_bound_780.txt,23371880,,,,,23371880

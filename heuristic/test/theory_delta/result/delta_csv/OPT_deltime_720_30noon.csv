@@ -1,0 +1,11 @@
+Encoding,Horizon,Problem,counter wrac1_y_wrbc1,counter wrbc1_b_wrcc1,counter wrcc1_x_wrdc1,counter wrdc1_b_wrec1,counter wrec1_y_wrfc1,Total
+clingcon,720,./theory_delta/result/Instancesv2/sippv2/fixlen4/30noon/p03[count=350]_OPT_deltime_720.txt,24791460,18547200,18522840,,,61861500
+clingcon,720,./theory_delta/result/Instancesv2/sippv2/fixlen4/30noon/p04[count=350]_OPT_deltime_720.txt,24791460,18547200,18522840,18928900,,80790400
+clingcon,720,./theory_delta/result/Instancesv2/sippv2/fixlen4/30noon/p05[count=350]_OPT_deltime_720.txt,24791460,18547200,18522840,18928900,19245900,100036300
+clingcon,720,./theory_delta/result/Instancesv2/sippv2/fixlen4/30noon/p02[count=350]_OPT_deltime_720.txt,24791460,18547200,,,,43338660
+clingcon,720,./theory_delta/result/Instancesv2/sippv2/fixlen4/30noon/p01[count=350]_OPT_deltime_720.txt,24791460,,,,,24791460
+clingcon,720,./theory_delta/result/Instancesv2_round/sippv2/fixlen4/30noon/p03[count=350]_OPT_deltime_720.txt,22668520,14803200,15646000,,,53117720
+clingcon,720,./theory_delta/result/Instancesv2_round/sippv2/fixlen4/30noon/p04[count=350]_OPT_deltime_720.txt,22668520,14803200,15646000,16610800,,69728520
+clingcon,720,./theory_delta/result/Instancesv2_round/sippv2/fixlen4/30noon/p05[count=350]_OPT_deltime_720.txt,22668520,14803200,15646000,16610800,17350700,87079220
+clingcon,720,./theory_delta/result/Instancesv2_round/sippv2/fixlen4/30noon/p02[count=350]_OPT_deltime_720.txt,22668520,14803200,,,,37471720
+clingcon,720,./theory_delta/result/Instancesv2_round/sippv2/fixlen4/30noon/p01[count=350]_OPT_deltime_720.txt,22668520,,,,,22668520

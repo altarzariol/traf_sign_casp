@@ -1,0 +1,14 @@
+pddl_solution(link(wrac1,y,wrbc1),17868499).
+clingcon version 5.2.1
+Reading from .../random/fixlen4/muse/p01[count=350].lp ...
+Solving...
+Answer: 1 (Time: 16.596s)
+
+Assignment:
+counter(780,link(wrac1,y,wrbc1))=17782600
+SATISFIABLE
+
+Models       : 1+
+Calls        : 1
+Time         : 16.851s (Solving: 6.67s 1st Model: 6.39s Unsat: 0.00s)
+CPU Time     : 16.849s

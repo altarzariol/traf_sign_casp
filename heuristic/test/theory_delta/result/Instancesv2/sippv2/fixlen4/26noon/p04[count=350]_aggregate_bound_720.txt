@@ -1,0 +1,35 @@
+clingcon version 5.2.1
+Reading from ...ippv2/fixlen4/26noon/p04[count=350].lp ...
+Solving...
+Answer: 1 (Time: 17.067s)
+sol(571,inter(wrbc1,5),conf_wrbc1_1,conf_wrbc1_5) sol(704,inter(wrec1,4),conf_wrec1_1,conf_wrec1_3)
+Assignment:
+counter(720,link(wrac1,y,wrbc1))=25052800 counter(720,link(wrbc1,b,wrcc1))=17395200 counter(720,link(wrcc1,x,wrdc1))=17466080 counter(720,link(wrdc1,b,wrec1))=17410300
+Cost: -77324380
+Answer: 2 (Time: 17.976s)
+sol(571,inter(wrbc1,5),conf_wrbc1_1,conf_wrbc1_5) sol(642,inter(wrac1,4),conf_wrac1_1,conf_wrac1_5) sol(704,inter(wrec1,4),conf_wrec1_1,conf_wrec1_3)
+Assignment:
+counter(720,link(wrac1,y,wrbc1))=25152480 counter(720,link(wrbc1,b,wrcc1))=17395200 counter(720,link(wrcc1,x,wrdc1))=17466080 counter(720,link(wrdc1,b,wrec1))=17410300
+Cost: -77424060
+Answer: 3 (Time: 35.716s)
+sol(571,inter(wrbc1,5),conf_wrbc1_1,conf_wrbc1_5) sol(642,inter(wrac1,4),conf_wrac1_1,conf_wrac1_6) sol(644,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_5) sol(704,inter(wrec1,4),conf_wrec1_1,conf_wrec1_3) sol(714,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_3)
+Assignment:
+counter(720,link(wrac1,y,wrbc1))=25202800 counter(720,link(wrbc1,b,wrcc1))=17395200 counter(720,link(wrcc1,x,wrdc1))=17466080 counter(720,link(wrdc1,b,wrec1))=17370500
+Cost: -77434580
+Answer: 4 (Time: 39.038s)
+sol(571,inter(wrbc1,5),conf_wrbc1_1,conf_wrbc1_5) sol(642,inter(wrac1,4),conf_wrac1_1,conf_wrac1_6) sol(704,inter(wrec1,4),conf_wrec1_1,conf_wrec1_3) sol(714,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_3)
+Assignment:
+counter(720,link(wrac1,y,wrbc1))=25202800 counter(720,link(wrbc1,b,wrcc1))=17395200 counter(720,link(wrcc1,x,wrdc1))=17466080 counter(720,link(wrdc1,b,wrec1))=17410300
+Cost: -77474380
+Answer: 5 (Time: 344.735s)
+sol(571,inter(wrbc1,5),conf_wrbc1_1,conf_wrbc1_5) sol(642,inter(wrac1,4),conf_wrac1_1,conf_wrac1_6) sol(644,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_4) sol(704,inter(wrec1,4),conf_wrec1_1,conf_wrec1_3) sol(714,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_3)
+Assignment:
+counter(720,link(wrac1,y,wrbc1))=25202800 counter(720,link(wrbc1,b,wrcc1))=17395200 counter(720,link(wrcc1,x,wrdc1))=17466080 counter(720,link(wrdc1,b,wrec1))=17416100
+Cost: -77480180
+SATISFIABLE
+
+TIME LIMIT   : 1
+Models       : 5+
+Calls        : 1
+Time         : 600.630s (Solving: 591.39s 1st Model: 7.81s Unsat: 0.00s)
+CPU Time     : 600.582s

@@ -1,0 +1,16 @@
+clingcon version 5.2.1
+Reading from ...nd/sipp/fixlen4/muse/p04[count=350].lp ...
+Solving...
+Answer: 1 (Time: 23.004s)
+
+Assignment:
+counter(600,link(wrac1,y,wrbc1))=0 counter(600,link(wrbc1,b,wrcc1))=61300 counter(600,link(wrcc1,x,wrdc1))=0 counter(600,link(wrdc1,b,wrec1))=82100
+Optimization: -143400
+OPTIMUM FOUND
+
+Models       : 1
+  Optimum    : yes
+Optimization : -143400
+Calls        : 1
+Time         : 23.176s (Solving: 15.49s 1st Model: 15.30s Unsat: 0.19s)
+CPU Time     : 15.725s

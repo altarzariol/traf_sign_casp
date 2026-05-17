@@ -1,0 +1,15 @@
+Encoding,Horizon,Problem,counter wrac1_y_wrbc1,counter wrbc1_b_wrcc1,counter wrcc1_x_wrdc1,counter wrdc1_b_wrec1,counter wrec1_y_wrfc1,Total
+clingcon,720,./heu_105/result/Instancesv2_round/random/fixlen4/26noon/p04[count=350]_OPT_xdeltime_720.txt,15924320,11174400,11907240,10914400,,49920360
+clingcon,720,./heu_105/result/Instancesv2_round/random/fixlen4/26noon/p05[count=350]_OPT_xdeltime_720.txt,15924320,11174400,11907240,10914400,13183400,63103760
+clingcon,720,./heu_105/result/Instancesv2_round/random/fixlen4/26noon/p02[count=350]_OPT_xdeltime_720.txt,15924320,11174400,,,,27098720
+clingcon,720,./heu_105/result/Instancesv2_round/random/fixlen4/26noon/p01[count=350]_OPT_xdeltime_720.txt,15924320,,,,,15924320
+clingcon,720,./heu_105/result/Instancesv2_round/sipp/fixlen4/26noon/p03[count=350]_OPT_xdeltime_720.txt,22944460,14457600,14670620,,,52072680
+clingcon,720,./heu_105/result/Instancesv2_round/sipp/fixlen4/26noon/p04[count=350]_OPT_xdeltime_720.txt,65600,57600,0,0,,123200
+clingcon,720,./heu_105/result/Instancesv2_round/sipp/fixlen4/26noon/p05[count=350]_OPT_xdeltime_720.txt,22813260,14342400,14581220,14846000,17020900,83603780
+clingcon,720,./heu_105/result/Instancesv2_round/sipp/fixlen4/26noon/p02[count=350]_OPT_xdeltime_720.txt,22730620,14284800,,,,37015420
+clingcon,720,./heu_105/result/Instancesv2_round/sipp/fixlen4/26noon/p01[count=350]_OPT_xdeltime_720.txt,22718840,,,,,22718840
+clingcon,720,./heu_105/result/Instancesv2_round/sippv2/fixlen4/26noon/p03[count=350]_OPT_xdeltime_720.txt,22571400,14054400,14339380,,,50965180
+clingcon,720,./heu_105/result/Instancesv2_round/sippv2/fixlen4/26noon/p04[count=350]_OPT_xdeltime_720.txt,65600,57600,0,0,,123200
+clingcon,720,./heu_105/result/Instancesv2_round/sippv2/fixlen4/26noon/p05[count=350]_OPT_xdeltime_720.txt,22563440,14054400,14339380,14599800,16773700,82330720
+clingcon,720,./heu_105/result/Instancesv2_round/sippv2/fixlen4/26noon/p02[count=350]_OPT_xdeltime_720.txt,22571400,14054400,,,,36625800
+clingcon,720,./heu_105/result/Instancesv2_round/sippv2/fixlen4/26noon/p01[count=350]_OPT_xdeltime_720.txt,22571400,,,,,22571400

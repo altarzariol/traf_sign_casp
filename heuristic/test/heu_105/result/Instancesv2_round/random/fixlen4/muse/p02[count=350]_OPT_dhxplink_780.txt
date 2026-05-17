@@ -1,0 +1,15 @@
+clingcon version 5.2.1
+Reading from .../random/fixlen4/muse/p02[count=350].lp ...
+Solving...
+Answer: 3 (Time: 149.945s)
+sol(372,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_3) sol(702,inter(wrac1,4),conf_wrac1_1,conf_wrac1_2)
+Assignment:
+counter(780,link(wrac1,y,wrbc1))=17969700 counter(780,link(wrbc1,b,wrcc1))=11367000
+Cost: -29336700
+SATISFIABLE
+
+TIME LIMIT   : 1
+Models       : 3+
+Calls        : 1
+Time         : 601.402s (Solving: 590.20s 1st Model: 11.12s Unsat: 0.00s)
+CPU Time     : 385.825s

@@ -1,0 +1,9 @@
+tag,imprv_test,imprv_reference
+PDDL_TEST70,./result/improve/result_clingcon_asp_bound_imprv.csv,./result/improve/result_pddl_asp_bound_imprv.csv
+PDDL_DHXplinkmin,./result/improve/result_clingcon_pddl-bnd-min_dhxplink_imprv.csv,./result/improve/result_pddl_pddl-bnd-min_dhxplink_imprv.csv
+PDDL_DHXplinkComb,./result/improve/result_clingcon_pddl-bnd_dhxplink_imprv.csv,./result/improve/result_pddl_pddl-bnd_dhxplink_imprv.csv
+CAFE_DHXplink,./result/improve/result_clingcon_cafe-bnd_dhxplink_imprv.csv,./result/improve/result_pddl_cafe-bnd_dhxplink_imprv.csv
+PDDL_ClingconComb,./result/improve/result_clingcon_pddl-bnd_clingcon_imprv.csv,./result/improve/result_pddl_pddl-bnd_clingcon_imprv.csv
+OPTCAFE_DHXplink,./result/improve/result_clingcon_opt-dhxplink_imprv.csv,./result/improve/result_cafe_opt-dhxplink_imprv.csv
+OPTFIRE_DHXplink,./result/improve/result_clingcon_optpddl-dhxplink_imprv.csv,./result/improve/result_pddl_optpddl-dhxplink_imprv.csv
+,,

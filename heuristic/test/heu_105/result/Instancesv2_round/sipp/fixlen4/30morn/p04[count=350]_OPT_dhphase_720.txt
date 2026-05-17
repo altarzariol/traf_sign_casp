@@ -1,0 +1,15 @@
+clingcon version 5.2.1
+Reading from .../sipp/fixlen4/30morn/p04[count=350].lp ...
+Solving...
+Answer: 3 (Time: 49.501s)
+sol(414,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_4)
+Assignment:
+counter(720,link(wrac1,y,wrbc1))=8238260 counter(720,link(wrbc1,b,wrcc1))=6739200 counter(720,link(wrcc1,x,wrdc1))=8004660 counter(720,link(wrdc1,b,wrec1))=7581700
+Cost: -30563820
+SATISFIABLE
+
+TIME LIMIT   : 1
+Models       : 3+
+Calls        : 1
+Time         : 600.926s (Solving: 585.38s 1st Model: 12.67s Unsat: 0.00s)
+CPU Time     : 397.882s

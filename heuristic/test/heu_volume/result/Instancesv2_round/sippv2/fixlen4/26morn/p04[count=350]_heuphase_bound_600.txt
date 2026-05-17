@@ -1,0 +1,40 @@
+clingcon version 5.2.1
+Reading from ...ippv2/fixlen4/26morn/p04[count=350].lp ...
+Solving...
+Answer: 1 (Time: 19.125s)
+
+Assignment:
+counter(600,link(wrac1,y,wrbc1))=16102980 counter(600,link(wrbc1,b,wrcc1))=13305600 counter(600,link(wrcc1,x,wrdc1))=12564000 counter(600,link(wrdc1,b,wrec1))=11776100
+Cost: -53748680
+Answer: 2 (Time: 23.153s)
+sol(362,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_2)
+Assignment:
+counter(600,link(wrac1,y,wrbc1))=16102980 counter(600,link(wrbc1,b,wrcc1))=13478400 counter(600,link(wrcc1,x,wrdc1))=12645380 counter(600,link(wrdc1,b,wrec1))=11776100
+Cost: -54002860
+Answer: 3 (Time: 55.572s)
+sol(321,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_5) sol(362,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_2)
+Assignment:
+counter(600,link(wrac1,y,wrbc1))=16102980 counter(600,link(wrbc1,b,wrcc1))=13478400 counter(600,link(wrcc1,x,wrdc1))=12645380 counter(600,link(wrdc1,b,wrec1))=11885500
+Cost: -54112260
+Answer: 4 (Time: 67.296s)
+sol(321,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_3)
+Assignment:
+counter(600,link(wrac1,y,wrbc1))=16102980 counter(600,link(wrbc1,b,wrcc1))=13305600 counter(600,link(wrcc1,x,wrdc1))=12564000 counter(600,link(wrdc1,b,wrec1))=12197600
+Cost: -54170180
+Answer: 5 (Time: 74.030s)
+sol(321,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_3) sol(362,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_2)
+Assignment:
+counter(600,link(wrac1,y,wrbc1))=16102980 counter(600,link(wrbc1,b,wrcc1))=13478400 counter(600,link(wrcc1,x,wrdc1))=12645380 counter(600,link(wrdc1,b,wrec1))=12263500
+Cost: -54490260
+Answer: 6 (Time: 183.571s)
+sol(321,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_3) sol(353,inter(wrac1,4),conf_wrac1_1,conf_wrac1_4) sol(362,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_2)
+Assignment:
+counter(600,link(wrac1,y,wrbc1))=16343580 counter(600,link(wrbc1,b,wrcc1))=13478400 counter(600,link(wrcc1,x,wrdc1))=12645380 counter(600,link(wrdc1,b,wrec1))=12263500
+Cost: -54730860
+SATISFIABLE
+
+TIME LIMIT   : 1
+Models       : 6+
+Calls        : 1
+Time         : 600.983s (Solving: 587.52s 1st Model: 5.65s Unsat: 0.00s)
+CPU Time     : 600.838s

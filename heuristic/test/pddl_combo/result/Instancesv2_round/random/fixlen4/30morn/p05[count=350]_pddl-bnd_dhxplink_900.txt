@@ -1,0 +1,14 @@
+pddl_solution(link(wrac1,y,wrbc1),9807460). pddl_solution(link(wrbc1,b,wrcc1),8063999). pddl_solution(link(wrcc1,x,wrdc1),9241339). pddl_solution(link(wrdc1,b,wrec1),8648499). pddl_solution(link(wrec1,y,wrfc1),8593100).
+clingcon version 5.2.1
+Reading from ...andom/fixlen4/30morn/p05[count=350].lp ...
+Solving...
+Answer: 1 (Time: 27.277s)
+
+Assignment:
+counter(900,link(wrac1,y,wrbc1))=9741860 counter(900,link(wrbc1,b,wrcc1))=8006400 counter(900,link(wrcc1,x,wrdc1))=9464840 counter(900,link(wrdc1,b,wrec1))=8841200 counter(900,link(wrec1,y,wrfc1))=8593100
+SATISFIABLE
+
+Models       : 1+
+Calls        : 1
+Time         : 27.593s (Solving: 17.50s 1st Model: 17.15s Unsat: 0.00s)
+CPU Time     : 26.207s

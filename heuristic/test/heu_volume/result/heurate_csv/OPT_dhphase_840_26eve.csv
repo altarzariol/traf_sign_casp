@@ -1,0 +1,11 @@
+Encoding,Horizon,Problem,counter wrac1_y_wrbc1,counter wrbc1_b_wrcc1,counter wrcc1_x_wrdc1,counter wrdc1_b_wrec1,counter wrec1_y_wrfc1,Total
+clingcon,840,./heu_volume/result/Instancesv2/sippv2/fixlen4/26eve/p03[count=350]_OPT_dhphase_840.txt,29473420,20102400,21126820,,,70702640
+clingcon,840,./heu_volume/result/Instancesv2/sippv2/fixlen4/26eve/p04[count=350]_OPT_dhphase_840.txt,29473420,20102400,21126820,20502600,,91205240
+clingcon,840,./heu_volume/result/Instancesv2/sippv2/fixlen4/26eve/p05[count=350]_OPT_dhphase_840.txt,29473420,20102400,21126820,20464900,23024300,114191840
+clingcon,840,./heu_volume/result/Instancesv2/sippv2/fixlen4/26eve/p02[count=350]_OPT_dhphase_840.txt,29473420,20102400,,,,49575820
+clingcon,840,./heu_volume/result/Instancesv2/sippv2/fixlen4/26eve/p01[count=350]_OPT_dhphase_840.txt,29072320,,,,,29072320
+clingcon,840,./heu_volume/result/Instancesv2_round/sippv2/fixlen4/26eve/p03[count=350]_OPT_dhphase_840.txt,25756580,16876800,17612740,,,60246120
+clingcon,840,./heu_volume/result/Instancesv2_round/sippv2/fixlen4/26eve/p04[count=350]_OPT_dhphase_840.txt,25756580,16876800,17612740,17210500,,77456620
+clingcon,840,./heu_volume/result/Instancesv2_round/sippv2/fixlen4/26eve/p05[count=350]_OPT_dhphase_840.txt,25756580,16876800,17612740,17195200,21211500,98652820
+clingcon,840,./heu_volume/result/Instancesv2_round/sippv2/fixlen4/26eve/p02[count=350]_OPT_dhphase_840.txt,25756580,16876800,,,,42633380
+clingcon,840,./heu_volume/result/Instancesv2_round/sippv2/fixlen4/26eve/p01[count=350]_OPT_dhphase_840.txt,25067000,,,,,25067000

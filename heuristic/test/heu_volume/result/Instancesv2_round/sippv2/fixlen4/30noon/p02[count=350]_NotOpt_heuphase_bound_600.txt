@@ -1,0 +1,13 @@
+clingcon version 5.2.1
+Reading from ...ippv2/fixlen4/30noon/p02[count=350].lp ...
+Solving...
+Answer: 1 (Time: 81.952s)
+
+Assignment:
+counter(600,link(wrac1,y,wrbc1))=20339820 counter(600,link(wrbc1,b,wrcc1))=12960000
+SATISFIABLE
+
+Models       : 1+
+Calls        : 1
+Time         : 82.741s (Solving: 38.70s 1st Model: 37.88s Unsat: 0.00s)
+CPU Time     : 27.383s

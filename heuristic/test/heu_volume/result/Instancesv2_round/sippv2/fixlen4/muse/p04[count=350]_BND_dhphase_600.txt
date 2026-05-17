@@ -1,0 +1,13 @@
+clingcon version 5.2.1
+Reading from .../sippv2/fixlen4/muse/p04[count=350].lp ...
+Solving...
+Answer: 1 (Time: 31.949s)
+
+Assignment:
+counter(600,link(wrac1,y,wrbc1))=16990200 counter(600,link(wrbc1,b,wrcc1))=11674000 counter(600,link(wrcc1,x,wrdc1))=13878000 counter(600,link(wrdc1,b,wrec1))=24941700
+SATISFIABLE
+
+Models       : 1+
+Calls        : 1
+Time         : 32.209s (Solving: 10.08s 1st Model: 9.76s Unsat: 0.00s)
+CPU Time     : 12.664s

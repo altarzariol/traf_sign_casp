@@ -1,0 +1,16 @@
+clingcon version 5.2.1
+Reading from .../sipp/fixlen4/26morn/p04[count=350].lp ...
+Solving...
+Answer: 1 (Time: 24.901s)
+
+Assignment:
+counter(780,link(wrac1,y,wrbc1))=65600 counter(780,link(wrbc1,b,wrcc1))=0 counter(780,link(wrcc1,x,wrdc1))=0 counter(780,link(wrdc1,b,wrec1))=0
+Optimization: -65600
+OPTIMUM FOUND
+
+Models       : 1
+  Optimum    : yes
+Optimization : -65600
+Calls        : 1
+Time         : 25.051s (Solving: 18.86s 1st Model: 18.68s Unsat: 0.18s)
+CPU Time     : 19.058s

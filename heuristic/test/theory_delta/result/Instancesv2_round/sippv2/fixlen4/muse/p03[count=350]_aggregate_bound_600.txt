@@ -1,0 +1,30 @@
+clingcon version 5.2.1
+Reading from .../sippv2/fixlen4/muse/p03[count=350].lp ...
+Solving...
+Answer: 1 (Time: 10.129s)
+sol(417,inter(wrbc1,5),conf_wrbc1_1,conf_wrbc1_6)
+Assignment:
+counter(600,link(wrac1,y,wrbc1))=16986200 counter(600,link(wrbc1,b,wrcc1))=11606900 counter(600,link(wrcc1,x,wrdc1))=13878000
+Cost: -42471100
+Answer: 2 (Time: 20.646s)
+sol(520,inter(wrac1,4),conf_wrac1_1,conf_wrac1_6) sol(525,inter(wrbc1,5),conf_wrbc1_1,conf_wrbc1_6) sol(560,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_6)
+Assignment:
+counter(600,link(wrac1,y,wrbc1))=16998500 counter(600,link(wrbc1,b,wrcc1))=11606900 counter(600,link(wrcc1,x,wrdc1))=13878000
+Cost: -42483400
+Answer: 3 (Time: 22.033s)
+sol(520,inter(wrac1,4),conf_wrac1_1,conf_wrac1_6) sol(560,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_6)
+Assignment:
+counter(600,link(wrac1,y,wrbc1))=17029200 counter(600,link(wrbc1,b,wrcc1))=11674000 counter(600,link(wrcc1,x,wrdc1))=13878000
+Cost: -42581200
+Answer: 4 (Time: 478.079s)
+sol(338,inter(wrac1,4),conf_wrac1_1,conf_wrac1_6) sol(560,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_6) sol(580,inter(wrec1,4),conf_wrec1_1,conf_wrec1_3) sol(584,inter(wrfc1,3),conf_wrfc1_1,conf_wrfc1_5) sol(590,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_6)
+Assignment:
+counter(600,link(wrac1,y,wrbc1))=17042500 counter(600,link(wrbc1,b,wrcc1))=11674000 counter(600,link(wrcc1,x,wrdc1))=13878000
+Cost: -42594500
+SATISFIABLE
+
+TIME LIMIT   : 1
+Models       : 4+
+Calls        : 1
+Time         : 600.683s (Solving: 592.88s 1st Model: 2.31s Unsat: 0.00s)
+CPU Time     : 600.631s

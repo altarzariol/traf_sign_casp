@@ -1,0 +1,10 @@
+tag,figure,data,names,dir_out,script_plot,script_get
+tag_,name_plot,data_aggr,name_aggr,place,py_plot,get
+PDDL_TEST70,bnd_clingcon70,./parameters/histogr_data.csv,./parameters/aggregations.csv,./plot/all_instances,./py/inst6.py,./sh/get0.sh
+PDDL_DHXplinkComb,bnd_pddl_hlink,./parameters/histogr_data.csv,./parameters/aggregations.csv,./plot/peer_instances,./py/inst6.py,./sh/get0.sh
+PDDL_DHXplinkmin,bnd_pddl_mhlink,./parameters/histogr_data.csv,./parameters/aggregations.csv,./plot/peer_instances,./py/inst6.py,./sh/get0.sh
+CAFE_DHXplink,bnd_cafe_hlink,./parameters/histogr_data.csv,./parameters/aggregations.csv,./plot/peer_instances,./py/inst6.py,./sh/get0.sh
+PDDL_ClingconComb,bnd_pddl_clingcon,./parameters/histogr_data.csv,./parameters/aggregations.csv,./plot/peer_instances,./py/inst6.py,./sh/get0.sh
+OPTCAFE_DHXplink,opt_hlink_cafe,./parameters/histogr_data.csv,./parameters/aggregations.csv,./plot/all_instances,./py/inst6.py,./sh/get0.sh
+OPTFIRE_DHXplink,opt_hlink_pddl+,./parameters/histogr_data.csv,./parameters/aggregations.csv,./plot/all_instances,./py/inst6.py,./sh/get0.sh
+,,,,,,

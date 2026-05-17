@@ -1,0 +1,29 @@
+clingcon version 5.2.1
+Reading from ...ippv2/fixlen4/30morn/p03[count=350].lp ...
+Solving...
+Answer: 1 (Time: 102.257s)
+sol(328,inter(wrec1,4),conf_wrec1_1,conf_wrec1_2) sol(447,inter(wrfc1,3),conf_wrfc1_1,conf_wrfc1_4) sol(474,inter(wrac1,4),conf_wrac1_1,conf_wrac1_2) sol(497,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_3) sol(524,inter(wrbc1,5),conf_wrbc1_1,conf_wrbc1_4) sol(592,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_2)
+Assignment:
+counter(600,link(wrac1,y,wrbc1))=7120300 counter(600,link(wrbc1,b,wrcc1))=5760000 counter(600,link(wrcc1,x,wrdc1))=6389740
+Cost: -19270040
+Answer: 2 (Time: 105.062s)
+sol(328,inter(wrec1,4),conf_wrec1_1,conf_wrec1_2) sol(447,inter(wrfc1,3),conf_wrfc1_1,conf_wrfc1_4) sol(474,inter(wrac1,4),conf_wrac1_1,conf_wrac1_2) sol(497,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_3) sol(592,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_3)
+Assignment:
+counter(600,link(wrac1,y,wrbc1))=7120300 counter(600,link(wrbc1,b,wrcc1))=5875200 counter(600,link(wrcc1,x,wrdc1))=6389740
+Cost: -19385240
+Answer: 3 (Time: 111.375s)
+sol(328,inter(wrec1,4),conf_wrec1_1,conf_wrec1_2) sol(447,inter(wrfc1,3),conf_wrfc1_1,conf_wrfc1_4) sol(497,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_3) sol(585,inter(wrac1,4),conf_wrac1_1,conf_wrac1_5) sol(592,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_3)
+Assignment:
+counter(600,link(wrac1,y,wrbc1))=7170300 counter(600,link(wrbc1,b,wrcc1))=5875200 counter(600,link(wrcc1,x,wrdc1))=6389740
+Cost: -19435240
+Answer: 4 (Time: 149.732s)
+sol(328,inter(wrec1,4),conf_wrec1_1,conf_wrec1_2) sol(447,inter(wrfc1,3),conf_wrfc1_1,conf_wrfc1_4) sol(474,inter(wrac1,4),conf_wrac1_1,conf_wrac1_3) sol(592,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_6)
+Assignment:
+counter(600,link(wrac1,y,wrbc1))=7120300 counter(600,link(wrbc1,b,wrcc1))=5875200 counter(600,link(wrcc1,x,wrdc1))=6479140
+Cost: -19474640
+SATISFIABLE
+
+Models       : 4
+Calls        : 1
+Time         : 331.902s (Solving: 323.57s 1st Model: 93.91s Unsat: 182.19s)
+CPU Time     : 331.887s

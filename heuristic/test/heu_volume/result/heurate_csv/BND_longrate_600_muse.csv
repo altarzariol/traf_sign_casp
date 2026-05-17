@@ -1,0 +1,9 @@
+Encoding,Horizon,Problem,counter wrac1_y_wrbc1,counter wrbc1_b_wrcc1,counter wrcc1_x_wrdc1,counter wrdc1_b_wrec1,counter wrec1_y_wrfc1,Total
+clingcon,600,./heu_volume/result/Instancesv2/sippv2/fixlen4/muse/p04[count=350]_BND_longrate_600.txt,19393100,14337900,16680000,20403300,,70814300
+clingcon,600,./heu_volume/result/Instancesv2/sippv2/fixlen4/muse/p05[count=350]_BND_longrate_600.txt,19393100,14337900,16680000,20784200,22765400,93960600
+clingcon,600,./heu_volume/result/Instancesv2/sippv2/fixlen4/muse/p02[count=350]_BND_longrate_600.txt,19336500,14337900,,,,33674400
+clingcon,600,./heu_volume/result/Instancesv2/sippv2/fixlen4/muse/p01[count=350]_BND_longrate_600.txt,19400900,,,,,19400900
+clingcon,600,./heu_volume/result/Instancesv2_round/sippv2/fixlen4/muse/p03[count=350]_BND_longrate_600.txt,17171500,11785500,13971400,,,42928400
+clingcon,600,./heu_volume/result/Instancesv2_round/sippv2/fixlen4/muse/p04[count=350]_BND_longrate_600.txt,17171500,11785500,13971400,24941700,,67870100
+clingcon,600,./heu_volume/result/Instancesv2_round/sippv2/fixlen4/muse/p02[count=350]_BND_longrate_600.txt,17171500,11785500,,,,28957000
+clingcon,600,./heu_volume/result/Instancesv2_round/sippv2/fixlen4/muse/p01[count=350]_BND_longrate_600.txt,17171500,,,,,17171500

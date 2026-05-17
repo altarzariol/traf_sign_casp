@@ -1,0 +1,15 @@
+clingcon version 5.2.1
+Reading from .../sipp/fixlen4/26noon/p01[count=350].lp ...
+Solving...
+Answer: 1 (Time: 82.137s)
+
+Assignment:
+counter(900,link(wrac1,y,wrbc1))=27643860
+Cost: -27643860
+SATISFIABLE
+
+TIME LIMIT   : 1
+Models       : 1+
+Calls        : 1
+Time         : 603.680s (Solving: 581.89s 1st Model: 60.29s Unsat: 0.00s)
+CPU Time     : 402.364s

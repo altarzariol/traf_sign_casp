@@ -1,0 +1,17 @@
+Encoding,Horizon,Problem,counter wrac1_y_wrbc1,counter wrbc1_b_wrcc1,counter wrcc1_x_wrdc1,counter wrdc1_b_wrec1,counter wrec1_y_wrfc1,Total
+clingcon,600,./pddl_70/result/Instancesv2/sippv2/fixlen4/30eve/p03[count=350]_asp_bound_600.txt,13996680,12211200,13091260,,,39299140
+clingcon,600,./pddl_70/result/Instancesv2/sippv2/fixlen4/30eve/p04[count=350]_asp_bound_600.txt,14145720,12268800,12867760,13126000,,52408280
+clingcon,600,./pddl_70/result/Instancesv2/sippv2/fixlen4/30eve/p05[count=350]_asp_bound_600.txt,14145720,12268800,12867760,13126000,14384300,66792580
+clingcon,600,./pddl_70/result/Instancesv2/sippv2/fixlen4/30eve/p02[count=350]_asp_bound_600.txt,14145720,12268800,,,,26414520
+clingcon,600,./pddl_70/result/Instancesv2/sippv2/fixlen4/30eve/p01[count=350]_asp_bound_600.txt,14145720,,,,,14145720
+clingcon,600,./pddl_70/result/Instancesv2_round/sippv2/fixlen4/30eve/p01[count=350]_asp_bound_600.txt,14080120,,,,,14080120
+pddl,600,./pddl_70/result/Instancesv2/sippv2/fixlen4/30eve/p03[count=350]_asp_bound_600.txt,13996680,12211199,13091259,,,39299138
+pddl,600,./pddl_70/result/Instancesv2/sippv2/fixlen4/30eve/p04[count=350]_asp_bound_600.txt,13996680,12211199,13001859,13180299,,52390037
+pddl,600,./pddl_70/result/Instancesv2/sippv2/fixlen4/30eve/p05[count=350]_asp_bound_600.txt,13996680,12211199,13046559,13263599,14054699,66572736
+pddl,600,./pddl_70/result/Instancesv2/sippv2/fixlen4/30eve/p02[count=350]_asp_bound_600.txt,13996680,12211199,,,,26207879
+pddl,600,./pddl_70/result/Instancesv2/sippv2/fixlen4/30eve/p01[count=350]_asp_bound_600.txt,14067220,,,,,14067220
+pddl,600,./pddl_70/result/Instancesv2_round/sippv2/fixlen4/30eve/p03[count=350]_asp_bound_600.txt,14080120,12268799,11992099,,,38341018
+pddl,600,./pddl_70/result/Instancesv2_round/sippv2/fixlen4/30eve/p04[count=350]_asp_bound_600.txt,14080120,12268799,12036799,12386599,,50772317
+pddl,600,./pddl_70/result/Instancesv2_round/sippv2/fixlen4/30eve/p05[count=350]_asp_bound_600.txt,14080120,12268799,11992099,12386599,13148299,63875916
+pddl,600,./pddl_70/result/Instancesv2_round/sippv2/fixlen4/30eve/p02[count=350]_asp_bound_600.txt,14080120,12268799,,,,26348919
+pddl,600,./pddl_70/result/Instancesv2_round/sippv2/fixlen4/30eve/p01[count=350]_asp_bound_600.txt,14023920,,,,,14023920

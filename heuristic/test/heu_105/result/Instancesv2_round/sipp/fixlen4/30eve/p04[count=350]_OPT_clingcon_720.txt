@@ -1,0 +1,15 @@
+clingcon version 5.2.1
+Reading from ...d/sipp/fixlen4/30eve/p04[count=350].lp ...
+Solving...
+Answer: 2 (Time: 187.887s)
+sol(300,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_5) sol(357,inter(wrbc1,5),conf_wrbc1_1,conf_wrbc1_2) sol(395,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_4) sol(632,inter(wrac1,4),conf_wrac1_1,conf_wrac1_6) sol(687,inter(wrfc1,3),conf_wrfc1_1,conf_wrfc1_2) sol(692,inter(wrcc1,6),conf_wrcc1_5,conf_wrcc1_2)
+Assignment:
+counter(720,link(wrac1,y,wrbc1))=16117900 counter(720,link(wrbc1,b,wrcc1))=13939200 counter(720,link(wrcc1,x,wrdc1))=14856320 counter(720,link(wrdc1,b,wrec1))=14679400
+Cost: -59592820
+SATISFIABLE
+
+TIME LIMIT   : 1
+Models       : 2+
+Calls        : 1
+Time         : 604.219s (Solving: 575.60s 1st Model: 13.06s Unsat: 0.00s)
+CPU Time     : 398.689s

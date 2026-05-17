@@ -1,0 +1,40 @@
+clingcon version 5.2.1
+Reading from ...sippv2/fixlen4/26eve/p04[count=350].lp ...
+Solving...
+Answer: 1 (Time: 11.111s)
+sol(389,inter(wrbc1,5),conf_wrbc1_1,conf_wrbc1_6)
+Assignment:
+counter(600,link(wrac1,y,wrbc1))=19434540 counter(600,link(wrbc1,b,wrcc1))=12153600 counter(600,link(wrcc1,x,wrdc1))=12409260 counter(600,link(wrdc1,b,wrec1))=13423600
+Cost: -57421000
+Answer: 2 (Time: 14.871s)
+sol(389,inter(wrbc1,5),conf_wrbc1_1,conf_wrbc1_6) sol(538,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_6) sol(552,inter(wrec1,4),conf_wrec1_1,conf_wrec1_4) sol(561,inter(wrfc1,3),conf_wrfc1_1,conf_wrfc1_6) sol(582,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_4)
+Assignment:
+counter(600,link(wrac1,y,wrbc1))=19434540 counter(600,link(wrbc1,b,wrcc1))=12153600 counter(600,link(wrcc1,x,wrdc1))=12453960 counter(600,link(wrdc1,b,wrec1))=13423600
+Cost: -57465700
+Answer: 3 (Time: 43.495s)
+sol(552,inter(wrec1,4),conf_wrec1_1,conf_wrec1_5) sol(561,inter(wrfc1,3),conf_wrfc1_1,conf_wrfc1_6) sol(582,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_6) sol(587,inter(wrac1,4),conf_wrac1_1,conf_wrac1_4)
+Assignment:
+counter(600,link(wrac1,y,wrbc1))=19578640 counter(600,link(wrbc1,b,wrcc1))=12326400 counter(600,link(wrcc1,x,wrdc1))=12409260 counter(600,link(wrdc1,b,wrec1))=13423600
+Cost: -57737900
+Answer: 4 (Time: 66.690s)
+sol(538,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_6) sol(552,inter(wrec1,4),conf_wrec1_1,conf_wrec1_5) sol(561,inter(wrfc1,3),conf_wrfc1_1,conf_wrfc1_5) sol(582,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_2)
+Assignment:
+counter(600,link(wrac1,y,wrbc1))=19578640 counter(600,link(wrbc1,b,wrcc1))=12326400 counter(600,link(wrcc1,x,wrdc1))=12453960 counter(600,link(wrdc1,b,wrec1))=13423600
+Cost: -57782600
+Answer: 5 (Time: 226.566s)
+sol(483,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_5) sol(538,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_6) sol(552,inter(wrec1,4),conf_wrec1_1,conf_wrec1_4) sol(561,inter(wrfc1,3),conf_wrfc1_1,conf_wrfc1_5)
+Assignment:
+counter(600,link(wrac1,y,wrbc1))=19578640 counter(600,link(wrbc1,b,wrcc1))=12326400 counter(600,link(wrcc1,x,wrdc1))=12453960 counter(600,link(wrdc1,b,wrec1))=13438100
+Cost: -57797100
+Answer: 6 (Time: 322.295s)
+sol(384,inter(wrdc1,4),conf_wrdc1_1,conf_wrdc1_5) sol(538,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_6) sol(552,inter(wrec1,4),conf_wrec1_1,conf_wrec1_4) sol(561,inter(wrfc1,3),conf_wrfc1_1,conf_wrfc1_5)
+Assignment:
+counter(600,link(wrac1,y,wrbc1))=19578640 counter(600,link(wrbc1,b,wrcc1))=12326400 counter(600,link(wrcc1,x,wrdc1))=12453960 counter(600,link(wrdc1,b,wrec1))=13452600
+Cost: -57811600
+SATISFIABLE
+
+TIME LIMIT   : 1
+Models       : 6+
+Calls        : 1
+Time         : 600.852s (Solving: 593.81s 1st Model: 4.05s Unsat: 0.00s)
+CPU Time     : 600.828s

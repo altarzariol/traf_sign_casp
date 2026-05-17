@@ -1,0 +1,7 @@
+Encoding,Horizon,Problem,counter wrac1_y_wrbc1,counter wrbc1_b_wrcc1,counter wrcc1_x_wrdc1,counter wrdc1_b_wrec1,counter wrec1_y_wrfc1,Total
+clingcon,900,./heu_volume/result/Instancesv2/sippv2/fixlen4/muse/p03[count=350]_heurate_bound_900.txt,29026200,20929800,24949800,,,74905800
+clingcon,900,./heu_volume/result/Instancesv2/sippv2/fixlen4/muse/p04[count=350]_heurate_bound_900.txt,29026200,20929800,24949800,33859900,,108765700
+clingcon,900,./heu_volume/result/Instancesv2/sippv2/fixlen4/muse/p05[count=350]_heurate_bound_900.txt,29026200,20929800,24949800,33777800,36102200,144785800
+clingcon,900,./heu_volume/result/Instancesv2/sippv2/fixlen4/muse/p01[count=350]_heurate_bound_900.txt,29026200,,,,,29026200
+clingcon,900,./heu_volume/result/Instancesv2_round/sippv2/fixlen4/muse/p02[count=350]_heurate_bound_900.txt,24293200,16710700,,,,41003900
+clingcon,900,./heu_volume/result/Instancesv2_round/sippv2/fixlen4/muse/p01[count=350]_heurate_bound_900.txt,24293200,,,,,24293200

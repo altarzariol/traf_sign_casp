@@ -1,0 +1,18 @@
+Encoding,Horizon,Problem,counter wrac1_y_wrbc1,counter wrbc1_b_wrcc1,counter wrcc1_x_wrdc1,counter wrdc1_b_wrec1,counter wrec1_y_wrfc1,Total
+clingcon,600,./pddl_70/result/Instancesv2/sippv2/fixlen4/30morn/p04[count=350]_asp_bound_600.txt,7170300,5875200,6389740,6240500,,25675740
+clingcon,600,./pddl_70/result/Instancesv2/sippv2/fixlen4/30morn/p05[count=350]_asp_bound_600.txt,7170300,5875200,6389740,6214400,6250600,31900240
+clingcon,600,./pddl_70/result/Instancesv2/sippv2/fixlen4/30morn/p01[count=350]_asp_bound_600.txt,7170300,,,,,7170300
+clingcon,600,./pddl_70/result/Instancesv2_round/sippv2/fixlen4/30morn/p03[count=350]_asp_bound_600.txt,7041480,5817600,6765680,,,19624760
+clingcon,600,./pddl_70/result/Instancesv2_round/sippv2/fixlen4/30morn/p04[count=350]_asp_bound_600.txt,7041480,5817600,6765680,6283200,,25907960
+clingcon,600,./pddl_70/result/Instancesv2_round/sippv2/fixlen4/30morn/p05[count=350]_asp_bound_600.txt,7041480,5817600,6765680,6283200,6168200,32076160
+clingcon,600,./pddl_70/result/Instancesv2_round/sippv2/fixlen4/30morn/p02[count=350]_asp_bound_600.txt,7041480,5817600,,,,12859080
+pddl,600,./pddl_70/result/Instancesv2/sippv2/fixlen4/30morn/p03[count=350]_asp_bound_600.txt,7070300,5414399,6389739,,,18874438
+pddl,600,./pddl_70/result/Instancesv2/sippv2/fixlen4/30morn/p04[count=350]_asp_bound_600.txt,7070300,5529599,6389739,6214399,,25204037
+pddl,600,./pddl_70/result/Instancesv2/sippv2/fixlen4/30morn/p05[count=350]_asp_bound_600.txt,7070300,5529599,6389739,6214399,6250600,31454637
+pddl,600,./pddl_70/result/Instancesv2/sippv2/fixlen4/30morn/p02[count=350]_asp_bound_600.txt,7170300,5587199,,,,12757499
+pddl,600,./pddl_70/result/Instancesv2/sippv2/fixlen4/30morn/p01[count=350]_asp_bound_600.txt,7070300,,,,,7070300
+pddl,600,./pddl_70/result/Instancesv2_round/sippv2/fixlen4/30morn/p03[count=350]_asp_bound_600.txt,6791480,5587199,6631579,,,19010258
+pddl,600,./pddl_70/result/Instancesv2_round/sippv2/fixlen4/30morn/p04[count=350]_asp_bound_600.txt,6791480,5587199,6631579,6223099,,25233357
+pddl,600,./pddl_70/result/Instancesv2_round/sippv2/fixlen4/30morn/p05[count=350]_asp_bound_600.txt,6791480,5587199,6631579,6223099,6085800,31319157
+pddl,600,./pddl_70/result/Instancesv2_round/sippv2/fixlen4/30morn/p02[count=350]_asp_bound_600.txt,6791480,5587199,,,,12378679
+pddl,600,./pddl_70/result/Instancesv2_round/sippv2/fixlen4/30morn/p01[count=350]_asp_bound_600.txt,7041480,,,,,7041480

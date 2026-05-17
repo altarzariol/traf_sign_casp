@@ -1,0 +1,14 @@
+pddl_solution(link(wrac1,y,wrbc1),25500340).
+clingcon version 5.2.1
+Reading from .../sipp/fixlen4/26noon/p01[count=350].lp ...
+Solving...
+Answer: 1 (Time: 44.602s)
+
+Assignment:
+counter(840,link(wrac1,y,wrbc1))=26240580
+SATISFIABLE
+
+Models       : 1+
+Calls        : 1
+Time         : 45.278s (Solving: 38.61s 1st Model: 37.91s Unsat: 0.00s)
+CPU Time     : 44.719s

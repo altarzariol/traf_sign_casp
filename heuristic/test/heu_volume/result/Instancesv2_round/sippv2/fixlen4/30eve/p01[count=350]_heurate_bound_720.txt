@@ -1,0 +1,15 @@
+clingcon version 5.2.1
+Reading from ...sippv2/fixlen4/30eve/p01[count=350].lp ...
+Solving...
+Answer: 1 (Time: 34.636s)
+change_in(link(wrac1,y,wrbc1)) optimal_conf_in(conf_wrac1_2,link(wrac1,y,wrbc1)) optimal_conf_in(conf_wrac1_3,link(wrac1,y,wrbc1)) optimal_conf_in(conf_wrac1_4,link(wrac1,y,wrbc1)) optimal_conf_out(conf_wrbc1_2,link(wrac1,y,wrbc1)) optimal_conf_out(conf_wrbc1_4,link(wrac1,y,wrbc1)) sol(300,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_4) sol(328,inter(wrec1,4),conf_wrec1_1,conf_wrec1_4) sol(359,inter(wrac1,4),conf_wrac1_1,conf_wrac1_6) sol(692,inter(wrcc1,6),conf_wrcc1_4,conf_wrcc1_1) sol(704,inter(wrec1,4),conf_wrec1_4,conf_wrec1_3)
+Assignment:
+counter(720,link(wrac1,y,wrbc1))=16183500
+Cost: -16183500
+SATISFIABLE
+
+TIME LIMIT   : 1
+Models       : 1+
+Calls        : 1
+Time         : 601.363s (Solving: 579.61s 1st Model: 12.87s Unsat: 0.00s)
+CPU Time     : 484.446s

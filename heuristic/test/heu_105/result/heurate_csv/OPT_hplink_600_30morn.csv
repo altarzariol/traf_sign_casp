@@ -1,0 +1,16 @@
+Encoding,Horizon,Problem,counter wrac1_y_wrbc1,counter wrbc1_b_wrcc1,counter wrcc1_x_wrdc1,counter wrdc1_b_wrec1,counter wrec1_y_wrfc1,Total
+clingcon,600,./heu_105/result/Instancesv2_round/random/fixlen4/30morn/p03[count=350]_OPT_hplink_600.txt,6758520,5587200,6363380,,,18709100
+clingcon,600,./heu_105/result/Instancesv2_round/random/fixlen4/30morn/p04[count=350]_OPT_hplink_600.txt,6758520,5587200,6363380,6272400,,24981500
+clingcon,600,./heu_105/result/Instancesv2_round/random/fixlen4/30morn/p05[count=350]_OPT_hplink_600.txt,6737660,5472000,6408080,6332500,6333000,31283240
+clingcon,600,./heu_105/result/Instancesv2_round/random/fixlen4/30morn/p02[count=350]_OPT_hplink_600.txt,6758520,5587200,,,,12345720
+clingcon,600,./heu_105/result/Instancesv2_round/random/fixlen4/30morn/p01[count=350]_OPT_hplink_600.txt,7033520,,,,,7033520
+clingcon,600,./heu_105/result/Instancesv2_round/sipp/fixlen4/30morn/p03[count=350]_OPT_hplink_600.txt,7033520,5760000,6855080,,,19648600
+clingcon,600,./heu_105/result/Instancesv2_round/sipp/fixlen4/30morn/p04[count=350]_OPT_hplink_600.txt,7033520,5760000,6855080,6589500,,26238100
+clingcon,600,./heu_105/result/Instancesv2_round/sipp/fixlen4/30morn/p05[count=350]_OPT_hplink_600.txt,7033520,5760000,6855080,6589500,6333000,32571100
+clingcon,600,./heu_105/result/Instancesv2_round/sipp/fixlen4/30morn/p02[count=350]_OPT_hplink_600.txt,7033520,5760000,,,,12793520
+clingcon,600,./heu_105/result/Instancesv2_round/sipp/fixlen4/30morn/p01[count=350]_OPT_hplink_600.txt,7033520,,,,,7033520
+clingcon,600,./heu_105/result/Instancesv2_round/sippv2/fixlen4/30morn/p03[count=350]_OPT_hplink_600.txt,7041480,5817600,6855080,,,19714160
+clingcon,600,./heu_105/result/Instancesv2_round/sippv2/fixlen4/30morn/p04[count=350]_OPT_hplink_600.txt,7041480,5817600,6855080,6457700,,26171860
+clingcon,600,./heu_105/result/Instancesv2_round/sippv2/fixlen4/30morn/p05[count=350]_OPT_hplink_600.txt,7004700,5760000,6855080,6457700,6333000,32410480
+clingcon,600,./heu_105/result/Instancesv2_round/sippv2/fixlen4/30morn/p02[count=350]_OPT_hplink_600.txt,7041480,5817600,,,,12859080
+clingcon,600,./heu_105/result/Instancesv2_round/sippv2/fixlen4/30morn/p01[count=350]_OPT_hplink_600.txt,7041480,,,,,7041480

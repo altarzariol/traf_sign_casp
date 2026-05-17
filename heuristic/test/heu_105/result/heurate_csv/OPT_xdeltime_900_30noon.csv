@@ -1,0 +1,16 @@
+Encoding,Horizon,Problem,counter wrac1_y_wrbc1,counter wrbc1_b_wrcc1,counter wrcc1_x_wrdc1,counter wrdc1_b_wrec1,counter wrec1_y_wrfc1,Total
+clingcon,900,./heu_105/result/Instancesv2_round/random/fixlen4/30noon/p03[count=350]_OPT_xdeltime_900.txt,19153400,13651200,14837920,,,47642520
+clingcon,900,./heu_105/result/Instancesv2_round/random/fixlen4/30noon/p04[count=350]_OPT_xdeltime_900.txt,19153400,13651200,14837920,14602700,,62245220
+clingcon,900,./heu_105/result/Instancesv2_round/random/fixlen4/30noon/p05[count=350]_OPT_xdeltime_900.txt,19153400,11635200,12897480,14470900,15373000,73529980
+clingcon,900,./heu_105/result/Instancesv2_round/random/fixlen4/30noon/p02[count=350]_OPT_xdeltime_900.txt,19153400,13651200,,,,32804600
+clingcon,900,./heu_105/result/Instancesv2_round/random/fixlen4/30noon/p01[count=350]_OPT_xdeltime_900.txt,19153400,,,,,19153400
+clingcon,900,./heu_105/result/Instancesv2_round/sipp/fixlen4/30noon/p03[count=350]_OPT_xdeltime_900.txt,0,0,44700,,,44700
+clingcon,900,./heu_105/result/Instancesv2_round/sipp/fixlen4/30noon/p04[count=350]_OPT_xdeltime_900.txt,0,0,44700,0,,44700
+clingcon,900,./heu_105/result/Instancesv2_round/sipp/fixlen4/30noon/p05[count=350]_OPT_xdeltime_900.txt,26951220,18259200,19039720,19396800,20646600,104293540
+clingcon,900,./heu_105/result/Instancesv2_round/sipp/fixlen4/30noon/p02[count=350]_OPT_xdeltime_900.txt,26914440,18259200,,,,45173640
+clingcon,900,./heu_105/result/Instancesv2_round/sipp/fixlen4/30noon/p01[count=350]_OPT_xdeltime_900.txt,26951220,,,,,26951220
+clingcon,900,./heu_105/result/Instancesv2_round/sippv2/fixlen4/30noon/p03[count=350]_OPT_xdeltime_900.txt,0,0,44700,,,44700
+clingcon,900,./heu_105/result/Instancesv2_round/sippv2/fixlen4/30noon/p04[count=350]_OPT_xdeltime_900.txt,0,0,44700,0,,44700
+clingcon,900,./heu_105/result/Instancesv2_round/sippv2/fixlen4/30noon/p05[count=350]_OPT_xdeltime_900.txt,27373660,18547200,19263220,19597400,20976200,105757680
+clingcon,900,./heu_105/result/Instancesv2_round/sippv2/fixlen4/30noon/p02[count=350]_OPT_xdeltime_900.txt,27373660,18547200,,,,45920860
+clingcon,900,./heu_105/result/Instancesv2_round/sippv2/fixlen4/30noon/p01[count=350]_OPT_xdeltime_900.txt,27373660,,,,,27373660

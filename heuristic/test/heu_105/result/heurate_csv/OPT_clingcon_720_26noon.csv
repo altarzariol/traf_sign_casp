@@ -1,0 +1,16 @@
+Encoding,Horizon,Problem,counter wrac1_y_wrbc1,counter wrbc1_b_wrcc1,counter wrcc1_x_wrdc1,counter wrdc1_b_wrec1,counter wrec1_y_wrfc1,Total
+clingcon,720,./heu_105/result/Instancesv2_round/random/fixlen4/26noon/p03[count=350]_OPT_clingcon_720.txt,17394140,11001600,11907240,,,40302980
+clingcon,720,./heu_105/result/Instancesv2_round/random/fixlen4/26noon/p04[count=350]_OPT_clingcon_720.txt,17394140,11001600,11907240,10914400,,51217380
+clingcon,720,./heu_105/result/Instancesv2_round/random/fixlen4/26noon/p05[count=350]_OPT_clingcon_720.txt,17394140,11001600,11907240,10914400,13183400,64400780
+clingcon,720,./heu_105/result/Instancesv2_round/random/fixlen4/26noon/p02[count=350]_OPT_clingcon_720.txt,17394140,11001600,,,,28395740
+clingcon,720,./heu_105/result/Instancesv2_round/random/fixlen4/26noon/p01[count=350]_OPT_clingcon_720.txt,17394140,,,,,17394140
+clingcon,720,./heu_105/result/Instancesv2_round/sipp/fixlen4/26noon/p03[count=350]_OPT_clingcon_720.txt,22944460,14457600,14670620,,,52072680
+clingcon,720,./heu_105/result/Instancesv2_round/sipp/fixlen4/26noon/p04[count=350]_OPT_clingcon_720.txt,22944460,14457600,14670620,14911900,,66984580
+clingcon,720,./heu_105/result/Instancesv2_round/sipp/fixlen4/26noon/p05[count=350]_OPT_clingcon_720.txt,22944460,14457600,14670620,14911900,17020900,84005480
+clingcon,720,./heu_105/result/Instancesv2_round/sipp/fixlen4/26noon/p02[count=350]_OPT_clingcon_720.txt,22944460,14457600,,,,37402060
+clingcon,720,./heu_105/result/Instancesv2_round/sipp/fixlen4/26noon/p01[count=350]_OPT_clingcon_720.txt,22944460,,,,,22944460
+clingcon,720,./heu_105/result/Instancesv2_round/sippv2/fixlen4/26noon/p03[count=350]_OPT_clingcon_720.txt,22586200,14227200,14796700,,,51610100
+clingcon,720,./heu_105/result/Instancesv2_round/sippv2/fixlen4/26noon/p04[count=350]_OPT_clingcon_720.txt,22586200,14227200,14796700,14923500,,66533600
+clingcon,720,./heu_105/result/Instancesv2_round/sippv2/fixlen4/26noon/p05[count=350]_OPT_clingcon_720.txt,22586200,14227200,14796700,14923500,17103300,83636900
+clingcon,720,./heu_105/result/Instancesv2_round/sippv2/fixlen4/26noon/p02[count=350]_OPT_clingcon_720.txt,22586200,14227200,,,,36813400
+clingcon,720,./heu_105/result/Instancesv2_round/sippv2/fixlen4/26noon/p01[count=350]_OPT_clingcon_720.txt,22586200,,,,,22586200

@@ -1,0 +1,11 @@
+Encoding,Horizon,Problem,counter wrac1_y_wrbc1,counter wrbc1_b_wrcc1,counter wrcc1_x_wrdc1,counter wrdc1_b_wrec1,counter wrec1_y_wrfc1,Total
+clingcon,660,./heu_volume/result/Instancesv2/sippv2/fixlen4/26noon/p03[count=350]_NotOpt_heuphase_bound_660.txt,22785400,17049600,16715380,,,56550380
+clingcon,660,./heu_volume/result/Instancesv2/sippv2/fixlen4/26noon/p04[count=350]_NotOpt_heuphase_bound_660.txt,22785400,17049600,16715380,16673800,,73224180
+clingcon,660,./heu_volume/result/Instancesv2/sippv2/fixlen4/26noon/p05[count=350]_NotOpt_heuphase_bound_660.txt,22785400,17049600,16715380,16673800,18492400,91716580
+clingcon,660,./heu_volume/result/Instancesv2/sippv2/fixlen4/26noon/p02[count=350]_NotOpt_heuphase_bound_660.txt,22785400,17049600,,,,39835000
+clingcon,660,./heu_volume/result/Instancesv2/sippv2/fixlen4/26noon/p01[count=350]_NotOpt_heuphase_bound_660.txt,22785400,,,,,22785400
+clingcon,660,./heu_volume/result/Instancesv2_round/sippv2/fixlen4/26noon/p03[count=350]_NotOpt_heuphase_bound_660.txt,21693420,13248000,13232200,,,48173620
+clingcon,660,./heu_volume/result/Instancesv2_round/sippv2/fixlen4/26noon/p04[count=350]_NotOpt_heuphase_bound_660.txt,21693420,13248000,13232200,14427400,,62601020
+clingcon,660,./heu_volume/result/Instancesv2_round/sippv2/fixlen4/26noon/p05[count=350]_NotOpt_heuphase_bound_660.txt,21693420,13248000,13232200,14427400,16432400,79033420
+clingcon,660,./heu_volume/result/Instancesv2_round/sippv2/fixlen4/26noon/p02[count=350]_NotOpt_heuphase_bound_660.txt,21693420,13248000,,,,34941420
+clingcon,660,./heu_volume/result/Instancesv2_round/sippv2/fixlen4/26noon/p01[count=350]_NotOpt_heuphase_bound_660.txt,21693420,,,,,21693420

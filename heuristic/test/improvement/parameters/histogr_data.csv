@@ -1,0 +1,8 @@
+tag,results,results_inst
+PDDL_TEST70,./result/aggregate/results_PDDL_TEST70.txt,./result/aggregate/results_inst_PDDL_TEST70.txt
+PDDL_DHXplinkComb,./result/aggregate/results_PDDL_DHXplinkComb.txt,./result/aggregate/results_inst_PDDL_DHXplinkComb.txt
+PDDL_DHXplinkmin,./result/aggregate/results_PDDL_DHXplinkmin.txt,./result/aggregate/results_inst_PDDL_DHXplinkmin.txt
+CAFE_DHXplink,./result/aggregate/results_CAFE_DHXplink.txt,./result/aggregate/results_inst_CAFE_DHXplink.txt
+PDDL_ClingconComb,./result/aggregate/results_PDDL_ClingconComb.txt,./result/aggregate/results_inst_PDDL_ClingconComb.txt
+OPTCAFE_DHXplink,./result/aggregate/results_OPTCAFE_DHXplink.txt,./result/aggregate/results_inst_OPTCAFE_DHXplink.txt
+OPTFIRE_DHXplink,./result/aggregate/results_OPTFIRE_DHXplink.txt,./result/aggregate/results_inst_OPTFIRE_DHXplink.txt

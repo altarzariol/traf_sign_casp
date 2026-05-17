@@ -1,0 +1,30 @@
+clingcon version 5.2.1
+Reading from ...ippv2/fixlen4/26morn/p02[count=350].lp ...
+Solving...
+Answer: 1 (Time: 34.061s)
+
+Assignment:
+counter(780,link(wrac1,y,wrbc1))=20607160 counter(780,link(wrbc1,b,wrcc1))=15782400
+Cost: -36389560
+Answer: 2 (Time: 44.198s)
+sol(362,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_2)
+Assignment:
+counter(780,link(wrac1,y,wrbc1))=20607160 counter(780,link(wrbc1,b,wrcc1))=15955200
+Cost: -36562360
+Answer: 3 (Time: 91.351s)
+sol(353,inter(wrac1,4),conf_wrac1_1,conf_wrac1_4)
+Assignment:
+counter(780,link(wrac1,y,wrbc1))=20876580 counter(780,link(wrbc1,b,wrcc1))=15782400
+Cost: -36658980
+Answer: 4 (Time: 140.908s)
+sol(353,inter(wrac1,4),conf_wrac1_1,conf_wrac1_4) sol(362,inter(wrcc1,6),conf_wrcc1_1,conf_wrcc1_2)
+Assignment:
+counter(780,link(wrac1,y,wrbc1))=20876580 counter(780,link(wrbc1,b,wrcc1))=15955200
+Cost: -36831780
+SATISFIABLE
+
+TIME LIMIT   : 1
+Models       : 4+
+Calls        : 1
+Time         : 601.561s (Solving: 584.16s 1st Model: 16.64s Unsat: 0.00s)
+CPU Time     : 601.495s

@@ -1,0 +1,9 @@
+clingcon version 5.2.1
+Reading from ../hull/fixed-test-15/p05[count=350].lp ...
+Solving...
+UNSATISFIABLE
+
+Models       : 0
+Calls        : 1
+Time         : 122.957s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 120.875s

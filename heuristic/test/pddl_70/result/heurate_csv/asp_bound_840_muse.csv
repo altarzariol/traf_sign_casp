@@ -1,0 +1,18 @@
+Encoding,Horizon,Problem,counter wrac1_y_wrbc1,counter wrbc1_b_wrcc1,counter wrcc1_x_wrdc1,counter wrdc1_b_wrec1,counter wrec1_y_wrfc1,Total
+clingcon,840,./pddl_70/result/Instancesv2/sippv2/fixlen4/muse/p03[count=350]_asp_bound_840.txt,26534700,19090800,23035000,,,68660500
+clingcon,840,./pddl_70/result/Instancesv2/sippv2/fixlen4/muse/p04[count=350]_asp_bound_840.txt,26534700,19090800,23035000,32300000,,100960500
+clingcon,840,./pddl_70/result/Instancesv2/sippv2/fixlen4/muse/p01[count=350]_asp_bound_840.txt,26534700,,,,,26534700
+clingcon,840,./pddl_70/result/Instancesv2_round/sippv2/fixlen4/muse/p03[count=350]_asp_bound_840.txt,23206700,15763700,19625800,,,58596200
+clingcon,840,./pddl_70/result/Instancesv2_round/sippv2/fixlen4/muse/p04[count=350]_asp_bound_840.txt,23206700,15763700,19625800,32336300,,90932500
+clingcon,840,./pddl_70/result/Instancesv2_round/sippv2/fixlen4/muse/p02[count=350]_asp_bound_840.txt,23206700,15763700,,,,38970400
+clingcon,840,./pddl_70/result/Instancesv2_round/sippv2/fixlen4/muse/p01[count=350]_asp_bound_840.txt,23206700,,,,,23206700
+pddl,840,./pddl_70/result/Instancesv2/sippv2/fixlen4/muse/p03[count=350]_asp_bound_840.txt,26206399,19090799,23035000,,,68332198
+pddl,840,./pddl_70/result/Instancesv2/sippv2/fixlen4/muse/p04[count=350]_asp_bound_840.txt,26206399,19046399,22941600,31561099,,99755497
+pddl,840,./pddl_70/result/Instancesv2/sippv2/fixlen4/muse/p05[count=350]_asp_bound_840.txt,26206399,19090799,23035000,32135799,34866199,135334196
+pddl,840,./pddl_70/result/Instancesv2/sippv2/fixlen4/muse/p02[count=350]_asp_bound_840.txt,26270899,19490399,,,,45761298
+pddl,840,./pddl_70/result/Instancesv2/sippv2/fixlen4/muse/p01[count=350]_asp_bound_840.txt,26206399,,,,,26206399
+pddl,840,./pddl_70/result/Instancesv2_round/sippv2/fixlen4/muse/p03[count=350]_asp_bound_840.txt,23013799,15646399,19392000,,,58052198
+pddl,840,./pddl_70/result/Instancesv2_round/sippv2/fixlen4/muse/p04[count=350]_asp_bound_840.txt,23020099,15646399,19392000,32053699,,90112197
+pddl,840,./pddl_70/result/Instancesv2_round/sippv2/fixlen4/muse/p05[count=350]_asp_bound_840.txt,23382699,16214499,19952400,32628399,36596599,128774596
+pddl,840,./pddl_70/result/Instancesv2_round/sippv2/fixlen4/muse/p02[count=350]_asp_bound_840.txt,22861699,15457199,,,,38318898
+pddl,840,./pddl_70/result/Instancesv2_round/sippv2/fixlen4/muse/p01[count=350]_asp_bound_840.txt,22819099,,,,,22819099

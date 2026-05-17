@@ -1,0 +1,25 @@
+Encoding,Horizon,Problem,counter wrac1_y_wrbc1,counter wrbc1_b_wrcc1,counter wrcc1_x_wrdc1,counter wrdc1_b_wrec1,counter wrec1_y_wrfc1,Total
+clingcon,780,./pddl_cafe/result/Instancesv2_round/sipp/fixlen4/30morn/p03[count=350]_cafe-bnd_dhxplink_780.txt,9020080,7430400,8233880,,,24684360
+clingcon,780,./pddl_cafe/result/Instancesv2_round/sipp/fixlen4/30morn/p04[count=350]_cafe-bnd_dhxplink_780.txt,9020080,7430400,8233880,7696100,,32380460
+clingcon,780,./pddl_cafe/result/Instancesv2_round/sipp/fixlen4/30morn/p05[count=350]_cafe-bnd_dhxplink_780.txt,9020080,7430400,8233880,7696100,8016300,40396760
+clingcon,780,./pddl_cafe/result/Instancesv2_round/sipp/fixlen4/30morn/p02[count=350]_cafe-bnd_dhxplink_780.txt,9020080,7430400,,,,16450480
+clingcon,780,./pddl_cafe/result/Instancesv2_round/sipp/fixlen4/30morn/p01[count=350]_cafe-bnd_dhxplink_780.txt,9077720,,,,,9077720
+clingcon,780,./pddl_cafe/result/Instancesv2_round/sippv2/fixlen4/30morn/p03[count=350]_cafe-bnd_dhxplink_780.txt,9020080,7430400,8233880,,,24684360
+clingcon,780,./pddl_cafe/result/Instancesv2_round/sippv2/fixlen4/30morn/p04[count=350]_cafe-bnd_dhxplink_780.txt,9020080,7430400,8233880,7696100,,32380460
+clingcon,780,./pddl_cafe/result/Instancesv2_round/sippv2/fixlen4/30morn/p05[count=350]_cafe-bnd_dhxplink_780.txt,9020080,7430400,8233880,7696100,8016300,40396760
+clingcon,780,./pddl_cafe/result/Instancesv2_round/sippv2/fixlen4/30morn/p02[count=350]_cafe-bnd_dhxplink_780.txt,9020080,7430400,,,,16450480
+pddl,780,./pddl_cafe/result/Instancesv2_round/random/fixlen4/30morn/p03[count=350]_cafe-bnd_dhxplink_780.txt,9012120,7372799,8386319,,,24771238
+pddl,780,./pddl_cafe/result/Instancesv2_round/random/fixlen4/30morn/p04[count=350]_cafe-bnd_dhxplink_780.txt,9012120,7372799,8386319,7969199,,32740437
+pddl,780,./pddl_cafe/result/Instancesv2_round/random/fixlen4/30morn/p05[count=350]_cafe-bnd_dhxplink_780.txt,9012120,7372799,8386319,7969199,8181100,40921537
+pddl,780,./pddl_cafe/result/Instancesv2_round/random/fixlen4/30morn/p02[count=350]_cafe-bnd_dhxplink_780.txt,9012120,7372799,,,,16384919
+pddl,780,./pddl_cafe/result/Instancesv2_round/random/fixlen4/30morn/p01[count=350]_cafe-bnd_dhxplink_780.txt,9012120,,,,,9012120
+pddl,780,./pddl_cafe/result/Instancesv2_round/sipp/fixlen4/30morn/p03[count=350]_cafe-bnd_dhxplink_780.txt,9020080,7430399,8233879,,,24684358
+pddl,780,./pddl_cafe/result/Instancesv2_round/sipp/fixlen4/30morn/p04[count=350]_cafe-bnd_dhxplink_780.txt,9020080,7430399,8233879,7633099,,32317457
+pddl,780,./pddl_cafe/result/Instancesv2_round/sipp/fixlen4/30morn/p05[count=350]_cafe-bnd_dhxplink_780.txt,9020080,7430399,8233879,7633099,8016300,40333757
+pddl,780,./pddl_cafe/result/Instancesv2_round/sipp/fixlen4/30morn/p02[count=350]_cafe-bnd_dhxplink_780.txt,9020080,7430399,,,,16450479
+pddl,780,./pddl_cafe/result/Instancesv2_round/sipp/fixlen4/30morn/p01[count=350]_cafe-bnd_dhxplink_780.txt,9020080,,,,,9020080
+pddl,780,./pddl_cafe/result/Instancesv2_round/sippv2/fixlen4/30morn/p03[count=350]_cafe-bnd_dhxplink_780.txt,9020080,7430399,8233879,,,24684358
+pddl,780,./pddl_cafe/result/Instancesv2_round/sippv2/fixlen4/30morn/p04[count=350]_cafe-bnd_dhxplink_780.txt,9020080,7430399,8233879,7633099,,32317457
+pddl,780,./pddl_cafe/result/Instancesv2_round/sippv2/fixlen4/30morn/p05[count=350]_cafe-bnd_dhxplink_780.txt,9020080,7430399,8233879,7633099,8016300,40333757
+pddl,780,./pddl_cafe/result/Instancesv2_round/sippv2/fixlen4/30morn/p02[count=350]_cafe-bnd_dhxplink_780.txt,9020080,7430399,,,,16450479
+pddl,780,./pddl_cafe/result/Instancesv2_round/sippv2/fixlen4/30morn/p01[count=350]_cafe-bnd_dhxplink_780.txt,9020080,,,,,9020080

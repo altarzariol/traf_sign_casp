@@ -1,0 +1,13 @@
+clingcon version 5.2.1
+Reading from ...sippv2/fixlen4/26eve/p02[count=350].lp ...
+Solving...
+Answer: 1 (Time: 46.022s)
+sol(389,inter(wrbc1,5),conf_wrbc1_1,conf_wrbc1_6)
+Assignment:
+counter(600,link(wrac1,y,wrbc1))=19434540 counter(600,link(wrbc1,b,wrcc1))=12153600
+SATISFIABLE
+
+Models       : 1+
+Calls        : 1
+Time         : 46.468s (Solving: 22.51s 1st Model: 22.02s Unsat: 0.00s)
+CPU Time     : 15.483s

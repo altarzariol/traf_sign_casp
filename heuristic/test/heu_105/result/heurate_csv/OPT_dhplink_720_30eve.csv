@@ -1,0 +1,16 @@
+Encoding,Horizon,Problem,counter wrac1_y_wrbc1,counter wrbc1_b_wrcc1,counter wrcc1_x_wrdc1,counter wrdc1_b_wrec1,counter wrec1_y_wrfc1,Total
+clingcon,720,./heu_105/result/Instancesv2_round/random/fixlen4/30eve/p03[count=350]_OPT_dhplink_720.txt,15826680,11865600,11694060,,,39386340
+clingcon,720,./heu_105/result/Instancesv2_round/random/fixlen4/30eve/p04[count=350]_OPT_dhplink_720.txt,15826680,11865600,11694060,12261400,,51647740
+clingcon,720,./heu_105/result/Instancesv2_round/random/fixlen4/30eve/p05[count=350]_OPT_dhplink_720.txt,15826680,11865600,11694060,12109300,13536700,65032340
+clingcon,720,./heu_105/result/Instancesv2_round/random/fixlen4/30eve/p02[count=350]_OPT_dhplink_720.txt,15826680,11865600,,,,27692280
+clingcon,720,./heu_105/result/Instancesv2_round/random/fixlen4/30eve/p01[count=350]_OPT_dhplink_720.txt,15826680,,,,,15826680
+clingcon,720,./heu_105/result/Instancesv2_round/sipp/fixlen4/30eve/p03[count=350]_OPT_dhplink_720.txt,16183500,13996800,15392720,,,45573020
+clingcon,720,./heu_105/result/Instancesv2_round/sipp/fixlen4/30eve/p04[count=350]_OPT_dhplink_720.txt,16183500,13996800,15392720,15132000,,60705020
+clingcon,720,./heu_105/result/Instancesv2_round/sipp/fixlen4/30eve/p05[count=350]_OPT_dhplink_720.txt,16183500,13996800,15392720,15105900,16550200,77229120
+clingcon,720,./heu_105/result/Instancesv2_round/sipp/fixlen4/30eve/p02[count=350]_OPT_dhplink_720.txt,16183500,13996800,,,,30180300
+clingcon,720,./heu_105/result/Instancesv2_round/sipp/fixlen4/30eve/p01[count=350]_OPT_dhplink_720.txt,16183500,,,,,16183500
+clingcon,720,./heu_105/result/Instancesv2_round/sippv2/fixlen4/30eve/p03[count=350]_OPT_dhplink_720.txt,16249100,14054400,15392720,,,45696220
+clingcon,720,./heu_105/result/Instancesv2_round/sippv2/fixlen4/30eve/p04[count=350]_OPT_dhplink_720.txt,16249100,14054400,15392720,15132000,,60828220
+clingcon,720,./heu_105/result/Instancesv2_round/sippv2/fixlen4/30eve/p05[count=350]_OPT_dhplink_720.txt,16249100,14054400,15392720,15105900,16550200,77352320
+clingcon,720,./heu_105/result/Instancesv2_round/sippv2/fixlen4/30eve/p02[count=350]_OPT_dhplink_720.txt,16249100,14054400,,,,30303500
+clingcon,720,./heu_105/result/Instancesv2_round/sippv2/fixlen4/30eve/p01[count=350]_OPT_dhplink_720.txt,16249100,,,,,16249100

@@ -1,0 +1,7 @@
+Encoding,Horizon,Problem,counter wrac1_y_wrbc1,counter wrbc1_b_wrcc1,counter wrcc1_x_wrdc1,counter wrdc1_b_wrec1,counter wrec1_y_wrfc1,Total
+clingcon,660,./pddl_105/result/Instancesv2_round/sippv2/fixlen4/26eve/p03[count=350]_asp_bound_660.txt,20280680,12672000,13859120,,,46811800
+pddl,660,./pddl_105/result/Instancesv2_round/sippv2/fixlen4/26eve/p03[count=350]_asp_bound_660.txt,20242140,12441599,13804099,,,46487838
+pddl,660,./pddl_105/result/Instancesv2_round/sippv2/fixlen4/26eve/p04[count=350]_asp_bound_660.txt,20411520,12671999,14072299,13644499,,60800317
+pddl,660,./pddl_105/result/Instancesv2_round/sippv2/fixlen4/26eve/p05[count=350]_asp_bound_660.txt,20005020,12959999,14103259,14149299,17809699,79027276
+pddl,660,./pddl_105/result/Instancesv2_round/sippv2/fixlen4/26eve/p02[count=350]_asp_bound_660.txt,20281620,12787199,,,,33068819
+pddl,660,./pddl_105/result/Instancesv2_round/sippv2/fixlen4/26eve/p01[count=350]_asp_bound_660.txt,20557740,,,,,20557740

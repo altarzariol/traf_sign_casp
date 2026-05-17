@@ -1,0 +1,15 @@
+clingcon version 5.2.1
+Reading from .../sippv2/fixlen4/muse/p04[count=350].lp ...
+Solving...
+UNKNOWN
+
+TIME LIMIT   : 1
+Models       : 0+
+Calls        : 1
+<<<<<<< HEAD
+Time         : 986.803s (Solving: 969.41s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 593.035s
+=======
+Time         : 600.933s (Solving: 590.61s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 479.034s
+>>>>>>> 158e8b50dfc667dfd8570a10121568f7636c11b8

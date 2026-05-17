@@ -1,0 +1,15 @@
+Encoding,Horizon,Problem,counter wrac1_y_wrbc1,counter wrbc1_b_wrcc1,counter wrcc1_x_wrdc1,counter wrdc1_b_wrec1,counter wrec1_y_wrfc1,Total
+clingcon,720,./heu_105/result/Instancesv2_round/random/fixlen4/26morn/p04[count=350]_OPT_xdeltime_720.txt,13253100,10944000,12249920,10937600,,47384620
+clingcon,720,./heu_105/result/Instancesv2_round/random/fixlen4/26morn/p05[count=350]_OPT_xdeltime_720.txt,13253100,10944000,12249920,10937600,11947800,59332420
+clingcon,720,./heu_105/result/Instancesv2_round/random/fixlen4/26morn/p02[count=350]_OPT_xdeltime_720.txt,13253100,10944000,,,,24197100
+clingcon,720,./heu_105/result/Instancesv2_round/random/fixlen4/26morn/p01[count=350]_OPT_xdeltime_720.txt,13253100,,,,,13253100
+clingcon,720,./heu_105/result/Instancesv2_round/sipp/fixlen4/26morn/p03[count=350]_OPT_xdeltime_720.txt,18870820,15091200,15060300,,,49022320
+clingcon,720,./heu_105/result/Instancesv2_round/sipp/fixlen4/26morn/p04[count=350]_OPT_xdeltime_720.txt,65600,0,0,0,,65600
+clingcon,720,./heu_105/result/Instancesv2_round/sipp/fixlen4/26morn/p05[count=350]_OPT_xdeltime_720.txt,18870820,15091200,15060300,14320900,15243800,78587020
+clingcon,720,./heu_105/result/Instancesv2_round/sipp/fixlen4/26morn/p02[count=350]_OPT_xdeltime_720.txt,18870820,15091200,,,,33962020
+clingcon,720,./heu_105/result/Instancesv2_round/sipp/fixlen4/26morn/p01[count=350]_OPT_xdeltime_720.txt,18870820,,,,,18870820
+clingcon,720,./heu_105/result/Instancesv2_round/sippv2/fixlen4/26morn/p03[count=350]_OPT_xdeltime_720.txt,18870820,15148800,15060300,,,49079920
+clingcon,720,./heu_105/result/Instancesv2_round/sippv2/fixlen4/26morn/p04[count=350]_OPT_xdeltime_720.txt,65600,0,0,0,,65600
+clingcon,720,./heu_105/result/Instancesv2_round/sippv2/fixlen4/26morn/p05[count=350]_OPT_xdeltime_720.txt,18870820,15148800,15060300,14510700,15491000,79081620
+clingcon,720,./heu_105/result/Instancesv2_round/sippv2/fixlen4/26morn/p02[count=350]_OPT_xdeltime_720.txt,18870820,15206400,,,,34077220
+clingcon,720,./heu_105/result/Instancesv2_round/sippv2/fixlen4/26morn/p01[count=350]_OPT_xdeltime_720.txt,18870820,,,,,18870820

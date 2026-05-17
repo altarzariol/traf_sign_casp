@@ -1,0 +1,16 @@
+Encoding,Horizon,Problem,counter wrac1_y_wrbc1,counter wrbc1_b_wrcc1,counter wrcc1_x_wrdc1,counter wrdc1_b_wrec1,counter wrec1_y_wrfc1,Total
+clingcon,840,./heu_105/result/Instancesv2_round/random/fixlen4/30eve/p03[count=350]_OPT_dhextphs_840.txt,16254220,13651200,13993220,,,43898640
+clingcon,840,./heu_105/result/Instancesv2_round/random/fixlen4/30eve/p04[count=350]_OPT_dhextphs_840.txt,16254220,13651200,13993220,13688800,,57587440
+clingcon,840,./heu_105/result/Instancesv2_round/random/fixlen4/30eve/p05[count=350]_OPT_dhextphs_840.txt,16254220,13651200,13993220,13688800,15655500,73242940
+clingcon,840,./heu_105/result/Instancesv2_round/random/fixlen4/30eve/p02[count=350]_OPT_dhextphs_840.txt,16254220,13651200,,,,29905420
+clingcon,840,./heu_105/result/Instancesv2_round/random/fixlen4/30eve/p01[count=350]_OPT_dhextphs_840.txt,16254220,,,,,16254220
+clingcon,840,./heu_105/result/Instancesv2_round/sipp/fixlen4/30eve/p03[count=350]_OPT_dhextphs_840.txt,19337420,15782400,17649480,,,52769300
+clingcon,840,./heu_105/result/Instancesv2_round/sipp/fixlen4/30eve/p04[count=350]_OPT_dhextphs_840.txt,19337420,15782400,17649480,16954800,,69724100
+clingcon,840,./heu_105/result/Instancesv2_round/sipp/fixlen4/30eve/p05[count=350]_OPT_dhextphs_840.txt,19337420,15782400,17649480,16954800,18833800,88557900
+clingcon,840,./heu_105/result/Instancesv2_round/sipp/fixlen4/30eve/p02[count=350]_OPT_dhextphs_840.txt,19337420,15782400,,,,35119820
+clingcon,840,./heu_105/result/Instancesv2_round/sipp/fixlen4/30eve/p01[count=350]_OPT_dhextphs_840.txt,19337420,,,,,19337420
+clingcon,840,./heu_105/result/Instancesv2_round/sippv2/fixlen4/30eve/p03[count=350]_OPT_dhextphs_840.txt,19337420,15955200,17649480,,,52942100
+clingcon,840,./heu_105/result/Instancesv2_round/sippv2/fixlen4/30eve/p04[count=350]_OPT_dhextphs_840.txt,19337420,15955200,17649480,16954800,,69896900
+clingcon,840,./heu_105/result/Instancesv2_round/sippv2/fixlen4/30eve/p05[count=350]_OPT_dhextphs_840.txt,19337420,15955200,17649480,16954800,18833800,88730700
+clingcon,840,./heu_105/result/Instancesv2_round/sippv2/fixlen4/30eve/p02[count=350]_OPT_dhextphs_840.txt,19337420,15955200,,,,35292620
+clingcon,840,./heu_105/result/Instancesv2_round/sippv2/fixlen4/30eve/p01[count=350]_OPT_dhextphs_840.txt,19337420,,,,,19337420

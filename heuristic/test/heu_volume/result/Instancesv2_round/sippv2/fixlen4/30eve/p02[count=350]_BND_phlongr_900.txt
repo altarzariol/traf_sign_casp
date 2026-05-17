@@ -1,0 +1,13 @@
+clingcon version 5.2.1
+Reading from ...sippv2/fixlen4/30eve/p02[count=350].lp ...
+Solving...
+Answer: 1 (Time: 396.461s)
+optimal_conf_in(conf_wrac1_2,link(wrac1,y,wrbc1)) optimal_conf_in(conf_wrac1_3,link(wrac1,y,wrbc1)) optimal_conf_in(conf_wrac1_4,link(wrac1,y,wrbc1)) optimal_conf_in(conf_wrbc1_2,link(wrbc1,b,wrcc1)) optimal_conf_in(conf_wrbc1_3,link(wrbc1,b,wrcc1)) optimal_conf_in(conf_wrbc1_4,link(wrbc1,b,wrcc1)) optimal_conf_out(conf_wrbc1_2,link(wrac1,y,wrbc1)) optimal_conf_out(conf_wrbc1_3,link(wrac1,y,wrbc1)) optimal_conf_out(conf_wrbc1_4,link(wrac1,y,wrbc1)) optimal_conf_out(conf_wrcc1_1,link(wrbc1,b,wrcc1)) optimal_conf_out(conf_wrcc1_3,link(wrbc1,b,wrcc1)) promising_conf_1(wrac1,4,conf_wrac1_4) promising_conf_1(wrac1,5,conf_wrac1_4) promising_conf_1(wrac1,6,conf_wrac1_4) promising_conf_1(wrac1,7,conf_wrac1_4) promising_conf_1(wrac1,8,conf_wrac1_4) promising_conf_1(wrac1,9,conf_wrac1_4) promising_conf_1(wrbc1,4,conf_wrbc1_4) promising_conf_1(wrbc1,5,conf_wrbc1_4) promising_conf_1(wrbc1,6,conf_wrbc1_4) promising_conf_1(wrbc1,7,conf_wrbc1_4) promising_conf_1(wrbc1,8,conf_wrbc1_4) promising_conf_1(wrbc1,9,conf_wrbc1_4) promising_conf_2(wrbc1,4,conf_wrbc1_4) promising_conf_2(wrbc1,5,conf_wrbc1_4) promising_conf_2(wrbc1,6,conf_wrbc1_4) promising_conf_2(wrbc1,7,conf_wrbc1_4) promising_conf_2(wrbc1,8,conf_wrbc1_4) promising_conf_2(wrbc1,9,conf_wrbc1_4) promising_conf_2(wrcc1,0,conf_wrcc1_1) promising_conf_2(wrcc1,1,conf_wrcc1_1) promising_conf_2(wrcc1,2,conf_wrcc1_1) promising_conf_2(wrcc1,3,conf_wrcc1_1) promising_conf_2(wrcc1,4,conf_wrcc1_1) promising_conf_2(wrcc1,5,conf_wrcc1_1) promising_conf_2(wrcc1,6,conf_wrcc1_1) promising_conf_2(wrcc1,7,conf_wrcc1_1) promising_conf_2(wrcc1,8,conf_wrcc1_1) promising_conf_2(wrcc1,9,conf_wrcc1_1) promising_conf_2(wrcc1,10,conf_wrcc1_1) sol(357,inter(wrbc1,5),conf_wrbc1_1,conf_wrbc1_4) sol(359,inter(wrac1,4),conf_wrac1_1,conf_wrac1_4)
+Assignment:
+counter(900,link(wrac1,y,wrbc1))=20064140 counter(900,link(wrbc1,b,wrcc1))=17164800
+SATISFIABLE
+
+Models       : 1+
+Calls        : 1
+Time         : 402.106s (Solving: 333.92s 1st Model: 328.23s Unsat: 0.00s)
+CPU Time     : 131.804s

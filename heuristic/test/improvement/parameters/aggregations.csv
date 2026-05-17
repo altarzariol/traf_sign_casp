@@ -1,0 +1,10 @@
+tag,name__test,name_reference,encoding_test,encoding_reference,result_horizons,result_instances,file_record,improvements,results_aggregator,script_get
+tag_,name_test,name_ref,enc_test,enc_ref,result_hor,result_inst,record,imprvs,py_aggr,get
+PDDL_TEST70,clingcon,pddl+,clingcon,pddl,./result/aggregate/results_PDDL_TEST70.txt,./result/aggregate/results_inst_PDDL_TEST70.txt,./parameters/histogr_data.csv,./parameters/imprvs_results.csv,./py/inst1.py,./sh/get0.sh
+PDDL_DHXplinkComb,dhxplink,pddl+,clingcon,pddl,./result/aggregate/results_PDDL_DHXplinkComb.txt,./result/aggregate/results_inst_PDDL_DHXplinkComb.txt,./parameters/histogr_data.csv,./parameters/imprvs_results.csv,./py/inst1.py,./sh/get0.sh
+PDDL_DHXplinkmin,dhxplink,pddl+,clingcon,pddl,./result/aggregate/results_PDDL_DHXplinkmin.txt,./result/aggregate/results_inst_PDDL_DHXplinkmin.txt,./parameters/histogr_data.csv,./parameters/imprvs_results.csv,./py/inst1.py,./sh/get0.sh
+CAFE_DHXplink,dhxplink,cafe,clingcon,pddl,./result/aggregate/results_CAFE_DHXplink.txt,./result/aggregate/results_inst_CAFE_DHXplink.txt,./parameters/histogr_data.csv,./parameters/imprvs_results.csv,./py/inst1.py,./sh/get0.sh
+PDDL_ClingconComb,clingcon,pddl+,clingcon,pddl,./result/aggregate/results_PDDL_ClingconComb.txt,./result/aggregate/results_inst_PDDL_ClingconComb.txt,./parameters/histogr_data.csv,./parameters/imprvs_results.csv,./py/inst1.py,./sh/get0.sh
+OPTCAFE_DHXplink,hlink,cafe,clingcon,cafe,./result/aggregate/results_OPTCAFE_DHXplink.txt,./result/aggregate/results_inst_OPTCAFE_DHXplink.txt,./parameters/histogr_data.csv,./parameters/imprvs_results.csv,./py/inst1.py,./sh/get0.sh
+OPTFIRE_DHXplink,hlink,pddl+,clingcon,pddl,./result/aggregate/results_OPTFIRE_DHXplink.txt,./result/aggregate/results_inst_OPTFIRE_DHXplink.txt,./parameters/histogr_data.csv,./parameters/imprvs_results.csv,./py/inst1.py,./sh/get0.sh
+,,,,,,,,,,

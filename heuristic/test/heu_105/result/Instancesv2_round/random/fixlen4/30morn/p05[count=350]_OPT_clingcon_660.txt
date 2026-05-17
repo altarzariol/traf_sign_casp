@@ -1,0 +1,15 @@
+clingcon version 5.2.1
+Reading from ...andom/fixlen4/30morn/p05[count=350].lp ...
+Solving...
+Answer: 3 (Time: 43.432s)
+sol(293,inter(wrac1,4),conf_wrac1_2,conf_wrac1_3) sol(343,inter(wrec1,4),conf_wrec1_1,conf_wrec1_2) sol(387,inter(wrfc1,3),conf_wrfc1_1,conf_wrfc1_2) sol(389,inter(wrbc1,5),conf_wrbc1_3,conf_wrbc1_4) sol(413,inter(wrdc1,4),conf_wrdc1_3,conf_wrdc1_2) sol(657,inter(wrac1,4),conf_wrac1_3,conf_wrac1_1)
+Assignment:
+counter(660,link(wrac1,y,wrbc1))=7772360 counter(660,link(wrbc1,b,wrcc1))=6278400 counter(660,link(wrcc1,x,wrdc1))=7281440 counter(660,link(wrdc1,b,wrec1))=6722100 counter(660,link(wrec1,y,wrfc1))=7109900
+Cost: -35164200
+SATISFIABLE
+
+TIME LIMIT   : 1
+Models       : 3+
+Calls        : 1
+Time         : 600.968s (Solving: 580.41s 1st Model: 6.14s Unsat: 0.00s)
+CPU Time     : 600.875s

@@ -1,0 +1,15 @@
+Encoding,Horizon,Problem,counter wrac1_y_wrbc1,counter wrbc1_b_wrcc1,counter wrcc1_x_wrdc1,counter wrdc1_b_wrec1,counter wrec1_y_wrfc1,Total
+clingcon,780,./heu_105/result/Instancesv2_round/random/fixlen4/30noon/p04[count=350]_OPT_xdeltime_780.txt,16532380,11750400,12814980,12135400,,53233160
+clingcon,780,./heu_105/result/Instancesv2_round/random/fixlen4/30noon/p05[count=350]_OPT_xdeltime_780.txt,16532380,11750400,12814980,12135400,13842800,67075960
+clingcon,780,./heu_105/result/Instancesv2_round/random/fixlen4/30noon/p02[count=350]_OPT_xdeltime_780.txt,16532380,11980800,,,,28513180
+clingcon,780,./heu_105/result/Instancesv2_round/random/fixlen4/30noon/p01[count=350]_OPT_xdeltime_780.txt,16532380,,,,,16532380
+clingcon,780,./heu_105/result/Instancesv2_round/sipp/fixlen4/30noon/p03[count=350]_OPT_xdeltime_780.txt,24252820,15840000,16238540,,,56331360
+clingcon,780,./heu_105/result/Instancesv2_round/sipp/fixlen4/30noon/p04[count=350]_OPT_xdeltime_780.txt,0,0,44700,0,,44700
+clingcon,780,./heu_105/result/Instancesv2_round/sipp/fixlen4/30noon/p05[count=350]_OPT_xdeltime_780.txt,24252820,15840000,16238540,16978000,18704400,92013760
+clingcon,780,./heu_105/result/Instancesv2_round/sipp/fixlen4/30noon/p02[count=350]_OPT_xdeltime_780.txt,24252820,15840000,,,,40092820
+clingcon,780,./heu_105/result/Instancesv2_round/sipp/fixlen4/30noon/p01[count=350]_OPT_xdeltime_780.txt,24252820,,,,,24252820
+clingcon,780,./heu_105/result/Instancesv2_round/sippv2/fixlen4/30noon/p03[count=350]_OPT_xdeltime_780.txt,24590700,16070400,16417340,,,57078440
+clingcon,780,./heu_105/result/Instancesv2_round/sippv2/fixlen4/30noon/p04[count=350]_OPT_xdeltime_780.txt,0,0,44700,0,,44700
+clingcon,780,./heu_105/result/Instancesv2_round/sippv2/fixlen4/30noon/p05[count=350]_OPT_xdeltime_780.txt,24582740,16070400,16417340,17313300,19034000,93417780
+clingcon,780,./heu_105/result/Instancesv2_round/sippv2/fixlen4/30noon/p02[count=350]_OPT_xdeltime_780.txt,24590700,16070400,,,,40661100
+clingcon,780,./heu_105/result/Instancesv2_round/sippv2/fixlen4/30noon/p01[count=350]_OPT_xdeltime_780.txt,24590700,,,,,24590700
